@@ -3,7 +3,8 @@ import { NormalButton } from "../components/Button";
 import Logo from "../components/Logo/Logo1";
 import { NAV_MENU } from "../constants/Link";
 import { MenuLink } from "../type";
-import Section1 from "../containers/Home/Header";
+import About from "../containers/Home/About";
+import Header from "../containers/Home/Header";
 
 const Home = () => {
   return (
@@ -117,7 +118,8 @@ const Home = () => {
           data-framer-name="Main sections"
           data-name="Main sections"
         >
-          <Section1 />
+          <Header />
+          <About />
         </div>
       </div>
     </div>
