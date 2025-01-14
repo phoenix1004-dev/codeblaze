@@ -10,6 +10,7 @@ import Process from "../containers/Home/Process";
 import Satistics from "../containers/Home/Statistics";
 import Team from "../containers/Home/Team";
 import Price from "../containers/Home/Price";
+import Review from "../containers/Home/review";
 
 const Home = () => {
   return (
@@ -130,6 +131,7 @@ const Home = () => {
           <Satistics />
           <Team />
           <Price />
+          <Review />
         </div>
       </div>
     </div>
