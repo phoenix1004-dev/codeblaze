@@ -12,6 +12,7 @@ import Team from "../containers/Home/Team";
 import Price from "../containers/Home/Price";
 import Review from "../containers/Home/review";
 import FAQ from "../containers/Home/FAQ";
+import Contact from "../containers/Home/Contact";
 
 const Home = () => {
   return (
@@ -134,6 +135,7 @@ const Home = () => {
           <Price />
           <Review />
           <FAQ />
+          <Contact />
         </div>
       </div>
     </div>
