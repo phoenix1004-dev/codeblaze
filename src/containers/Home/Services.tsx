@@ -910,7 +910,7 @@ const Services = () => {
                         <p className="framer-text text-white text-left text-sm leading-6 font-sans">
                           <span
                             data-text-fill="true"
-                            className="framer-text text-white text-left text-sm leading-6 font-sans"
+                            className="framer-text bg-gradient-to-r from-white to-blue-400 text-left text-sm leading-6 font-sans"
                           >
                             Where do Quokka's live?
                           </span>
