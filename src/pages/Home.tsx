@@ -5,6 +5,7 @@ import { NAV_MENU } from "../constants/Link";
 import { MenuLink } from "../type";
 import About from "../containers/Home/About";
 import Header from "../containers/Home/Header";
+import Services from "../containers/Home/Services";
 
 const Home = () => {
   return (
@@ -120,6 +121,7 @@ const Home = () => {
         >
           <Header />
           <About />
+          <Services />
         </div>
       </div>
     </div>
