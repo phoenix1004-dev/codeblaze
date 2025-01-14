@@ -1,7 +1,7 @@
 import Nav from "../../components/Nav";
 import arrowRight from "../../assets/images/arrow-right.png";
 
-const Section1 = () => {
+const Header = () => {
   return (
     <div className="framer-13gmy9c-container" id="header">
       <div className="ssr-variant hidden-r5chz7 hidden-5tblbe hidden-ncoutt">
@@ -148,4 +148,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default Header;

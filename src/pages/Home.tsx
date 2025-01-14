@@ -3,7 +3,7 @@ import { NormalButton } from "../components/Button";
 import Logo from "../components/Logo/Logo1";
 import { NAV_MENU } from "../constants/Link";
 import { MenuLink } from "../type";
-import Section1 from "../containers/Home/Section1";
+import Section1 from "../containers/Home/Header";
 
 const Home = () => {
   return (
