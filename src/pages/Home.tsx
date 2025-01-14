@@ -9,6 +9,7 @@ import Services from "../containers/Home/Services";
 import Process from "../containers/Home/Process";
 import Satistics from "../containers/Home/Statistics";
 import Team from "../containers/Home/Team";
+import Price from "../containers/Home/Price";
 
 const Home = () => {
   return (
@@ -128,6 +129,7 @@ const Home = () => {
           <Process />
           <Satistics />
           <Team />
+          <Price />
         </div>
       </div>
     </div>
