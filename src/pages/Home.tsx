@@ -11,6 +11,7 @@ import Satistics from "../containers/Home/Statistics";
 import Team from "../containers/Home/Team";
 import Price from "../containers/Home/Price";
 import Review from "../containers/Home/review";
+import FAQ from "../containers/Home/FAQ";
 
 const Home = () => {
   return (
@@ -132,6 +133,7 @@ const Home = () => {
           <Team />
           <Price />
           <Review />
+          <FAQ />
         </div>
       </div>
     </div>
