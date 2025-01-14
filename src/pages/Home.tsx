@@ -6,6 +6,7 @@ import { MenuLink } from "../type";
 import About from "../containers/Home/About";
 import Header from "../containers/Home/Header";
 import Services from "../containers/Home/Services";
+import Process from "../containers/Home/Process";
 
 const Home = () => {
   return (
@@ -122,6 +123,7 @@ const Home = () => {
           <Header />
           <About />
           <Services />
+          <Process />
         </div>
       </div>
     </div>
