@@ -1,9 +1,14 @@
+import { FC } from "react";
 import LogoImage from "./LogoImage";
 import LogoText from "./LogoText";
 
-const Logo = () => {
+type LogoProps = {
+  className?: string;
+};
+
+const Logo: FC<LogoProps> = ({ className }) => {
   return (
-    <div className="framer-1n2yrmf" data-framer-name="Logo">
+    <div className={className} data-framer-name="Logo">
       <LogoImage />
       <LogoText />
     </div>
