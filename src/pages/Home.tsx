@@ -13,6 +13,7 @@ import Price from "../containers/Home/Price";
 import Review from "../containers/Home/review";
 import FAQ from "../containers/Home/FAQ";
 import Contact from "../containers/Home/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -136,6 +137,7 @@ const Home = () => {
           <Review />
           <FAQ />
           <Contact />
+          <Footer />
         </div>
       </div>
     </div>
