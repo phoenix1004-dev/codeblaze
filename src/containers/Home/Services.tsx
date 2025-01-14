@@ -876,8 +876,8 @@ const Services = () => {
               data-framer-name="LLM Development"
               data-name="LLM Development"
             >
-              <div className="ssr-variant hidden-r5chz7 hidden-wbkh13">
-                <div className="framer-h6vlzy-container w-full h-full">
+              <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
+                <div className="framer-h6vlzy-container !w-full h-full">
                   <div
                     className="framer-xrZ8E framer-l50WH framer-wb8ig1 framer-v-wb8ig1"
                     data-framer-name="Desktop 1440 &amp; Tablet 999"
@@ -1026,7 +1026,7 @@ const Services = () => {
                 className="framer-1no8lx7"
                 data-framer-name="Gradient"
                 data-name="Gradient"
-              ></div>
+              />
             </div>
           </div>
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
@@ -1037,7 +1037,7 @@ const Services = () => {
               data-framer-name="AI Consulting"
               data-name="AI Consulting"
             >
-              <div className="ssr-variant hidden-r5chz7 hidden-wbkh13">
+              <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
                 <div className="framer-m30icq-container">
                   <div
                     className="framer-LXnkX framer-o3waff framer-v-o3waff w-full h-full"
