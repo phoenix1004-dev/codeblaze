@@ -7,6 +7,7 @@ import About from "../containers/Home/About";
 import Header from "../containers/Home/Header";
 import Services from "../containers/Home/Services";
 import Process from "../containers/Home/Process";
+import Satistics from "../containers/Home/Statistics";
 
 const Home = () => {
   return (
@@ -124,6 +125,7 @@ const Home = () => {
           <About />
           <Services />
           <Process />
+          <Satistics />
         </div>
       </div>
     </div>
