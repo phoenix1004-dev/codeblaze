@@ -56,10 +56,10 @@ const Nav = () => {
                 className="framer-1mkf86x outline-none flex flex-col justify-start flex-shrink-0 text-white link text-blue-500 underline"
                 data-framer-component-type="RichTextContainer"
               >
-                <h4 className="framer-text font-[Switzer, sans-serif] text-white text-[14px] tracking-normal">
+                <h4 className="framer-text font-[Switzer, sans-serif] text-white tracking-normal">
                   <span
                     data-text-fill="true"
-                    className="framer-text bg-gradient-to-r from-white to-[#70befa]"
+                    className="framer-text text-[14px] bg-gradient-to-r from-white to-[#70befa]"
                   >
                     Get template
                   </span>
