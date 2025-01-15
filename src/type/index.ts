@@ -48,3 +48,8 @@ export type REVIEW = {
   person: MEMBER;
   comment: string;
 };
+
+export type QA = {
+  qu: string;
+  an: string;
+};

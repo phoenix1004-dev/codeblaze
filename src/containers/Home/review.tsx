@@ -65,7 +65,7 @@ const Review = () => {
                                 data-framer-name="Review"
                               >
                                 <div
-                                  className="framer-c00j38 flex flex-col justify-start flex-shrink-0 text-blue-500 underline"
+                                  className="framer-c00j38 flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline"
                                   data-framer-component-type="RichTextContainer"
                                 >
                                   <p
@@ -125,7 +125,7 @@ const Review = () => {
                                     className="framer-1f9uiki flex flex-col justify-start shrink-0 text-[#9c9c9c]"
                                     data-framer-component-type="RichTextContainer"
                                   >
-                                    <h4 className="framer-text text-[#9c9c9c] text-sm font-sans">
+                                    <h4 className="framer-text !text-[#ffffff] text-sm font-sans">
                                       {review.person.pos}
                                     </h4>
                                   </div>
@@ -153,7 +153,7 @@ const Review = () => {
                                 data-framer-name="Review"
                               >
                                 <div
-                                  className="framer-c00j38 flex flex-col justify-start flex-shrink-0 text-blue-500 underline"
+                                  className="framer-c00j38 flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline"
                                   data-framer-component-type="RichTextContainer"
                                 >
                                   <p
@@ -213,7 +213,7 @@ const Review = () => {
                                     className="framer-1f9uiki flex flex-col justify-start shrink-0 text-[#9c9c9c]"
                                     data-framer-component-type="RichTextContainer"
                                   >
-                                    <h4 className="framer-text text-[#9c9c9c] text-sm font-sans">
+                                    <h4 className="framer-text !text-[#ffffff] text-sm font-sans">
                                       {review.person.pos}
                                     </h4>
                                   </div>
@@ -257,7 +257,7 @@ const Review = () => {
                                 data-framer-name="Review"
                               >
                                 <div
-                                  className="framer-c00j38 flex flex-col justify-start flex-shrink-0 text-blue-500 underline"
+                                  className="framer-c00j38 flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline"
                                   data-framer-component-type="RichTextContainer"
                                 >
                                   <p
@@ -317,7 +317,7 @@ const Review = () => {
                                     className="framer-1f9uiki flex flex-col justify-start shrink-0 text-[#9c9c9c]"
                                     data-framer-component-type="RichTextContainer"
                                   >
-                                    <h4 className="framer-text text-[#9c9c9c] text-sm font-sans">
+                                    <h4 className="framer-text !text-[#ffffff] text-sm font-sans">
                                       {review.person.pos}
                                     </h4>
                                   </div>
@@ -345,7 +345,7 @@ const Review = () => {
                                 data-framer-name="Review"
                               >
                                 <div
-                                  className="framer-c00j38 flex flex-col justify-start flex-shrink-0 text-blue-500 underline"
+                                  className="framer-c00j38 flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline"
                                   data-framer-component-type="RichTextContainer"
                                 >
                                   <p
@@ -405,7 +405,7 @@ const Review = () => {
                                     className="framer-1f9uiki flex flex-col justify-start shrink-0 text-[#9c9c9c]"
                                     data-framer-component-type="RichTextContainer"
                                   >
-                                    <h4 className="framer-text text-[#9c9c9c] text-sm font-sans">
+                                    <h4 className="framer-text !text-[#ffffff] text-sm font-sans">
                                       {review.person.pos}
                                     </h4>
                                   </div>

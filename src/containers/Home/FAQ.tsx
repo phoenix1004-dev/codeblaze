@@ -1,4 +1,17 @@
+import QABox from "../../components/QA";
+import { QAs } from "../../constants/QAs";
+import { QA } from "../../type";
+
 const FAQ = () => {
+  const className: string[] = [
+    "framer-1hsafb6-container",
+    "framer-12nl61y-container",
+    "framer-1nrz16v-container",
+    "framer-k82vdj-container",
+    "framer-19k61sf-container",
+    "framer-zateej-container",
+  ];
+
   return (
     <section
       className="framer-2r13k6"
@@ -43,211 +56,14 @@ const FAQ = () => {
               data-framer-name="Desktop 1440 &amp; 1200"
             >
               <div className="framer-93fu28" data-framer-name="Left row">
-                <div className="framer-1hsafb6-container">
-                  <div
-                    className="framer-dgUsn framer-V74Ls framer-l50WH framer-slbiny framer-v-slbiny border border-solid border-gray-800 bg-gray-900 rounded-[10px] shadow-md !w-full"
-                    data-border="true"
-                    data-framer-name="Question closed"
-                  >
-                    <div
-                      className="framer-1lup9zr"
-                      data-framer-name="Question"
-                      data-highlight="true"
-                      tabIndex={0}
-                    >
-                      <div
-                        className="framer-1kse8k3 flex flex-col justify-start flex-shrink-0 text-blue-500 underline space-y-0"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-85tvh7"
-                          data-styles-preset="FhU5qX9WL"
-                        >
-                          Is my company a good fit for Halo?
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1npyh8s border border-solid border-gray-800 bg-gray-900 rounded-sm shadow-sm shadow-blue-400"
-                        data-border="true"
-                        data-framer-name="Plus"
-                      >
-                        <div className="framer-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"></div>
-                        <div className="framer-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="framer-12nl61y-container">
-                  <div
-                    className="framer-dgUsn framer-V74Ls framer-l50WH framer-slbiny framer-v-slbiny border border-solid border-gray-800 bg-gray-900 rounded-[10px] shadow-md !w-full"
-                    data-border="true"
-                    data-framer-name="Question closed"
-                  >
-                    <div
-                      className="framer-1lup9zr"
-                      data-framer-name="Question"
-                      data-highlight="true"
-                      tabIndex={0}
-                    >
-                      <div
-                        className="framer-1kse8k3 flex flex-col justify-start flex-shrink-0 text-blue-500 underline space-y-0"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-85tvh7"
-                          data-styles-preset="FhU5qX9WL"
-                        >
-                          Are your solutions secure?
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1npyh8s border border-solid border-gray-800 bg-gray-900 rounded-sm shadow-sm shadow-blue-400"
-                        data-border="true"
-                        data-framer-name="Plus"
-                      >
-                        <div className="framer-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"></div>
-                        <div className="framer-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="framer-1nrz16v-container">
-                  <div
-                    className="framer-dgUsn framer-V74Ls framer-l50WH framer-slbiny framer-v-slbiny border border-solid border-gray-800 bg-gray-900 rounded-[10px] shadow-md !w-full"
-                    data-border="true"
-                    data-framer-name="Question closed"
-                  >
-                    <div
-                      className="framer-1lup9zr"
-                      data-framer-name="Question"
-                      data-highlight="true"
-                      tabIndex={0}
-                    >
-                      <div
-                        className="framer-1kse8k3 flex flex-col justify-start flex-shrink-0 text-blue-500 underline space-y-0"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-85tvh7"
-                          data-styles-preset="FhU5qX9WL"
-                        >
-                          Do you offer continuous support?
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1npyh8s border border-solid border-gray-800 bg-gray-900 rounded-sm shadow-sm shadow-blue-400"
-                        data-border="true"
-                        data-framer-name="Plus"
-                      >
-                        <div className="framer-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"></div>
-                        <div className="framer-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="framer-1p4v03q" data-framer-name="Right row">
-                <div className="framer-k82vdj-container">
-                  <div
-                    className="framer-dgUsn framer-V74Ls framer-l50WH framer-slbiny framer-v-slbiny border border-solid border-gray-800 bg-gray-900 rounded-[10px] shadow-md !w-full"
-                    data-border="true"
-                    data-framer-name="Question closed"
-                  >
-                    <div
-                      className="framer-1lup9zr"
-                      data-framer-name="Question"
-                      data-highlight="true"
-                      tabIndex={0}
-                    >
-                      <div
-                        className="framer-1kse8k3 flex flex-col justify-start flex-shrink-0 text-blue-500 underline space-y-0"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-85tvh7"
-                          data-styles-preset="FhU5qX9WL"
-                        >
-                          How long does it take to implement my requests?
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1npyh8s border border-solid border-gray-800 bg-gray-900 rounded-sm shadow-sm shadow-blue-400"
-                        data-border="true"
-                        data-framer-name="Plus"
-                      >
-                        <div className="framer-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"></div>
-                        <div className="framer-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="framer-19k61sf-container">
-                  <div
-                    className="framer-dgUsn framer-V74Ls framer-l50WH framer-slbiny framer-v-slbiny border border-solid border-gray-800 bg-gray-900 rounded-[10px] shadow-md !w-full"
-                    data-border="true"
-                    data-framer-name="Question closed"
-                  >
-                    <div
-                      className="framer-1lup9zr"
-                      data-framer-name="Question"
-                      data-highlight="true"
-                      tabIndex={0}
-                    >
-                      <div
-                        className="framer-1kse8k3 flex flex-col justify-start flex-shrink-0 text-blue-500 underline space-y-0"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-85tvh7"
-                          data-styles-preset="FhU5qX9WL"
-                        >
-                          Can I get more developers than 3?
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1npyh8s border border-solid border-gray-800 bg-gray-900 rounded-sm shadow-sm shadow-blue-400"
-                        data-border="true"
-                        data-framer-name="Plus"
-                      >
-                        <div className="framer-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"></div>
-                        <div className="framer-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="framer-zateej-container">
-                  <div
-                    className="framer-dgUsn framer-V74Ls framer-l50WH framer-slbiny framer-v-slbiny border border-solid border-gray-800 bg-gray-900 rounded-[10px] shadow-md !w-full"
-                    data-border="true"
-                    data-framer-name="Question closed"
-                  >
-                    <div
-                      className="framer-1lup9zr"
-                      data-framer-name="Question"
-                      data-highlight="true"
-                      tabIndex={0}
-                    >
-                      <div
-                        className="framer-1kse8k3 flex flex-col justify-start flex-shrink-0 text-blue-500 underline space-y-0"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-85tvh7"
-                          data-styles-preset="FhU5qX9WL"
-                        >
-                          Can I cancel my subscription at any time?
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1npyh8s border border-solid border-gray-800 bg-gray-900 rounded-sm shadow-sm shadow-blue-400"
-                        data-border="true"
-                        data-framer-name="Plus"
-                      >
-                        <div className="framer-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"></div>
-                        <div className="framer-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"></div>
-                      </div>
-                    </div>
-                  </div>
+                <div className="grid grid-cols-2 gap-4 w-full">
+                  {QAs.map((item: QA, index: number) => (
+                    <QABox
+                      key={index}
+                      className={className[index]}
+                      item={item}
+                    />
+                  ))}
                 </div>
               </div>
             </div>

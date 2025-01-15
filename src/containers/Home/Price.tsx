@@ -1,3 +1,5 @@
+import { AnimationButton } from "../../components/Animation";
+
 const Price = () => {
   return (
     <section
@@ -370,35 +372,37 @@ const Price = () => {
                     </div>
                   </div>
                   <div className="framer-tpxytm-container">
-                    <a
-                      className="framer-h2PBY framer-1y9luj6 framer-v-1y9luj6 framer-mrhza5 bg-[rgb(34, 34, 34)] rounded-lg w-full"
-                      data-framer-name="Button State 1"
-                      data-highlight="true"
-                      href="./#contact"
-                      target="_blank"
-                    >
-                      <div
-                        className="framer-113bi6a bg-[radial-gradient(25%_50%_at_50%_100%,rgb(112,190,250)_0%,rgba(171,171,171,0)_100%)] rounded-lg"
-                        data-framer-name="Stroke"
-                      ></div>
-                      <div
-                        className="framer-1vk8fb2 bg-[rgb(22,22,22)] rounded-lg"
-                        data-framer-name="Fill"
-                      ></div>
-                      <div
-                        className="framer-10dfqn2 flex flex-col justify-start shrink-0 text-white"
-                        data-framer-component-type="RichTextContainer"
+                    <AnimationButton>
+                      <a
+                        className="framer-h2PBY framer-1y9luj6 framer-v-1y9luj6 framer-mrhza5 bg-[rgb(34, 34, 34)] rounded-lg w-full"
+                        data-framer-name="Button State 1"
+                        data-highlight="true"
+                        href="./#contact"
+                        target="_blank"
                       >
-                        <h4 className="framer-text text-white text-[14px] tracking-normal font-sans">
-                          <span
-                            data-text-fill="true"
-                            className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
-                          >
-                            Choose this plan
-                          </span>
-                        </h4>
-                      </div>
-                    </a>
+                        {/* <div
+                          className="framer-113bi6a bg-[radial-gradient(25%_50%_at_50%_100%,rgb(112,190,250)_0%,rgba(171,171,171,0)_100%)] rounded-lg"
+                          data-framer-name="Stroke"
+                        ></div> */}
+                        <div
+                          className="framer-1vk8fb2 bg-[rgb(22,22,22)] rounded-lg"
+                          data-framer-name="Fill"
+                        ></div>
+                        <div
+                          className="framer-10dfqn2 flex flex-col justify-start shrink-0 text-white"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <h4 className="framer-text text-white text-[14px] tracking-normal font-sans">
+                            <span
+                              data-text-fill="true"
+                              className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
+                            >
+                              Choose this plan
+                            </span>
+                          </h4>
+                        </div>
+                      </a>
+                    </AnimationButton>
                   </div>
                   <div
                     className="framer-hrvqse bg-[rgb(35,35,35)]"
