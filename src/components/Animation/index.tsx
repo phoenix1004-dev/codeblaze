@@ -68,6 +68,10 @@ type RotateButtonProps = {
   isActive: boolean;
 };
 
+type InitialLoadingProps = {
+  setIsLoading: (res: boolean) => void;
+};
+
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   isActive,
   from,
@@ -359,7 +363,19 @@ export const RealCursorPointer = () => {
         type: "spring",
         stiffness: 300,
         damping: 20,
+        duration: 0.01,
       }}
     />
+  );
+};
+
+export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
+  return (
+    <motion.span
+      data-text-fill="true"
+      className="framer-text leading-normal text-[150px] bg-gradient-to-r from-white to-[#70bafa]"
+    >
+      Halo
+    </motion.span>
   );
 };

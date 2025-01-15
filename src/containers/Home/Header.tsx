@@ -1,7 +1,10 @@
 import Nav from "../../components/Nav";
 import { HeaderButtonGroup } from "../../components/Button";
+import { useState } from "react";
 
 const Header = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
   return (
     <div className="framer-13gmy9c-container" id="header">
       <div className="ssr-variant hidden-r5chz7 hidden-5tblbe hidden-ncoutt">
