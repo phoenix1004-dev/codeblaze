@@ -13,7 +13,7 @@ import Price from "../containers/Home/Price";
 import FAQ from "../containers/Home/FAQ";
 import Contact from "../containers/Home/Contact";
 import Footer from "../components/Footer";
-import Review from "../containers/Home/Review";
+import ReviewContainer from "../containers/Home/Reviews";
 import { RealCursorPointer } from "../components/Animation";
 
 const Home = () => {
@@ -135,7 +135,7 @@ const Home = () => {
           <Satistics />
           <Team />
           <Price />
-          <Review />
+          <ReviewContainer />
           <FAQ />
           <Contact />
           <Footer />

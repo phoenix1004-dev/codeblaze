@@ -2,7 +2,7 @@ import { Slider } from "../../components/Animation";
 import { Reviews } from "../../constants/Review";
 import { REVIEW } from "../../type";
 
-const Review = () => {
+const ReviewContainer = () => {
   return (
     <section
       className="framer-6g7y9c"
@@ -427,4 +427,4 @@ const Review = () => {
   );
 };
 
-export default Review;
+export default ReviewContainer;
