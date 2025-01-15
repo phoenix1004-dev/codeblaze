@@ -23,6 +23,14 @@ type SliderProps = {
   children: React.ReactNode;
 };
 
+type AnalyzeBoxProps = {
+  className?: string;
+  border?: string;
+  name?: string;
+  isActive: boolean;
+  children: React.ReactNode;
+};
+
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   isActive,
   from,
@@ -104,5 +112,43 @@ export const Slider: FC<SliderProps> = ({ dir, children }) => {
     >
       {children}
     </motion.div>
+  );
+};
+
+export const AnalyzeBox: FC<AnalyzeBoxProps> = ({
+  className,
+  border,
+  name,
+  isActive,
+  children,
+}) => {
+  return (
+    <motion.div
+      className={`${className} border border-solid border-[rgba(34,34,34)] rounded-[5px]`}
+      data-border={border}
+      data-framer-name={name}
+      animate={{
+        boxShadow: isActive
+          ? "0 0 2px 0.5px rgba(112, 190, 250, 0.75)"
+          : "0 0 2px 0.5px rgba(112, 190, 250, 0)",
+      }}
+      transition={{ duration: 0.3 }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const AnalyzeBlur = ({ isActive }: { isActive: boolean }) => {
+  return (
+    <motion.div
+      className="framer-1c27g3o border border-solid border-[#222222] rounded-lg"
+      data-border="true"
+      animate={{
+        background: isActive
+          ? "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(13, 13, 13, 0.75) 100%)"
+          : "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgb(13, 13, 13) 100%)",
+      }}
+    />
   );
 };

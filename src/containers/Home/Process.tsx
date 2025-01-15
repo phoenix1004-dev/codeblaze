@@ -1,4 +1,9 @@
+import { useState } from "react";
+import { AnalyzeBlur, AnalyzeBox } from "../../components/Animation";
+
 const Process = () => {
+  const [isHoverAnalyze, setIsHoverAnalyze] = useState<boolean>(false);
+  console.log(isHoverAnalyze);
   return (
     <section
       className="framer-z0emgc"
@@ -41,6 +46,8 @@ const Process = () => {
                     className="framer-csNpt framer-1e0v1i2 framer-v-1e0v1i2 border border-solid border-[var(--token-dfd29766-9b54-40dd-9398-e62b74c1aefb,#222222)] rounded-[10px] !h-full !w-full"
                     data-border="true"
                     data-framer-name="Desktop 1440, Tablet 810"
+                    onMouseEnter={() => setIsHoverAnalyze(true)}
+                    onMouseLeave={() => setIsHoverAnalyze(false)}
                   >
                     <div
                       className="framer-z5xv38 border border-solid border-[var(--token-dfd29766-9b54-40dd-9398-e62b74c1aefb,#222222)] bg-[var(--token-c3b293ca-d1b8-41d0-a4df-58182d7e1499,#161616)] rounded-[5px] shadow-[0px_0px_2px_0.5px_var(--token-0a59846b-ae05-40ce-bc7b-1a139c4ffa01,rgba(112,190,250,0.75))]"
@@ -61,10 +68,11 @@ const Process = () => {
                         </div>
                       </div>
                     </div>
-                    <div
-                      className="framer-1kih6qv border border-solid border-[rgba(34,34,34)] bg-[rgb(13,13,13)] rounded-[5px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0)]"
-                      data-border="true"
-                      data-framer-name="Airtable"
+                    <AnalyzeBox
+                      className="framer-1kih6qv"
+                      border="true"
+                      name="Airtable"
+                      isActive={isHoverAnalyze}
                     >
                       <div className="framer-1gj98y7 opacity-30 transform -translate-x-1/2 -translate-y-1/2">
                         <div
@@ -79,35 +87,36 @@ const Process = () => {
                           />
                         </div>
                       </div>
-                    </div>
+                    </AnalyzeBox>
                     <div
-                      className="framer-p8bhcj border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-p8bhcj border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
                     ></div>
                     <div
-                      className="framer-q3rccd border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-q3rccd border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
                     ></div>
                     <div
-                      className="framer-1ry28ob border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-1ry28ob border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
                     ></div>
                     <div
-                      className="framer-1lapu67 border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-1lapu67 border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
                     ></div>
                     <div
-                      className="framer-1t9zmoq border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-1t9zmoq border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
                     ></div>
                     <div
-                      className="framer-maefqn border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-maefqn border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
-                    ></div>
-                    <div
-                      className="framer-4769xr border border-solid border-[rgba(34,34,34)] bg-[rgb(13,13,13)] rounded-[5px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0)]"
-                      data-border="true"
-                      data-framer-name="Gmail"
+                    />
+                    <AnalyzeBox
+                      className="framer-4769xr"
+                      border="true"
+                      name="Gmail"
+                      isActive={isHoverAnalyze}
                     >
                       <div className="framer-17wr7i4 opacity-30 transform -translate-x-1/2 -translate-y-1/2">
                         <div
@@ -128,11 +137,12 @@ const Process = () => {
                           />
                         </div>
                       </div>
-                    </div>
-                    <div
-                      className="framer-29sq0s border border-solid border-[rgba(34,34,34)] bg-[rgb(13,13,13)] rounded-[5px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0)]"
-                      data-border="true"
-                      data-framer-name="Midjourney"
+                    </AnalyzeBox>
+                    <AnalyzeBox
+                      className="framer-29sq0s"
+                      border="true"
+                      name="Midjourney"
+                      isActive={isHoverAnalyze}
                     >
                       <div className="framer-s8o8fs opacity-30 transform -translate-x-1/2 -translate-y-1/2">
                         <div
@@ -154,19 +164,20 @@ const Process = () => {
                           />
                         </div>
                       </div>
-                    </div>
+                    </AnalyzeBox>
                     <div
-                      className="framer-3ks1rw border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-3ks1rw border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
                     ></div>
                     <div
-                      className="framer-1ht6jap border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-1ht6jap border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
                     ></div>
-                    <div
-                      className="framer-w1sqf6 border border-solid border-[rgba(34,34,34)] bg-[rgb(13,13,13)] rounded-[5px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0)]"
-                      data-border="true"
-                      data-framer-name="Zapier"
+                    <AnalyzeBox
+                      className="framer-w1sqf6"
+                      border="true"
+                      name="Zapier"
+                      isActive={isHoverAnalyze}
                     >
                       <div className="framer-4e9j0j opacity-30 transform -translate-x-1/2 -translate-y-1/2">
                         <div
@@ -188,19 +199,20 @@ const Process = () => {
                           />
                         </div>
                       </div>
-                    </div>
+                    </AnalyzeBox>
                     <div
-                      className="framer-c09535 border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-c09535 border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
                     ></div>
                     <div
-                      className="framer-l1mp7u border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-gray-700 bg-gray-900 rounded-lg"
+                      className="framer-l1mp7u border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#0c0c0c] rounded-lg"
                       data-border="true"
                     ></div>
-                    <div
-                      className="framer-12nxdd7 border border-solid border-[rgba(34,34,34)] bg-[rgb(13,13,13)] rounded-[5px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0)]"
-                      data-border="true"
-                      data-framer-name="OpenAI"
+                    <AnalyzeBox
+                      className="framer-12nxdd7"
+                      border="true"
+                      name="OpenAI"
+                      isActive={isHoverAnalyze}
                     >
                       <div className="framer-1ch0wak opacity-30 transform -translate-x-1/2 -translate-y-1/2">
                         <div
@@ -215,11 +227,12 @@ const Process = () => {
                           />
                         </div>
                       </div>
-                    </div>
-                    <div
-                      className="framer-1xwgw7y border border-solid border-[rgba(34,34,34)] bg-[rgb(13,13,13)] rounded-[5px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0)]"
-                      data-border="true"
-                      data-framer-name="Notion"
+                    </AnalyzeBox>
+                    <AnalyzeBox
+                      className="framer-1xwgw7y"
+                      border="true"
+                      name="Notion"
+                      isActive={isHoverAnalyze}
                     >
                       <div className="framer-16door1 opacity-30 transform -translate-x-1/2 -translate-y-1/2">
                         <div
@@ -234,11 +247,8 @@ const Process = () => {
                           />
                         </div>
                       </div>
-                    </div>
-                    <div
-                      className="framer-1c27g3o border border-solid border-t-1 border-b-1 border-l-1 border-r-1 bg-gradient-radial from-transparent to-gray-900 rounded-lg"
-                      data-border="true"
-                    ></div>
+                    </AnalyzeBox>
+                    <AnalyzeBlur isActive={isHoverAnalyze} />
                   </div>
                 </div>
               </div>
