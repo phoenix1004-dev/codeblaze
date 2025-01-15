@@ -2,8 +2,23 @@ import arrowUp from "../../assets/images/arrow-up.png";
 import googleMeet from "../../assets/images/google-meet.png";
 import expend from "../../assets/images/expend.png";
 import person1 from "../../assets/images/person/person1.png";
+import { useState } from "react";
+import {
+  AnimationButton,
+  HoverMoveTop,
+  Slider,
+} from "../../components/Animation";
+import {
+  FIRST_WORKFLOW_ITEMS,
+  SECOND_WORKFLOW_ITEMS,
+} from "../../constants/Workflow";
+import { IMAGE } from "../../type";
+import WorkflowItem from "../../components/Image/Workflow";
 
 const Services = () => {
+  const [isHoverChatbot, setIsHoverChatbot] = useState<boolean>(false);
+  const [isHoverLLM, setIsHoverLLM] = useState<boolean>(false);
+
   return (
     <section
       className="framer-pswywp"
@@ -57,6 +72,12 @@ const Services = () => {
                   <div
                     className="framer-Wen01 framer-l50WH framer-14xpdin framer-v-e204k rounded-[10px] !h-full !w-full"
                     data-framer-name="Tablet Big 1199"
+                    onMouseEnter={() => {
+                      setIsHoverChatbot(true);
+                    }}
+                    onMouseLeave={() => {
+                      setIsHoverChatbot(false);
+                    }}
                   >
                     <div
                       className="framer-1r7gfum bg-[#0f0f0f] rounded-[5px] border-solid border-[#222222] border-[1px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0)]"
@@ -107,157 +128,169 @@ const Services = () => {
                       data-border="true"
                       data-framer-name="Chatbot"
                     >
-                      <div
-                        className="framer-1q8fu0c border-solid border-[#222222] border-[1px] rounded-[5px]"
-                        data-border="true"
-                        data-framer-name="Google meeting"
+                      <HoverMoveTop
+                        className="w-full h-full"
+                        isActive={isHoverChatbot}
+                        from={0}
+                        to={-75}
                       >
-                        <div className="framer-ivt88i" data-framer-name="Text">
-                          <div className="framer-wsk78n">
+                        <div className="w-full h-full overflow-visable relative">
+                          <div
+                            className="framer-1q8fu0c border-solid border-[#222222] border-[1px] rounded-[5px]"
+                            data-border="true"
+                            data-framer-name="Google meeting"
+                          >
                             <div
-                              className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                              data-framer-background-image-wrapper="true"
+                              className="framer-ivt88i"
+                              data-framer-name="Text"
                             >
-                              <img
-                                decoding="async"
-                                sizes="(min-width: 1440px) 20px, (min-width: 999px) and (max-width: 1199px) 20px, (min-width: 1200px) and (max-width: 1439px) 20px, (max-width: 809px) 20px, (min-width: 810px) and (max-width: 998px) 20px"
-                                src={googleMeet}
-                                alt="google-meet"
-                                className="block w-full h-full rounded-none object-center object-cover"
-                                data-framer-original-sizes="20px"
-                              />
+                              <div className="framer-wsk78n">
+                                <div
+                                  className="absolute rounded-none top-0 right-0 bottom-0 left-0"
+                                  data-framer-background-image-wrapper="true"
+                                >
+                                  <img
+                                    decoding="async"
+                                    sizes="(min-width: 1440px) 20px, (min-width: 999px) and (max-width: 1199px) 20px, (min-width: 1200px) and (max-width: 1439px) 20px, (max-width: 809px) 20px, (min-width: 810px) and (max-width: 998px) 20px"
+                                    src={googleMeet}
+                                    alt="google-meet"
+                                    className="block w-full h-full rounded-none object-center object-cover"
+                                    data-framer-original-sizes="20px"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                className="framer-1kosht4 outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#0099ff] no-underline"
+                                data-framer-component-type="RichTextContainer"
+                              >
+                                <p
+                                  className="framer-text framer-styles-preset-1otixq8"
+                                  data-styles-preset="Z8KnRQzQq"
+                                >
+                                  Google Meet with John
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              className="framer-flbwfi transform translate-y-[-50%]"
+                              data-framer-name="Share icon"
+                            >
+                              <div
+                                className="absolute rounded-none top-0 right-0 bottom-0 left-0"
+                                data-framer-background-image-wrapper="true"
+                              >
+                                <img
+                                  decoding="async"
+                                  src={expend}
+                                  alt="expend"
+                                  className="block w-full h-full rounded-none object-center object-cover"
+                                />
+                              </div>
                             </div>
                           </div>
                           <div
-                            className="framer-1kosht4 outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#0099ff] underline"
+                            className="framer-1orlrx2 border-solid border-[#222222] border-[1px] rounded-[3px]"
+                            data-border="true"
+                            data-framer-name="Memoji"
+                          >
+                            <div className="framer-a1nn5f">
+                              <div
+                                className="absolute rounded-none top-0 right-0 bottom-0 left-0"
+                                data-framer-background-image-wrapper="true"
+                              >
+                                <img
+                                  decoding="async"
+                                  src={person1}
+                                  alt="Memoji Tim"
+                                  className="block w-full h-full rounded-none object-center object-cover"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className="framer-18z790b outline-none flex flex-col justify-start flex-shrink-0 transform-none text-white text-[#0099ff] underline"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                              <span
+                                data-text-fill="true"
+                                className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
+                              >
+                                You
+                              </span>
+                            </p>
+                          </div>
+                          <div
+                            className="framer-1kxseoo outline-none flex flex-col justify-start flex-shrink-0 opacity-75 transform-none text-[#0099ff] no-underline"
                             data-framer-component-type="RichTextContainer"
                           >
                             <p
                               className="framer-text framer-styles-preset-1otixq8"
                               data-styles-preset="Z8KnRQzQq"
                             >
-                              Google Meet with John
+                              Schedule a Google meeting with John for 3:45PM
+                              tomorrow!
+                            </p>
+                          </div>
+                          <div
+                            className="framer-1uc0yr3 outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#9c9c9c] text-[#0099ff] no-underline"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-[#9c9c9c] font-['Switzer','Switzer Placeholder',sans-serif]">
+                              8:15 AM
+                            </p>
+                          </div>
+                          <div
+                            className="framer-42xbc7 border border-solid border-[#222222] rounded-[3px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0.75)]"
+                            data-border="true"
+                            data-framer-name="AI Logo"
+                          >
+                            <div
+                              className="framer-1vbqghs outline-none flex flex-col justify-start flex-shrink-0 transform translate-x-[-50%] translate-y-[-50%]"
+                              data-framer-component-type="RichTextContainer"
+                            >
+                              <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                                AI
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            className="framer-cgf9tq outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#ffffff] text-[#0099ff] underline"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                              <span
+                                data-text-fill="true"
+                                className="framer-text bg-gradient-to-r from-white to-[#70baf9]"
+                              >
+                                AI Assistant
+                              </span>
+                            </p>
+                          </div>
+                          <div
+                            className="framer-1oon2c4 flex flex-col justify-start flex-shrink-0 text-[#9c9c9c] no-underline"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p className="framer-text text-left !text-[#9c9c9c] text-[15px] leading-[1.4em]">
+                              8:15 AM
+                            </p>
+                          </div>
+                          <div
+                            className="framer-13klyp5 flex flex-col justify-start opacity-75 text-[#0099ff] no-underline"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p
+                              className="framer-text framer-styles-preset-1otixq8"
+                              data-styles-preset="Z8KnRQzQq"
+                            >
+                              I've successfully scheduled a Google meeting with
+                              John for
+                              <br className="framer-text" />
+                              3:45PM tomorrow.
                             </p>
                           </div>
                         </div>
-                        <div
-                          className="framer-flbwfi transform translate-y-[-50%]"
-                          data-framer-name="Share icon"
-                        >
-                          <div
-                            className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                            data-framer-background-image-wrapper="true"
-                          >
-                            <img
-                              decoding="async"
-                              src={expend}
-                              alt="expend"
-                              className="block w-full h-full rounded-none object-center object-cover"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="framer-1orlrx2 border-solid border-[#222222] border-[1px] rounded-[3px]"
-                        data-border="true"
-                        data-framer-name="Memoji"
-                      >
-                        <div className="framer-a1nn5f">
-                          <div
-                            className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                            data-framer-background-image-wrapper="true"
-                          >
-                            <img
-                              decoding="async"
-                              src={person1}
-                              alt="Memoji Tim"
-                              className="block w-full h-full rounded-none object-center object-cover"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="framer-18z790b outline-none flex flex-col justify-start flex-shrink-0 transform-none text-white text-[#0099ff] underline"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
-                          <span
-                            data-text-fill="true"
-                            className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
-                          >
-                            You
-                          </span>
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1kxseoo outline-none flex flex-col justify-start flex-shrink-0 opacity-75 transform-none text-[#0099ff] no-underline"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-1otixq8"
-                          data-styles-preset="Z8KnRQzQq"
-                        >
-                          Schedule a Google meeting with John for 3:45PM
-                          tomorrow!
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1uc0yr3 outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#9c9c9c] text-[#0099ff] no-underline"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-[#9c9c9c] font-['Switzer','Switzer Placeholder',sans-serif]">
-                          8:15 AM
-                        </p>
-                      </div>
-                      <div
-                        className="framer-42xbc7 border border-solid border-[#222222] rounded-[3px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0.75)]"
-                        data-border="true"
-                        data-framer-name="AI Logo"
-                      >
-                        <div
-                          className="framer-1vbqghs outline-none flex flex-col justify-start flex-shrink-0 transform translate-x-[-50%] translate-y-[-50%]"
-                          data-framer-component-type="RichTextContainer"
-                        >
-                          <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-white font-['Switzer','Switzer Placeholder',sans-serif]">
-                            AI
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        className="framer-cgf9tq outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#ffffff] text-[#0099ff] underline"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
-                          <span
-                            data-text-fill="true"
-                            className="framer-text bg-gradient-to-r from-white to-[#70baf9]"
-                          >
-                            AI Assistant
-                          </span>
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1oon2c4 flex flex-col justify-start flex-shrink-0 text-[#9c9c9c] no-underline"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p className="framer-text text-left !text-[#9c9c9c] text-[15px] leading-[1.4em]">
-                          8:15 AM
-                        </p>
-                      </div>
-                      <div
-                        className="framer-13klyp5 flex flex-col justify-start opacity-75 text-[#0099ff] no-underline"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-1otixq8"
-                          data-styles-preset="Z8KnRQzQq"
-                        >
-                          I've successfully scheduled a Google meeting with John
-                          for
-                          <br className="framer-text" />
-                          3:45PM tomorrow.
-                        </p>
-                      </div>
+                      </HoverMoveTop>
                     </div>
                   </div>
                 </div>
@@ -382,33 +415,35 @@ const Services = () => {
                     </div>
                   </div>
                   <div className="framer-1cco58z-container">
-                    <div
-                      className="framer-XOvFy framer-11v76sm framer-v-11v76sm bg-gray-800 rounded-[8px]"
-                      data-framer-name="Button State 1"
-                      data-highlight="true"
-                    >
+                    <AnimationButton>
                       <div
-                        className="framer-sj29an bg-gradient-radial from-blue-400 via-transparent to-transparent rounded-lg"
-                        data-framer-name="Stroke"
-                      />
-                      <div
-                        className="framer-1fvuyyf !bg-[#0f0f0f] rounded-[8px]"
-                        data-framer-name="Fill"
-                      />
-                      <div
-                        className="framer-hnyl0t flex flex-col justify-start flex-shrink-0 text-white"
-                        data-framer-component-type="RichTextContainer"
+                        className="framer-XOvFy framer-11v76sm framer-v-11v76sm bg-gray-800 rounded-[8px]"
+                        data-framer-name="Button State 1"
+                        data-highlight="true"
                       >
-                        <h4 className="framer-text text-white text-sm font-sans tracking-normal">
-                          <span
-                            data-text-fill="true"
-                            className="framer-text bg-gradient-to-r from-white to-[#70bffa]"
-                          >
-                            Generating image…
-                          </span>
-                        </h4>
+                        <div
+                          className="framer-sj29an bg-gradient-radial from-blue-400 via-transparent to-transparent rounded-lg"
+                          data-framer-name="Stroke"
+                        />
+                        <div
+                          className="framer-1fvuyyf !bg-[#0f0f0f] rounded-[8px]"
+                          data-framer-name="Fill"
+                        />
+                        <div
+                          className="framer-hnyl0t flex flex-col justify-start flex-shrink-0 text-white"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <h4 className="framer-text text-white text-sm font-sans tracking-normal">
+                            <span
+                              data-text-fill="true"
+                              className="framer-text bg-gradient-to-r from-white to-[#70bffa]"
+                            >
+                              Generating image…
+                            </span>
+                          </h4>
+                        </div>
                       </div>
-                    </div>
+                    </AnimationButton>
                   </div>
                 </div>
               </div>
@@ -471,319 +506,36 @@ const Services = () => {
                     <div className="framer-svzn11-container">
                       <section className="flex w-full h-full max-w-full max-h-full place-items-center m-0 p-0 list-none opacity-100 overflow-hidden mask-image-[linear-gradient(to_right,_rgba(0,_0,_0,_0)_0%,_rgba(0,_0,_0,_1)_15%,_rgba(0,_0,_0,_1)_85%,_rgba(0,_0,_0,_0)_100%)]">
                         <ul className="flex w-full h-full max-w-full max-h-full place-items-center m-0 p-0 list-none gap-5 relative flex-row transform translate-x-0 will-change-transform">
-                          <li className="w-20">
-                            <div className="framer-ipyiqq-container w-20 flex-shrink-0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-g7w011 border border-solid border-[#0f0f0f] rounded-[10px] shadow-lg w-full h-full"
-                                data-border="true"
-                                data-framer-name="OpenAI"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute top-0 right-0 bottom-0 left-0 rounded-[inherit]"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      src="https://framerusercontent.com/images/s7l8usru7RBaoSRsHO4uzGVD3k.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded-[inherit] object-center object-cover"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="w-20">
-                            <div className="framer-1cbv5pd-container w-20 flex-shrink-0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-1j4ejpv w-full h-full bg-[#0f0f0f] border border-solid border-[#222222] rounded-[10px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)]"
-                                data-border="true"
-                                data-framer-name="Zapier"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute rounded-[inherit] top-0 right-0 bottom-0 left-0"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                                      srcSet="
-                                              https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png?scale-down-to=512   512w,
-                                              https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png?scale-down-to=1024 1024w,
-                                              https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png                    2048w
-                                            "
-                                      src="https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded-[inherit] object-center object-cover"
-                                      data-framer-original-sizes="30px"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="w-20">
-                            <div className="framer-1py563t-container width:80px;flex-shrink:0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-1geu8ln border border-solid border-[#0f0f0f] rounded-[10px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0)] h-full w-full"
-                                data-border="true"
-                                data-framer-name="Midjourney"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute rounded-inherit top-0 right-0 bottom-0 left-0"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                                      srcSet="
-                                              https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png?scale-down-to=512   512w,
-                                              https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png?scale-down-to=1024 1024w,
-                                              https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png                    1600w
-                                            "
-                                      src="https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded-inherit object-center object-cover"
-                                      data-framer-original-sizes="30px"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="w-20">
-                            <div className="framer-eybygj-containerw-20 flex-shrink-0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-1103sed border border-solid border-[#0f0f0f] rounded-[10px] shadow-sm w-full h-full"
-                                data-border="true"
-                                data-framer-name="Figma"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                                      srcSet="
-                                              https://framerusercontent.com/images/VWdoxfrHXup0NvXCqRl0yIsbg.png?scale-down-to=1024  682w,
-                                              https://framerusercontent.com/images/VWdoxfrHXup0NvXCqRl0yIsbg.png?scale-down-to=2048 1365w,
-                                              https://framerusercontent.com/images/VWdoxfrHXup0NvXCqRl0yIsbg.png                    2400w
-                                            "
-                                      src="https://framerusercontent.com/images/VWdoxfrHXup0NvXCqRl0yIsbg.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded-none object-center object-contain"
-                                      data-framer-original-sizes="30px"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="w-20">
-                            <div className="framer-14gwh9e-containerw-20 flex-shrink-0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-1709nfv block w-full h-full object-center bg-[#0f0f0f] rounded-[10px] object-contain"
-                                data-border="true"
-                                data-framer-name="Discord"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                                      srcSet="
-                                              https://framerusercontent.com/images/TXvCCbPbOXLC9URWNfRVX5U0iC4.png?scale-down-to=512 512w,
-                                              https://framerusercontent.com/images/TXvCCbPbOXLC9URWNfRVX5U0iC4.png                   619w
-                                            "
-                                      src="https://framerusercontent.com/images/TXvCCbPbOXLC9URWNfRVX5U0iC4.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded-none object-center object-contain"
-                                      data-framer-original-sizes="30px"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
+                          <Slider dir="left">
+                            {FIRST_WORKFLOW_ITEMS.map(
+                              (item: IMAGE, index: number) => (
+                                <WorkflowItem key={index} item={item} />
+                              )
+                            )}
+                            {FIRST_WORKFLOW_ITEMS.map(
+                              (item: IMAGE, index: number) => (
+                                <WorkflowItem key={index} item={item} />
+                              )
+                            )}
+                          </Slider>
                         </ul>
                       </section>
                     </div>
                     <div className="framer-15pfzxi-container">
                       <section className="flex w-full h-full max-w-full max-h-full items-center m-0 p-0 list-none text-indent-none opacity-100 overflow-hidden mask-image-[linear-gradient(to_right,_rgba(0,_0,_0,_0)_0%,_rgba(0,_0,_0,_1)_15%,_rgba(0,_0,_0,_1)_85%,_rgba(0,_0,_0,_0)_100%)]">
                         <ul className="flex w-full h-full max-w-full max-h-full items-center m-0 p-0 list-none text-indent-none gap-5 relative flex-row will-change-transform transform translate-x-0">
-                          <li className="w-20">
-                            <div className="framer-4zekc8-containerw-20 flex-shrink-0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-s1d45v block w-full h-full rounded-none object-center object-contain"
-                                data-border="true"
-                                data-framer-name="Slack"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                                      srcSet="
-                                              https://framerusercontent.com/images/1h87ns2Ps0CAPgYnwassgeqY.png?scale-down-to=512   512w,
-                                              https://framerusercontent.com/images/1h87ns2Ps0CAPgYnwassgeqY.png?scale-down-to=1024 1024w,
-                                              https://framerusercontent.com/images/1h87ns2Ps0CAPgYnwassgeqY.png                    1600w
-                                            "
-                                      src="https://framerusercontent.com/images/1h87ns2Ps0CAPgYnwassgeqY.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded object-center object-cover"
-                                      data-framer-original-sizes="30px"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="w-20">
-                            <div className="framer-2d7062-containerw-20 flex-shrink-0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-d5zdmz block w-full h-full rounded-none object-center object-contain"
-                                data-border="true"
-                                data-framer-name="Github"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                                      srcSet="
-                                              https://framerusercontent.com/images/UBzDbcjU9OK8N90S1vnMreOSijg.png?scale-down-to=512   512w,
-                                              https://framerusercontent.com/images/UBzDbcjU9OK8N90S1vnMreOSijg.png?scale-down-to=1024 1024w,
-                                              https://framerusercontent.com/images/UBzDbcjU9OK8N90S1vnMreOSijg.png                    2048w
-                                            "
-                                      src="https://framerusercontent.com/images/UBzDbcjU9OK8N90S1vnMreOSijg.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded object-center object-cover"
-                                      data-framer-original-sizes="30px"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="w-20">
-                            <div className="framer-t893eo-containerw-20 flex-shrink-0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-wlr8td block w-full h-full rounded-none object-center object-contain"
-                                data-border="true"
-                                data-framer-name="Notion"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      src="https://framerusercontent.com/images/eIDifEepcllMTSnFfdMm68QyzI.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded object-center object-cover"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="w-20">
-                            <div className="framer-1pybyhg-containerw-20 flex-shrink-0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-19ic1qi block w-full h-full rounded-none object-center object-contain"
-                                data-border="true"
-                                data-framer-name="Airtable"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      src="https://framerusercontent.com/images/ElXA9BRDlk1EUYX76fVdPRGVs.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded object-center object-cover"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="w-20">
-                            <div className="framer-1bf64dz-containerw-20 flex-shrink-0">
-                              <div
-                                className="framer-6zv0y framer-19ic1qi framer-v-e1x4ip block w-full h-full rounded-none object-center object-contain"
-                                data-border="true"
-                                data-framer-name="Gmail"
-                              >
-                                <div
-                                  className="framer-dcbepv opacity-30 transform translate-x-[-50%] translate-y-[-50%]"
-                                  data-framer-name="Logo"
-                                >
-                                  <div
-                                    className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                    data-framer-background-image-wrapper="true"
-                                  >
-                                    <img
-                                      decoding="async"
-                                      sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                                      srcSet="
-                                              https://framerusercontent.com/images/fV5eKM828WIq0uUi1QspK4cUrEw.png?scale-down-to=512 512w,
-                                              https://framerusercontent.com/images/fV5eKM828WIq0uUi1QspK4cUrEw.png                   643w
-                                            "
-                                      src="https://framerusercontent.com/images/fV5eKM828WIq0uUi1QspK4cUrEw.png"
-                                      alt="Logo Airtable"
-                                      className="block w-full h-full rounded-none object-center object-contain"
-                                      data-framer-original-sizes="30px"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
+                          <Slider dir="right">
+                            {SECOND_WORKFLOW_ITEMS.map(
+                              (item: IMAGE, index: number) => (
+                                <WorkflowItem key={index} item={item} />
+                              )
+                            )}
+                            {SECOND_WORKFLOW_ITEMS.map(
+                              (item: IMAGE, index: number) => (
+                                <WorkflowItem key={index} item={item} />
+                              )
+                            )}
+                          </Slider>
                         </ul>
                       </section>
                     </div>
@@ -800,10 +552,10 @@ const Services = () => {
                             className="framer-c9ksas outline-none flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline"
                             data-framer-component-type="RichTextContainer"
                           >
-                            <p className="framer-text font-[Inter Tight] text-3xl font-medium text-white">
+                            <p className="framer-text">
                               <span
                                 data-text-fill="true"
-                                className="framer-text bg-gradient-to-r from-white to-blue-400"
+                                className="framer-text bg-gradient-to-r from-white to-blue-400 text-3xl font-medium text-white"
                               >
                                 100+
                               </span>
@@ -881,6 +633,12 @@ const Services = () => {
                   <div
                     className="framer-xrZ8E framer-l50WH framer-wb8ig1 framer-v-wb8ig1"
                     data-framer-name="Desktop 1440 &amp; Tablet 999"
+                    onMouseEnter={() => {
+                      setIsHoverLLM(true);
+                    }}
+                    onMouseLeave={() => {
+                      setIsHoverLLM(false);
+                    }}
                   >
                     <div
                       className="framer-vprgby border border-solid border-[#222222] bg-[#0f0f0f] rounded-[5px]"
@@ -941,32 +699,43 @@ const Services = () => {
                       data-border="true"
                     />
                     <div
-                      className="framer-1wxi3qm border border-solid border-[#222222] bg-[#0f0f0f] rounded-[5px]"
+                      className={`framer-1wxi3qm border border-solid border-[#222222] bg-[#0f0f0f] rounded-[5px] ${
+                        isHoverLLM ? "border-[#70befa]" : ""
+                      }`}
                       data-border="true"
                       data-framer-name="Chatbar"
                     >
-                      <div
-                        className="framer-13tvggq flex flex-col justify-start flex-shrink-0 text-blue-500 underline transform translate-y-[-50%] no-underline"
-                        data-framer-component-type="RichTextContainer"
+                      <HoverMoveTop
+                        className="w-full h-full"
+                        isActive={isHoverLLM}
+                        from={0}
+                        to={-40}
                       >
-                        <p
-                          className="framer-text framer-styles-preset-1otixq8"
-                          data-styles-preset="Z8KnRQzQq"
-                        >
-                          Write your prompt…
-                        </p>
-                      </div>
-                      <div
-                        className="framer-1huzdru flex flex-col justify-start flex-shrink-0 text-blue-500 underline"
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-1otixq8"
-                          data-styles-preset="Z8KnRQzQq"
-                        >
-                          And are Quokka's big?
-                        </p>
-                      </div>
+                        <div className="w-full h-full overflow-visable">
+                          <div
+                            className="framer-13tvggq flex flex-col justify-start flex-shrink-0 text-blue-500 underline transform translate-y-[-50%] no-underline"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p
+                              className="framer-text framer-styles-preset-1otixq8"
+                              data-styles-preset="Z8KnRQzQq"
+                            >
+                              Write your prompt…
+                            </p>
+                          </div>
+                          <div
+                            className="framer-1huzdru flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p
+                              className="framer-text framer-styles-preset-1otixq8"
+                              data-styles-preset="Z8KnRQzQq"
+                            >
+                              And are Quokka's big?
+                            </p>
+                          </div>
+                        </div>
+                      </HoverMoveTop>
                       <div
                         className="framer-1fjj3ny border border-solid border-gray-600 rounded-sm shadow-[0_0_2px_0.5px_rgba(112,190,250,0.75)] transform translate-y-[-50%]"
                         data-border="true"

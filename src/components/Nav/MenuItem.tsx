@@ -1,11 +1,11 @@
 import { FC, useRef } from "react";
-import { CursorPosition, MenuLink } from "../../type";
+import { CURSOR_POSITION, MENULINK } from "../../type";
 import { NormalButton } from "../Button";
 
 type MenuItemProps = {
-  item: MenuLink;
-  currentPos: CursorPosition;
-  setPosition: (pos: CursorPosition) => void;
+  item: MENULINK;
+  currentPos: CURSOR_POSITION;
+  setPosition: (pos: CURSOR_POSITION) => void;
 };
 
 const MenuItem: FC<MenuItemProps> = ({ item, currentPos, setPosition }) => {

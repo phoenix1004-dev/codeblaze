@@ -2,7 +2,7 @@ import logo from "../assets/images/logo.png";
 import { NormalButton } from "../components/Button";
 import Logo from "../components/Logo/Logo1";
 import { NAV_MENU } from "../constants/Link";
-import { MenuLink } from "../type";
+import { MENULINK } from "../type";
 import About from "../containers/Home/About";
 import Header from "../containers/Home/Header";
 import Services from "../containers/Home/Services";
@@ -44,7 +44,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {NAV_MENU.map((item: MenuLink, index: number) => (
+            {NAV_MENU.map((item: MENULINK, index: number) => (
               <a
                 key={index}
                 className="framer-lu3rjb framer-1rmjqro rounded-[5px]"

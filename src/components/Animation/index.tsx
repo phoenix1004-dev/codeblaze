@@ -1,19 +1,25 @@
 import { motion } from "framer-motion";
 import React, { FC } from "react";
-import { CursorPosition } from "../../type";
+import { CURSOR_POSITION } from "../../type";
 
 type HoverMoveTopProps = {
   isActive: boolean;
   from: number;
   to: number;
+  className?: string;
   children: React.ReactNode;
 };
 
 type MenuCursorProps = {
-  pos: CursorPosition;
+  pos: CURSOR_POSITION;
 };
 
 type AnimationButtonProps = {
+  children: React.ReactNode;
+};
+
+type SliderProps = {
+  dir: "right" | "left";
   children: React.ReactNode;
 };
 
@@ -21,10 +27,12 @@ export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   isActive,
   from,
   to,
+  className,
   children,
 }) => {
   return (
     <motion.div
+      className={className}
       animate={{ y: isActive ? to : from }}
       transition={{ duration: 0.2, ease: "easeInOut" }}
     >
@@ -75,6 +83,23 @@ export const AnimationButton: FC<AnimationButtonProps> = ({ children }) => {
       style={{
         backgroundClip: "padding-box, border-box",
         backgroundOrigin: "padding-box, border-box",
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const Slider: FC<SliderProps> = ({ dir, children }) => {
+  return (
+    <motion.div
+      className="absolute top-0 left-0 flex space-x-4"
+      initial={{ x: dir === "right" ? "-51%" : 0 }}
+      animate={{ x: dir === "right" ? 0 : "-51%" }}
+      transition={{
+        ease: "linear",
+        duration: 10,
+        repeat: Infinity,
       }}
     >
       {children}

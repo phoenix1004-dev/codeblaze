@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { NAV_MENU } from "../../constants/Link";
-import { CursorPosition, MenuLink } from "../../type";
+import { CURSOR_POSITION, MENULINK } from "../../type";
 import { CursorDiv } from "../Animation";
 import MenuItem from "./MenuItem";
 
 const MenuList = () => {
-  const [position, setPosition] = useState<CursorPosition>({
+  const [position, setPosition] = useState<CURSOR_POSITION>({
     left: 0,
     width: 0,
     opacity: 0,
@@ -17,7 +17,7 @@ const MenuList = () => {
       data-framer-name="Menu"
     >
       <CursorDiv pos={position} />
-      {NAV_MENU.map((item: MenuLink, index: number) => (
+      {NAV_MENU.map((item: MENULINK, index: number) => (
         <MenuItem
           key={index}
           item={item}

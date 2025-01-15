@@ -1,6 +1,6 @@
 import React, { FC, useRef, useState } from "react";
 import { HEADER_BUTTON_LIST } from "../../constants/Link";
-import { CursorPosition, HEADER_BUTTON } from "../../type";
+import { CURSOR_POSITION, HEADER_BUTTON } from "../../type";
 import { InitialCursorDiv } from "../Animation";
 
 type ButtonProps = {
@@ -9,8 +9,8 @@ type ButtonProps = {
 
 type HeaderButtonProps = {
   item: HEADER_BUTTON;
-  currentPos: CursorPosition;
-  setPosition: (pos: CursorPosition) => void;
+  currentPos: CURSOR_POSITION;
+  setPosition: (pos: CURSOR_POSITION) => void;
 };
 
 export const NormalButton: FC<ButtonProps> = ({ children }) => {
@@ -93,7 +93,7 @@ export const HeaderButton: FC<HeaderButtonProps> = ({
 };
 
 export const HeaderButtonGroup = () => {
-  const [position, setPosition] = useState<CursorPosition>({
+  const [position, setPosition] = useState<CURSOR_POSITION>({
     left: 127,
     width: 135,
     opacity: 1,

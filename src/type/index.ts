@@ -1,4 +1,4 @@
-export type MenuLink = {
+export type MENULINK = {
   title: string;
   link: string;
 };
@@ -10,8 +10,14 @@ export type HEADER_BUTTON = {
   icon: any;
 };
 
-export type CursorPosition = {
+export type CURSOR_POSITION = {
   left: number;
   width: number;
   opacity: number;
+};
+
+export type IMAGE = {
+  image: any;
+  srcSet?: string;
+  alt?: string;
 };

@@ -1,7 +1,7 @@
 import { arrowRight } from "../assets/image";
-import { HEADER_BUTTON, MenuLink } from "../type";
+import { MENULINK, HEADER_BUTTON } from "../type";
 
-export const NAV_MENU: MenuLink[] = [
+export const NAV_MENU: MENULINK[] = [
   { title: "services", link: "./#services" },
   { title: "process", link: "./#process" },
   { title: "team", link: "./#team" },
