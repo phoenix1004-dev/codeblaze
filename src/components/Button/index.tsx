@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 
-type TextProps = {
+type ButtonProps = {
   children: React.ReactNode;
 };
 
-export const NormalButton: FC<TextProps> = ({ children }) => {
+export const NormalButton: FC<ButtonProps> = ({ children }) => {
   return (
     <h4
       className="framer-text framer-styles-preset-1nt88v3"

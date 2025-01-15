@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NAV_MENU } from "../../constants/Link";
 import { CursorPosition, MenuLink } from "../../type";
-import { MenuCursor } from "../Animation";
+import { CursorDiv } from "../Animation";
 import MenuItem from "./MenuItem";
 
 const MenuList = () => {
@@ -16,7 +16,7 @@ const MenuList = () => {
       data-border="true"
       data-framer-name="Menu"
     >
-      <MenuCursor pos={position} />
+      <CursorDiv pos={position} />
       {NAV_MENU.map((item: MenuLink, index: number) => (
         <MenuItem
           key={index}
