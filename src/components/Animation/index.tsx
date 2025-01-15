@@ -1,0 +1,381 @@
+import { motion } from "framer-motion";
+import React, { FC, ReactNode, useEffect, useState } from "react";
+import { CURSOR_POSITION, POINTER, RECT_CURSOR } from "../../type";
+
+type HoverMoveTopProps = {
+  isActive: boolean;
+  from: number;
+  to: number;
+  className?: string;
+  children: React.ReactNode;
+};
+
+type CursorProps = {
+  pos: CURSOR_POSITION;
+};
+
+type AnimationButtonProps = {
+  children: React.ReactNode;
+};
+
+type SliderProps = {
+  dir: "right" | "left";
+  time?: number;
+  pos?: string;
+  children: React.ReactNode;
+};
+
+type AnalyzeBoxProps = {
+  className?: string;
+  border?: string;
+  name?: string;
+  isActive: boolean;
+  children: React.ReactNode;
+};
+
+type ChangeColorTextProps = {
+  className?: string;
+  isActive: boolean;
+  from: string;
+  to: string;
+  children: React.ReactNode;
+};
+
+type SelectedTextAreaProps = {
+  isActive: boolean;
+  from: RECT_CURSOR;
+  to: RECT_CURSOR;
+};
+
+type SelectedTextCursorProps = {
+  isActive: boolean;
+  from: POINTER;
+  to: POINTER;
+};
+
+type SelectedTextTooltopProps = {
+  isActive: boolean;
+  from: POINTER;
+  to: POINTER;
+};
+
+type ToggleAnswerTextProps = {
+  isActive: boolean;
+  children: ReactNode;
+};
+
+type RotateButtonProps = {
+  isActive: boolean;
+};
+
+type InitialLoadingProps = {
+  setIsLoading: (res: boolean) => void;
+};
+
+export const HoverMoveTop: FC<HoverMoveTopProps> = ({
+  isActive,
+  from,
+  to,
+  className,
+  children,
+}) => {
+  return (
+    <motion.div
+      className={className}
+      animate={{ y: isActive ? to : from }}
+      transition={{ duration: 0.2, ease: "easeInOut" }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const CursorDiv: FC<CursorProps> = ({ pos }) => {
+  return (
+    <motion.div
+      className="absolute z-0 h-[35px] bg-red border border-solid rounded-[6px]"
+      style={{ borderColor: "rgba(112, 190, 250, 0.75)" }}
+      animate={pos}
+    />
+  );
+};
+
+export const ClickableCursorDiv: FC<CursorProps> = ({ pos }) => {
+  return (
+    <motion.div
+      className="framer-oggjeu border border-solid border-gray-800 bg-gray-900 rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      animate={pos}
+      data-border="true"
+    />
+  );
+};
+
+export const InitialCursorDiv: FC<CursorProps> = ({ pos }) => {
+  return (
+    <motion.div
+      className="absolute z-0 h-[35px] bg-red border border-solid rounded-[6px]"
+      style={{ borderColor: "rgba(112, 190, 250, 0.75)" }}
+      animate={pos}
+    />
+  );
+};
+
+export const AnimationButton: FC<AnimationButtonProps> = ({ children }) => {
+  return (
+    <motion.div
+      className="border-[0.3px] border-transparent rounded-[8px]"
+      initial={{
+        backgroundImage:
+          "linear-gradient(to right, #0a0a0a, #0a0a0a), linear-gradient(0deg, #70befa, #0a0a0a 40%)",
+      }}
+      animate={{
+        backgroundImage:
+          "linear-gradient(to right, #0a0a0a, #0a0a0a), linear-gradient(360deg, #70befa, #0a0a0a 40%)",
+      }}
+      transition={{
+        type: "tween",
+        ease: "linear",
+        duration: 4,
+        repeat: Infinity,
+        repeatType: "loop",
+      }}
+      style={{
+        backgroundClip: "padding-box, border-box",
+        backgroundOrigin: "padding-box, border-box",
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const Slider: FC<SliderProps> = ({
+  dir,
+  time = 10,
+  pos = "-51%",
+  children,
+}) => {
+  return (
+    <motion.div
+      className="absolute top-0 left-0 flex space-x-4"
+      initial={{ x: dir === "right" ? pos : 0 }}
+      animate={{ x: dir === "right" ? 0 : pos }}
+      transition={{
+        ease: "linear",
+        duration: time,
+        repeat: Infinity,
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const AnalyzeBox: FC<AnalyzeBoxProps> = ({
+  className,
+  border,
+  name,
+  isActive,
+  children,
+}) => {
+  return (
+    <motion.div
+      className={`${className} border border-solid border-[rgba(34,34,34)] rounded-[5px]`}
+      data-border={border}
+      data-framer-name={name}
+      animate={{
+        boxShadow: isActive
+          ? "0 0 2px 0.5px rgba(112, 190, 250, 0.75)"
+          : "0 0 2px 0.5px rgba(112, 190, 250, 0)",
+      }}
+      transition={{ duration: 0.3 }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const AnalyzeBlur = ({ isActive }: { isActive: boolean }) => {
+  return (
+    <motion.div
+      className="framer-1c27g3o border border-solid border-[#222222] rounded-lg"
+      data-border="true"
+      animate={{
+        background: isActive
+          ? "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(13, 13, 13, 0.75) 100%)"
+          : "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgb(13, 13, 13) 100%)",
+      }}
+    />
+  );
+};
+
+export const ChangeColorText: FC<ChangeColorTextProps> = ({
+  className,
+  isActive,
+  from,
+  to,
+  children,
+}) => {
+  return (
+    <motion.p
+      className={className}
+      animate={{ color: isActive ? to : from }}
+      transition={{ duration: 0.3 }}
+    >
+      {children}
+    </motion.p>
+  );
+};
+
+export const SelectedTextArea: FC<SelectedTextAreaProps> = ({
+  isActive,
+  from,
+  to,
+}) => {
+  return (
+    <motion.div
+      className="framer-1l8m52c border border-solid border-gray-800 rounded-[2px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      data-border="true"
+      data-framer-name="Code highlighter"
+      animate={isActive ? to : from}
+    />
+  );
+};
+
+export const SelectedTextCursor: FC<SelectedTextTooltopProps> = ({
+  isActive,
+  from,
+  to,
+}) => {
+  return (
+    <motion.div
+      className="framer-1lsin23 opacity-75"
+      data-framer-name="Pointer"
+      animate={isActive ? to : from}
+    >
+      <div
+        className="absolute rounded-[inherit] top-0 right-0 bottom-0 left-0"
+        data-framer-background-image-wrapper="true"
+      >
+        <img
+          decoding="async"
+          src="https://framerusercontent.com/images/rvmRoFIcGrHNamGkuTyVS7imKU.png"
+          alt="telegram"
+          className="block w-full h-full rounded-[inherit] object-center object-cover"
+        />
+      </div>
+    </motion.div>
+  );
+};
+
+export const SelectedTextTooltip: FC<SelectedTextCursorProps> = ({
+  isActive,
+  from,
+  to,
+}) => {
+  return (
+    <motion.div
+      className="framer-1ywhfnj border border-solid border-gray-800 bg-gray-900 rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      data-border="true"
+      data-framer-name="User name"
+      animate={isActive ? to : from}
+    >
+      <div
+        className="framer-h1p7s4 outline-none flex flex-col justify-start flex-shrink-0 text-white hover:text-blue-500 underline transform -translate-x-1/2 -translate-y-1/2"
+        data-framer-component-type="RichTextContainer"
+      >
+        <p className="framer-text font-sans text-[14px] tracking-normal text-white">
+          <span
+            data-text-fill="true"
+            className="framer-text bg-gradient-to-r from-white to-blue-400"
+          >
+            Tibor
+          </span>
+        </p>
+      </div>
+    </motion.div>
+  );
+};
+
+export const ToggleAnswerText: FC<ToggleAnswerTextProps> = ({
+  isActive,
+  children,
+}) => {
+  return (
+    <motion.p
+      className="framer-text font-switzer !text-[15px] !text-[#9c9c9c]"
+      animate={{
+        marginBottom: isActive ? "20px" : "0px",
+        height: isActive ? "70px" : "0px",
+        display: isActive ? "block" : "none",
+      }}
+      transition={{ duration: 0.3 }}
+    >
+      {children}
+    </motion.p>
+  );
+};
+
+export const RotateButton: FC<RotateButtonProps> = ({ isActive }) => {
+  return (
+    <>
+      <motion.div
+        className="framer-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"
+        animate={{ rotate: isActive ? 45 : 0 }}
+        transition={{ duration: 0.3 }}
+      />
+      <motion.div
+        className="framer-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"
+        animate={{ rotate: isActive ? 45 : 0 }}
+        transition={{ duration: 0.3 }}
+      />
+    </>
+  );
+};
+
+export const RealCursorPointer = () => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <motion.div
+      className="fixed top-0 left-0 w-4 h-4 bg-[#70befa] rounded-full pointer-events-none z-[9999]"
+      style={{
+        translateX: "-50%",
+        translateY: "-50%",
+      }}
+      animate={{
+        x: cursorPosition.x,
+        y: cursorPosition.y,
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+        duration: 0.01,
+      }}
+    />
+  );
+};
+
+export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
+  return (
+    <motion.span
+      data-text-fill="true"
+      className="framer-text leading-normal text-[150px] bg-gradient-to-r from-white to-[#70bafa]"
+    >
+      Halo
+    </motion.span>
+  );
+};
