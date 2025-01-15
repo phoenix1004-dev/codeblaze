@@ -22,17 +22,11 @@ const About = () => {
               <h3 className="framer-text !leading-normal">
                 <span
                   data-text-fill="true"
-                  className="framer-text bg-gradient-to-r from-white to-[#70bffa] text-white text-center text-[55px] font-medium tracking-normal w-full"
+                  className="framer-text bg-gradient-to-r from-white to-[#70bffa] text-white text-center text-[48px] font-medium tracking-normal w-full"
                 >
-                  We're Halo. We develop custom AI
-                </span>
-              </h3>
-              <h3 className="framer-text !leading-normal">
-                <span
-                  data-text-fill="true"
-                  className="framer-text bg-gradient-to-r from-white to-[#70bffa] font-inter text-white text-center text-[55px] font-medium leading-none tracking-normal w-full"
-                >
-                  solutions for innovative companies.
+                  Build, deploy, and collaborate seamlessly with our
+                  browser-based platform designed for the future of web
+                  development.
                 </span>
               </h3>
             </div>

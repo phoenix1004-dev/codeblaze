@@ -11,10 +11,10 @@ export const NAV_MENU: MENULINK[] = [
 ];
 
 export const HEADER_BUTTON_LIST: HEADER_BUTTON[] = [
-  { key: 0, title: "our services", link: "./#services", icon: null },
+  { key: 0, title: "Get started", link: "./#services", icon: null },
   {
     key: 1,
-    title: "contact us",
+    title: "Load more",
     link: "./#contact",
     icon: arrowRight,
   },
