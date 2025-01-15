@@ -13,6 +13,10 @@ type MenuCursorProps = {
   pos: CursorPosition;
 };
 
+type AnimationButtonProps = {
+  children: React.ReactNode;
+};
+
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   isActive,
   from,
@@ -36,5 +40,34 @@ export const MenuCursor: FC<MenuCursorProps> = ({ pos }) => {
       style={{ borderColor: "rgba(112, 190, 250, 0.75)" }}
       animate={pos}
     />
+  );
+};
+
+export const AnimationButton: FC<AnimationButtonProps> = ({ children }) => {
+  return (
+    <motion.div
+      className="border-[0.3px] border-transparent rounded-[6px]"
+      initial={{
+        backgroundImage:
+          "linear-gradient(to right, #0a0a0a, #0a0a0a), linear-gradient(0deg, #70befa, #0a0a0a 40%)",
+      }}
+      animate={{
+        backgroundImage:
+          "linear-gradient(to right, #0a0a0a, #0a0a0a), linear-gradient(360deg, #70befa, #0a0a0a 40%)",
+      }}
+      transition={{
+        type: "tween",
+        ease: "linear",
+        duration: 4,
+        repeat: Infinity,
+        repeatType: "loop",
+      }}
+      style={{
+        backgroundClip: "padding-box, border-box",
+        backgroundOrigin: "padding-box, border-box",
+      }}
+    >
+      {children}
+    </motion.div>
   );
 };
