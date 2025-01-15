@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { FC } from "react";
-import { CURSOR_POSITION, Pointer, RECT_CURSOR } from "../../type";
+import { CURSOR_POSITION, POINTER, RECT_CURSOR } from "../../type";
 
 type HoverMoveTopProps = {
   isActive: boolean;
@@ -20,6 +20,8 @@ type AnimationButtonProps = {
 
 type SliderProps = {
   dir: "right" | "left";
+  time?: number;
+  pos?: string;
   children: React.ReactNode;
 };
 
@@ -47,14 +49,14 @@ type SelectedTextAreaProps = {
 
 type SelectedTextCursorProps = {
   isActive: boolean;
-  from: Pointer;
-  to: Pointer;
+  from: POINTER;
+  to: POINTER;
 };
 
 type SelectedTextTooltopProps = {
   isActive: boolean;
-  from: Pointer;
-  to: Pointer;
+  from: POINTER;
+  to: POINTER;
 };
 
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
@@ -134,15 +136,20 @@ export const AnimationButton: FC<AnimationButtonProps> = ({ children }) => {
   );
 };
 
-export const Slider: FC<SliderProps> = ({ dir, children }) => {
+export const Slider: FC<SliderProps> = ({
+  dir,
+  time = 10,
+  pos = "-51%",
+  children,
+}) => {
   return (
     <motion.div
       className="absolute top-0 left-0 flex space-x-4"
-      initial={{ x: dir === "right" ? "-51%" : 0 }}
-      animate={{ x: dir === "right" ? 0 : "-51%" }}
+      initial={{ x: dir === "right" ? pos : 0 }}
+      animate={{ x: dir === "right" ? 0 : pos }}
       transition={{
         ease: "linear",
-        duration: 10,
+        duration: time,
         repeat: Infinity,
       }}
     >

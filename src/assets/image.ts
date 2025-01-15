@@ -14,6 +14,10 @@ import sandbox from "./images/sandbox.png";
 import email from "./images/email.png";
 import notion from "./images/notion.png";
 import person1 from "./images/person/person1.png";
+import person2 from "./images/person/person2.png";
+import person3 from "./images/person/person3.png";
+import person4 from "./images/person/person4.png";
+import person5 from "./images/person/person5.png";
 
 export {
   arrowRight,
@@ -32,4 +36,8 @@ export {
   sandbox,
   notion,
   person1,
+  person2,
+  person3,
+  person4,
+  person5,
 };

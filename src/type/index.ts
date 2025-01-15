@@ -33,7 +33,13 @@ export type RECT_CURSOR = {
   width: number;
 };
 
-export type Pointer = {
+export type POINTER = {
   top: number;
   left: number;
+};
+
+export type MEMBER = {
+  avatar: any;
+  pos: string;
+  name: string;
 };
