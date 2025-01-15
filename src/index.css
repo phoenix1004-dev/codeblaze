@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Switzer";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Switzer"),
+    url("https://fonts.cdnfonts.com/s/85792/Switzer-Regular.woff")
+      format("woff");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

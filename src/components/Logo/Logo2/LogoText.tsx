@@ -11,7 +11,7 @@ const LogoText = () => {
           className="framer-m6s0ez outline-none flex flex-col justify-start flex-shrink-0 transform -translate-y-1/2 text-[#0099ff] underline"
           data-framer-component-type="RichTextContainer"
         >
-          <p className="framer-text font-[Switzer] text-white tracking-[0px] translate-y-[2px]">
+          <p className="framer-text !font-switzer text-white tracking-[0px] translate-y-[2px]">
             <span
               data-text-fill="true"
               className="framer-text bg-white text-[22px]"
@@ -24,7 +24,7 @@ const LogoText = () => {
           className="framer-c6deyg outline-none flex flex-col justify-start flex-shrink-0 transform -translate-y-1/2 text-[#0099ff] underline !bottom-[-30px]"
           data-framer-component-type="RichTextContainer"
         >
-          <p className="framer-text font-[Switzer] text-white tracking-[0px] translate-y-[2px]">
+          <p className="framer-text font-switzer text-white tracking-[0px] translate-y-[2px]">
             <span
               data-text-fill="true"
               className="framer-text bg-white text-[22px]"
