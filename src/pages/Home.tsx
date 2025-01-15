@@ -10,10 +10,10 @@ import Process from "../containers/Home/Process";
 import Satistics from "../containers/Home/Statistics";
 import Team from "../containers/Home/Team";
 import Price from "../containers/Home/Price";
-import Review from "../containers/Home/Review";
 import FAQ from "../containers/Home/FAQ";
 import Contact from "../containers/Home/Contact";
 import Footer from "../components/Footer";
+import Review from "../containers/Home/Review";
 import { RealCursorPointer } from "../components/Animation";
 
 const Home = () => {
