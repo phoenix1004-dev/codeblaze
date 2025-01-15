@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { FC, ReactNode } from "react";
+import React, { FC, ReactNode, useEffect, useState } from "react";
 import { CURSOR_POSITION, POINTER, RECT_CURSOR } from "../../type";
 
 type HoverMoveTopProps = {
@@ -326,5 +326,40 @@ export const RotateButton: FC<RotateButtonProps> = ({ isActive }) => {
         transition={{ duration: 0.3 }}
       />
     </>
+  );
+};
+
+export const RealCursorPointer = () => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <motion.div
+      className="fixed top-0 left-0 w-4 h-4 bg-[#70befa] rounded-full pointer-events-none z-[9999]"
+      style={{
+        translateX: "-50%",
+        translateY: "-50%",
+      }}
+      animate={{
+        x: cursorPosition.x,
+        y: cursorPosition.y,
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+      }}
+    />
   );
 };

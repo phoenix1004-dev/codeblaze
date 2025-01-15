@@ -14,6 +14,7 @@ import Review from "../containers/Home/Review";
 import FAQ from "../containers/Home/FAQ";
 import Contact from "../containers/Home/Contact";
 import Footer from "../components/Footer";
+import { RealCursorPointer } from "../components/Animation";
 
 const Home = () => {
   return (
@@ -140,6 +141,7 @@ const Home = () => {
           <Footer />
         </div>
       </div>
+      <RealCursorPointer />
     </div>
   );
 };
