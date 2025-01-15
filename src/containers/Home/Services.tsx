@@ -6,6 +6,7 @@ import { useState } from "react";
 import {
   AnimationButton,
   HoverMoveTop,
+  ShootingStar,
   Slider,
 } from "../../components/Animation";
 import {
@@ -409,9 +410,7 @@ const Services = () => {
                 >
                   <div className="framer-yda9mq-container">
                     <div className="w-full h-full overflow-hidden bg-[#0f0f0f] transform translate-z-0 rounded-none relative">
-                      <div id="One">
-                        <canvas className="w-full h-full absolute"></canvas>
-                      </div>
+                      <ShootingStar />
                     </div>
                   </div>
                   <div className="framer-1cco58z-container">

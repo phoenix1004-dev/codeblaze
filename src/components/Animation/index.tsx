@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { FC, ReactNode, useEffect, useState } from "react";
-import { CURSOR_POSITION, POINTER, RECT_CURSOR } from "../../type";
+import { CURSOR_POSITION, POINTER, RECT_CURSOR, STAR } from "../../type";
 
 type HoverMoveTopProps = {
   isActive: boolean;
@@ -403,6 +403,66 @@ export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
         transition={{ duration: 1 }}
         onAnimationComplete={() => setStep((prev) => prev + 1)}
       />
+    </div>
+  );
+};
+
+export const ShootingStar = () => {
+  const [stars, setStars] = useState<STAR[]>([]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const angle = Math.random() * 360;
+      const distance = Math.random() * 300 + 100;
+      const newStar = {
+        id: Date.now(),
+        angle,
+        distance,
+        duration: Math.random() * 2 + 10,
+      };
+
+      setStars((prevStars) => [...prevStars, newStar]);
+
+      setTimeout(() => {
+        setStars((prevStars) =>
+          prevStars.filter((star) => star.id !== newStar.id)
+        );
+      }, (newStar.duration + 0.5) * 1000);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="relative w-full h-full overflow-hidden">
+      {stars.map((star) => {
+        const endX = Math.cos((star.angle * Math.PI) / 180) * star.distance;
+        const endY = Math.sin((star.angle * Math.PI) / 180) * star.distance;
+
+        return (
+          <motion.div
+            key={star.id}
+            initial={{
+              x: 0,
+              y: 0,
+              opacity: 1,
+            }}
+            animate={{
+              x: endX,
+              y: endY,
+              opacity: 0,
+            }}
+            transition={{
+              duration: star.duration,
+              ease: "easeOut",
+            }}
+            className="absolute top-1/2 left-1/2 w-[2px] h-[2px] bg-white rounded-full translate-x-1/2 translate-y-1/2"
+            style={{
+              boxShadow: "0 0 8px rgba(255, 255, 255, 0.8)",
+            }}
+          />
+        );
+      })}
     </div>
   );
 };

@@ -53,3 +53,10 @@ export type QA = {
   qu: string;
   an: string;
 };
+
+export type STAR = {
+  id: number;
+  angle: number;
+  distance: number;
+  duration: number;
+};
