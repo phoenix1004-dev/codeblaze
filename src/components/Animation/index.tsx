@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { FC } from "react";
-import { CURSOR_POSITION } from "../../type";
+import { CURSOR_POSITION, Pointer, RECT_CURSOR } from "../../type";
 
 type HoverMoveTopProps = {
   isActive: boolean;
@@ -10,7 +10,7 @@ type HoverMoveTopProps = {
   children: React.ReactNode;
 };
 
-type MenuCursorProps = {
+type CursorProps = {
   pos: CURSOR_POSITION;
 };
 
@@ -31,6 +31,32 @@ type AnalyzeBoxProps = {
   children: React.ReactNode;
 };
 
+type ChangeColorTextProps = {
+  className?: string;
+  isActive: boolean;
+  from: string;
+  to: string;
+  children: React.ReactNode;
+};
+
+type SelectedTextAreaProps = {
+  isActive: boolean;
+  from: RECT_CURSOR;
+  to: RECT_CURSOR;
+};
+
+type SelectedTextCursorProps = {
+  isActive: boolean;
+  from: Pointer;
+  to: Pointer;
+};
+
+type SelectedTextTooltopProps = {
+  isActive: boolean;
+  from: Pointer;
+  to: Pointer;
+};
+
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   isActive,
   from,
@@ -49,7 +75,7 @@ export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   );
 };
 
-export const CursorDiv: FC<MenuCursorProps> = ({ pos }) => {
+export const CursorDiv: FC<CursorProps> = ({ pos }) => {
   return (
     <motion.div
       className="absolute z-0 h-[35px] bg-red border border-solid rounded-[6px]"
@@ -59,7 +85,17 @@ export const CursorDiv: FC<MenuCursorProps> = ({ pos }) => {
   );
 };
 
-export const InitialCursorDiv: FC<MenuCursorProps> = ({ pos }) => {
+export const ClickableCursorDiv: FC<CursorProps> = ({ pos }) => {
+  return (
+    <motion.div
+      className="framer-oggjeu border border-solid border-gray-800 bg-gray-900 rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      animate={pos}
+      data-border="true"
+    />
+  );
+};
+
+export const InitialCursorDiv: FC<CursorProps> = ({ pos }) => {
   return (
     <motion.div
       className="absolute z-0 h-[35px] bg-red border border-solid rounded-[6px]"
@@ -150,5 +186,93 @@ export const AnalyzeBlur = ({ isActive }: { isActive: boolean }) => {
           : "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgb(13, 13, 13) 100%)",
       }}
     />
+  );
+};
+
+export const ChangeColorText: FC<ChangeColorTextProps> = ({
+  className,
+  isActive,
+  from,
+  to,
+  children,
+}) => {
+  return (
+    <motion.p
+      className={className}
+      animate={{ color: isActive ? to : from }}
+      transition={{ duration: 0.3 }}
+    >
+      {children}
+    </motion.p>
+  );
+};
+
+export const SelectedTextArea: FC<SelectedTextAreaProps> = ({
+  isActive,
+  from,
+  to,
+}) => {
+  return (
+    <motion.div
+      className="framer-1l8m52c border border-solid border-gray-800 rounded-[2px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      data-border="true"
+      data-framer-name="Code highlighter"
+      animate={isActive ? to : from}
+    />
+  );
+};
+
+export const SelectedTextCursor: FC<SelectedTextTooltopProps> = ({
+  isActive,
+  from,
+  to,
+}) => {
+  return (
+    <motion.div
+      className="framer-1lsin23 opacity-75"
+      data-framer-name="Pointer"
+      animate={isActive ? to : from}
+    >
+      <div
+        className="absolute rounded-[inherit] top-0 right-0 bottom-0 left-0"
+        data-framer-background-image-wrapper="true"
+      >
+        <img
+          decoding="async"
+          src="https://framerusercontent.com/images/rvmRoFIcGrHNamGkuTyVS7imKU.png"
+          alt="telegram"
+          className="block w-full h-full rounded-[inherit] object-center object-cover"
+        />
+      </div>
+    </motion.div>
+  );
+};
+
+export const SelectedTextTooltip: FC<SelectedTextCursorProps> = ({
+  isActive,
+  from,
+  to,
+}) => {
+  return (
+    <motion.div
+      className="framer-1ywhfnj border border-solid border-gray-800 bg-gray-900 rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      data-border="true"
+      data-framer-name="User name"
+      animate={isActive ? to : from}
+    >
+      <div
+        className="framer-h1p7s4 outline-none flex flex-col justify-start flex-shrink-0 text-white hover:text-blue-500 underline transform -translate-x-1/2 -translate-y-1/2"
+        data-framer-component-type="RichTextContainer"
+      >
+        <p className="framer-text font-sans text-[14px] tracking-normal text-white">
+          <span
+            data-text-fill="true"
+            className="framer-text bg-gradient-to-r from-white to-blue-400"
+          >
+            Tibor
+          </span>
+        </p>
+      </div>
+    </motion.div>
   );
 };

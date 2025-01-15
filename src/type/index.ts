@@ -21,3 +21,19 @@ export type IMAGE = {
   srcSet?: string;
   alt?: string;
 };
+
+export type TAB = {
+  key: number;
+  title: string;
+};
+
+export type RECT_CURSOR = {
+  top: number;
+  left: number;
+  width: number;
+};
+
+export type Pointer = {
+  top: number;
+  left: number;
+};
