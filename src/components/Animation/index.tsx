@@ -297,7 +297,6 @@ export const ToggleAnswerText: FC<ToggleAnswerTextProps> = ({
   isActive,
   children,
 }) => {
-  console.log(isActive);
   return (
     <motion.p
       className="framer-text font-switzer !text-[15px] !text-[#9c9c9c]"
@@ -306,7 +305,7 @@ export const ToggleAnswerText: FC<ToggleAnswerTextProps> = ({
         height: isActive ? "70px" : "0px",
         display: isActive ? "block" : "none",
       }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
     >
       {children}
     </motion.p>
@@ -319,12 +318,12 @@ export const RotateButton: FC<RotateButtonProps> = ({ isActive }) => {
       <motion.div
         className="framer-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"
         animate={{ rotate: isActive ? 45 : 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
       />
       <motion.div
         className="framer-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"
         animate={{ rotate: isActive ? 45 : 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
       />
     </>
   );
