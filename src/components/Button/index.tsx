@@ -35,7 +35,6 @@ export const HeaderButton: FC<HeaderButtonProps> = ({
     if (!ref.current) return;
 
     const { width } = ref.current.getBoundingClientRect();
-    console.log(ref.current.offsetLeft);
     setPosition({ left: ref.current.offsetLeft, width: width, opacity: 1 });
   };
 

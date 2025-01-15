@@ -56,7 +56,7 @@ export const InitialCursorDiv: FC<MenuCursorProps> = ({ pos }) => {
 export const AnimationButton: FC<AnimationButtonProps> = ({ children }) => {
   return (
     <motion.div
-      className="border-[0.3px] border-transparent rounded-[6px]"
+      className="border-[0.3px] border-transparent rounded-[8px]"
       initial={{
         backgroundImage:
           "linear-gradient(to right, #0a0a0a, #0a0a0a), linear-gradient(0deg, #70befa, #0a0a0a 40%)",

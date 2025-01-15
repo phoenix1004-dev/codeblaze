@@ -1,3 +1,5 @@
+import { AnimationButton } from "../../components/Animation";
+
 const About = () => {
   return (
     <section
@@ -40,34 +42,36 @@ const About = () => {
           className="framer-fl9649-container opacity-100 transform translate-y-[10px]"
           style={{ transform: "perspective(1200px)" }}
         >
-          <div
-            className="framer-m2G2h framer-1x78atm framer-v-1x78atm bg-[#222222] rounded-[8px]"
-            data-framer-name="Button State 1"
-            data-highlight="true"
-          >
+          <AnimationButton>
             <div
-              className="framer-qdqyn3 rounded-[10px] !relative"
-              data-framer-name="Stroke"
+              className="framer-m2G2h framer-1x78atm framer-v-1x78atm bg-[#222222] rounded-[8px]"
+              data-framer-name="Button State 1"
+              data-highlight="true"
             >
               <div
-                className="framer-1ckdakb rounded-[8px]"
-                data-framer-name="Fill"
-              />
-              <div
-                className="framer-w410ah"
-                data-framer-component-type="RichTextContainer outline-none flex flex-col justify-start flex-shrink-0 text-white text-[#0099ff] underline"
+                className="framer-qdqyn3 rounded-[10px] !relative"
+                data-framer-name="Stroke"
               >
-                <h4 className="framer-text">
-                  <span
-                    data-text-fill="true"
-                    className="framer-text bg-gradient-to-r from-white to-[#70bffa] font-switzer text-white text-[14px] tracking-normal"
-                  >
-                    Get in touch
-                  </span>
-                </h4>
+                <div
+                  className="framer-1ckdakb rounded-[8px]"
+                  data-framer-name="Fill"
+                />
+                <div
+                  className="framer-w410ah"
+                  data-framer-component-type="RichTextContainer outline-none flex flex-col justify-start flex-shrink-0 text-white text-[#0099ff] underline"
+                >
+                  <h4 className="framer-text">
+                    <span
+                      data-text-fill="true"
+                      className="framer-text bg-gradient-to-r from-white to-[#70bffa] font-switzer text-white text-[14px] tracking-normal"
+                    >
+                      Get in touch
+                    </span>
+                  </h4>
+                </div>
               </div>
             </div>
-          </div>
+          </AnimationButton>
         </div>
       </div>
       <div className="ssr-variant hidden-wbkh13 hidden-5tblbe hidden-72rtr7 hidden-ncoutt !contents">
