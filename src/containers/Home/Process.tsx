@@ -1,9 +1,15 @@
 import { useState } from "react";
-import { AnalyzeBlur, AnalyzeBox } from "../../components/Animation";
+import {
+  AnalyzeBlur,
+  AnalyzeBox,
+  AnimationButton,
+  HoverMoveTop,
+} from "../../components/Animation";
 import CodeBox from "../../components/CodeBox";
 
 const Process = () => {
   const [isHoverAnalyze, setIsHoverAnalyze] = useState<boolean>(false);
+  const [isHoverMaintain, setIsHoverMaintain] = useState<boolean>(false);
 
   return (
     <section
@@ -390,7 +396,11 @@ const Process = () => {
             data-name="03 Maintain &amp; Improve"
           >
             <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
-              <div className="framer-zrd6iz-container">
+              <div
+                className="framer-zrd6iz-container"
+                onMouseEnter={() => setIsHoverMaintain(true)}
+                onMouseLeave={() => setIsHoverMaintain(false)}
+              >
                 <div
                   className="framer-SbEof framer-h9ksv3 framer-v-h9ksv3 !h-full !w-full"
                   data-framer-name="Desktop 1440 &amp; 1200 &amp; Tablet 999"
@@ -409,156 +419,167 @@ const Process = () => {
                       </p>
                     </div>
                     <div className="framer-12ok1dm-container transform translate-y-[-50%]">
+                      <AnimationButton>
+                        <div
+                          className="framer-jRrTJ framer-jipnyk framer-v-jipnyk bg-[var(--token-dfd29766-9b54-40dd-9398-e62b74c1aefb,#222222)] rounded-[8px]"
+                          data-framer-name="Button State 1"
+                          data-highlight="true"
+                        >
+                          <div
+                            className="framer-5r6p28 bg-radial-gradient-[25%_50%_at_50%_100%,var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,#70befa)_0%,rgba(171,171,171,0)_100%] rounded-[10px]"
+                            data-framer-name="Stroke"
+                          ></div>
+                          <div
+                            className="framer-1g3dgsk bg-[var(--token-c3b293ca-d1b8-41d0-a4df-58182d7e1499,#161616)] rounded-[8px]"
+                            data-framer-name="Fill"
+                          ></div>
+                          <div
+                            className="framer-3p9rh6 outline-none flex flex-col justify-start flex-shrink-0 text-[var(--extracted-1eung3n,#ffffff)] [--framer-link-text-color:#0099ff] [--framer-link-text-decoration:underline] transform-none"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <h4 className="framer-text [--font-selector:'FS;Switzer-regular'] [--framer-font-family:'Switzer','Switzer Placeholder',sans-serif] text-[14px] tracking-[0px] text-[var(--extracted-1eung3n,#ffffff)]">
+                              <span
+                                data-text-fill="true"
+                                className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
+                              >
+                                Update
+                              </span>
+                            </h4>
+                          </div>
+                          <div className="framer-xe6cjg transform rotate-360">
+                            <div
+                              className="absolute top-0 right-0 bottom-0 left-0 rounded-none"
+                              data-framer-background-image-wrapper="true"
+                            >
+                              <img
+                                decoding="async"
+                                src="https://framerusercontent.com/images/5eEBrcgZrpTpswgmkk51nT0I9c.png"
+                                alt="arrow-up"
+                                className="block w-full h-full rounded-none object-center object-cover"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </AnimationButton>
+                    </div>
+                  </div>
+                  <HoverMoveTop
+                    className="w-full h-full"
+                    isActive={isHoverMaintain}
+                    from={0}
+                    to={-55}
+                  >
+                    <div className="w-full h-full overflow-visable">
                       <div
-                        className="framer-jRrTJ framer-jipnyk framer-v-jipnyk bg-[var(--token-dfd29766-9b54-40dd-9398-e62b74c1aefb,#222222)] rounded-[8px]"
-                        data-framer-name="Button State 1"
-                        data-highlight="true"
+                        className="framer-1ej6bkh border border-solid border-gray-800 bg-[#0c0c0c] rounded-[5px] shadow-none opacity-100"
+                        data-border="true"
+                        data-framer-name="Operational cost"
                       >
                         <div
-                          className="framer-5r6p28 bg-radial-gradient-[25%_50%_at_50%_100%,var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,#70befa)_0%,rgba(171,171,171,0)_100%] rounded-[10px]"
-                          data-framer-name="Stroke"
-                        ></div>
-                        <div
-                          className="framer-1g3dgsk bg-[var(--token-c3b293ca-d1b8-41d0-a4df-58182d7e1499,#161616)] rounded-[8px]"
-                          data-framer-name="Fill"
-                        ></div>
-                        <div
-                          className="framer-3p9rh6 outline-none flex flex-col justify-start flex-shrink-0 text-[var(--extracted-1eung3n,#ffffff)] [--framer-link-text-color:#0099ff] [--framer-link-text-decoration:underline] transform-none"
+                          className="framer-jzu6mj outline-none flex flex-col justify-start flex-shrink-0 text-[rgb(156,156,156)] [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] [--framer-paragraph-spacing:0px] transform -translate-y-1/2"
                           data-framer-component-type="RichTextContainer"
                         >
-                          <h4 className="framer-text [--font-selector:'FS;Switzer-regular'] [--framer-font-family:'Switzer','Switzer Placeholder',sans-serif] text-[14px] tracking-[0px] text-[var(--extracted-1eung3n,#ffffff)]">
+                          <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[rgb(156,156,156)]">
+                            Operational cost
+                          </p>
+                        </div>
+                        <div
+                          className="framer-yljaau flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline transform -translate-y-1/2"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p className="framer-text font-switzer text-white text-left text-sm leading-6">
                             <span
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                             >
-                              Update
+                              -11%
                             </span>
-                          </h4>
+                          </p>
                         </div>
-                        <div className="framer-xe6cjg transform rotate-360">
-                          <div
-                            className="absolute top-0 right-0 bottom-0 left-0 rounded-none"
-                            data-framer-background-image-wrapper="true"
-                          >
-                            <img
-                              decoding="async"
-                              src="https://framerusercontent.com/images/5eEBrcgZrpTpswgmkk51nT0I9c.png"
-                              alt="arrow-up"
-                              className="block w-full h-full rounded-none object-center object-cover"
-                            />
-                          </div>
+                      </div>
+                      <div
+                        className="framer-ztxi9q border border-solid border-[rgba(34,34,34)] bg-[#0c0c0c] rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)]"
+                        data-border="true"
+                        data-framer-name="Security"
+                      >
+                        <div
+                          className="framer-uzmsm2 outline-none flex flex-col justify-start flex-shrink-0 text-[rgb(156,156,156)] [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] [--framer-paragraph-spacing:0px] transform -translate-y-1/2"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[rgb(156,156,156)]">
+                            Security
+                          </p>
+                        </div>
+                        <div
+                          className="framer-1dngx23 flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline transform -translate-y-1/2"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p className="framer-text font-switzer text-white text-left text-sm leading-6">
+                            <span
+                              data-text-fill="true"
+                              className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
+                            >
+                              +8%
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        className="framer-asgcoi border border-gray-800 bg-[#0c0c0c] rounded-[5px] shadow-sm opacity-50"
+                        data-border="true"
+                        data-framer-name="Workflow efficiency"
+                      >
+                        <div
+                          className="framer-l10ppw outline-none flex flex-col justify-start flex-shrink-0 text-[rgb(156,156,156)] [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] [--framer-paragraph-spacing:0px] transform -translate-y-1/2"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[rgb(156,156,156)]">
+                            Workflow efficiency
+                          </p>
+                        </div>
+                        <div
+                          className="framer-ddaah8 flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline transform -translate-y-1/2"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p className="framer-text font-switzer text-white text-left text-sm leading-6">
+                            <span
+                              data-text-fill="true"
+                              className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
+                            >
+                              +25%
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        className="framer-s4ydu2 border border-gray-800 bg-[#0c0c0c] rounded-md shadow-sm opacity-25"
+                        data-border="true"
+                        data-framer-name="Software speed"
+                      >
+                        <div
+                          className="framer-1xm3s2b outline-none flex flex-col justify-start flex-shrink-0 text-[rgb(156,156,156)] [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] [--framer-paragraph-spacing:0px] transform -translate-y-1/2"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[rgb(156,156,156)]">
+                            Software speed
+                          </p>
+                        </div>
+                        <div
+                          className="framer-10my0e2 flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline transform -translate-y-1/2"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p className="framer-text font-switzer text-white text-left text-sm leading-6">
+                            <span
+                              data-text-fill="true"
+                              className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
+                            >
+                              +38%
+                            </span>
+                          </p>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    className="framer-1ej6bkh border border-solid border-gray-800 bg-gray-900 rounded-[5px] shadow-none opacity-100"
-                    data-border="true"
-                    data-framer-name="Operational cost"
-                  >
-                    <div
-                      className="framer-jzu6mj outline-none flex flex-col justify-start flex-shrink-0 text-[rgb(156,156,156)] [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] [--framer-paragraph-spacing:0px] transform -translate-y-1/2"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[rgb(156,156,156)]">
-                        Operational cost
-                      </p>
-                    </div>
-                    <div
-                      className="framer-yljaau flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline transform -translate-y-1/2"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p className="framer-text font-switzer text-white text-left text-sm leading-6">
-                        <span
-                          data-text-fill="true"
-                          className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
-                        >
-                          -11%
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    className="framer-ztxi9q border border-solid border-[rgba(34,34,34)] bg-[rgb(15,15,15)] rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)]"
-                    data-border="true"
-                    data-framer-name="Security"
-                  >
-                    <div
-                      className="framer-uzmsm2 outline-none flex flex-col justify-start flex-shrink-0 text-[rgb(156,156,156)] [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] [--framer-paragraph-spacing:0px] transform -translate-y-1/2"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[rgb(156,156,156)]">
-                        Security
-                      </p>
-                    </div>
-                    <div
-                      className="framer-1dngx23 flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline transform -translate-y-1/2"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p className="framer-text font-switzer text-white text-left text-sm leading-6">
-                        <span
-                          data-text-fill="true"
-                          className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
-                        >
-                          +8%
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    className="framer-asgcoi border border-gray-800 bg-gray-900 rounded-[5px] shadow-sm opacity-50"
-                    data-border="true"
-                    data-framer-name="Workflow efficiency"
-                  >
-                    <div
-                      className="framer-l10ppw outline-none flex flex-col justify-start flex-shrink-0 text-[rgb(156,156,156)] [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] [--framer-paragraph-spacing:0px] transform -translate-y-1/2"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[rgb(156,156,156)]">
-                        Workflow efficiency
-                      </p>
-                    </div>
-                    <div
-                      className="framer-ddaah8 flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline transform -translate-y-1/2"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p className="framer-text font-switzer text-white text-left text-sm leading-6">
-                        <span
-                          data-text-fill="true"
-                          className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
-                        >
-                          +25%
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    className="framer-s4ydu2 border border-gray-800 bg-gray-900 rounded-md shadow-sm opacity-25"
-                    data-border="true"
-                    data-framer-name="Software speed"
-                  >
-                    <div
-                      className="framer-1xm3s2b outline-none flex flex-col justify-start flex-shrink-0 text-[rgb(156,156,156)] [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] [--framer-paragraph-spacing:0px] transform -translate-y-1/2"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[rgb(156,156,156)]">
-                        Software speed
-                      </p>
-                    </div>
-                    <div
-                      className="framer-10my0e2 flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline transform -translate-y-1/2"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p className="framer-text font-switzer text-white text-left text-sm leading-6">
-                        <span
-                          data-text-fill="true"
-                          className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
-                        >
-                          +38%
-                        </span>
-                      </p>
-                    </div>
-                  </div>
+                  </HoverMoveTop>
                 </div>
               </div>
             </div>
