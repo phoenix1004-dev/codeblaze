@@ -1,4 +1,4 @@
-import { AnimationButton } from "../Animation";
+import { AnimationButton } from "../../Animation";
 
 const SubMenu = () => {
   return (

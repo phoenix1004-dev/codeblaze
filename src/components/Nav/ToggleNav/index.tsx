@@ -1,8 +1,8 @@
-import Logo from "../Logo/Logo2";
+import Logo from "../../Logo/Logo2";
 import MenuList from "./MenuList";
 import SubMenu from "./SubMenu";
 
-const Nav = () => {
+const ToggleNav = () => {
   return (
     <div className="framer-83vgnn-container opacity-100 will-change-transform">
       <nav
@@ -17,4 +17,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default ToggleNav;

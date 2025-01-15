@@ -13,6 +13,7 @@ import star from "./images/star.png";
 import sandbox from "./images/sandbox.png";
 import email from "./images/email.png";
 import notion from "./images/notion.png";
+import logo from "./images/logo.png";
 import person1 from "./images/person/person1.png";
 import person2 from "./images/person/person2.png";
 import person3 from "./images/person/person3.png";
@@ -37,6 +38,7 @@ export {
   github,
   email,
   star,
+  logo,
   sandbox,
   notion,
   person1,

@@ -1,4 +1,4 @@
-import Nav from "../../components/Nav";
+import ToggleNav from "../../components/Nav/ToggleNav";
 import { HeaderButtonGroup } from "../../components/Button";
 import { useState } from "react";
 import { InitialLoading } from "../../components/Animation";
@@ -15,7 +15,7 @@ const Header = () => {
           data-highlight="true"
         >
           {!isLoading && <InitialLoading setIsLoading={setIsLoading} />}
-          <Nav />
+          <ToggleNav />
           {isLoading && (
             <div className="framer-co01ly" data-framer-name="Header text">
               <div
