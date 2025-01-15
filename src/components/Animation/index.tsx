@@ -72,6 +72,15 @@ type InitialLoadingProps = {
   setIsLoading: (res: boolean) => void;
 };
 
+type MoveIndicatorProps = {
+  isActive: boolean;
+  from: POINTER;
+  to: POINTER;
+  className: string;
+  name: string;
+  children: ReactNode;
+};
+
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   isActive,
   from,
@@ -464,5 +473,25 @@ export const ShootingStar = () => {
         );
       })}
     </div>
+  );
+};
+
+export const MoveIndicator: FC<MoveIndicatorProps> = ({
+  isActive,
+  from,
+  to,
+  className,
+  name,
+  children,
+}) => {
+  return (
+    <motion.div
+      className={`${className} border border-solid border-gray-800 rounded-xl backdrop-blur-sm shadow-md`}
+      data-border="true"
+      data-framer-name={name}
+      animate={isActive ? to : from}
+    >
+      {children}
+    </motion.div>
   );
 };

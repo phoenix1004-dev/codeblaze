@@ -1,11 +1,8 @@
-import arrowUp from "../../assets/images/arrow-up.png";
-import googleMeet from "../../assets/images/google-meet.png";
-import expend from "../../assets/images/expend.png";
-import person1 from "../../assets/images/person/person1.png";
 import { useState } from "react";
 import {
   AnimationButton,
   HoverMoveTop,
+  MoveIndicator,
   ShootingStar,
   Slider,
 } from "../../components/Animation";
@@ -15,10 +12,18 @@ import {
 } from "../../constants/Workflow";
 import { IMAGE } from "../../type";
 import WorkflowItem from "../../components/Image/Workflow";
+import {
+  aiChat,
+  arrowUp,
+  expend,
+  googleMeet,
+  person1,
+} from "../../assets/image";
 
 const Services = () => {
   const [isHoverChatbot, setIsHoverChatbot] = useState<boolean>(false);
   const [isHoverLLM, setIsHoverLLM] = useState<boolean>(false);
+  const [isHoverConsult, setIsHoverConsult] = useState<boolean>(false);
 
   return (
     <section
@@ -81,7 +86,9 @@ const Services = () => {
                     }}
                   >
                     <div
-                      className="framer-1r7gfum bg-[#0f0f0f] rounded-[5px] border-solid border-[#222222] border-[1px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0)]"
+                      className={`framer-1r7gfum bg-[#0f0f0f] rounded-[5px] border-solid border-[1px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0)] ${
+                        isHoverChatbot ? "border-[#70befa]" : "border-[#222222]"
+                      }`}
                       data-border="true"
                       data-framer-name="Chatbar"
                     >
@@ -630,7 +637,7 @@ const Services = () => {
               <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
                 <div className="framer-h6vlzy-container !w-full h-full">
                   <div
-                    className="framer-xrZ8E framer-l50WH framer-wb8ig1 framer-v-wb8ig1"
+                    className="framer-xrZ8E framer-l50WH framer-wb8ig1 framer-v-wb8ig1 !w-full"
                     data-framer-name="Desktop 1440 &amp; Tablet 999"
                     onMouseEnter={() => {
                       setIsHoverLLM(true);
@@ -808,8 +815,10 @@ const Services = () => {
               <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
                 <div className="framer-m30icq-container">
                   <div
-                    className="framer-LXnkX framer-o3waff framer-v-o3waff w-full h-full"
+                    className="framer-LXnkX framer-o3waff framer-v-o3waff !w-full h-full"
                     data-framer-name="Desktop 1440 &amp; 1200 &amp; Phone 390"
+                    onMouseEnter={() => setIsHoverConsult(true)}
+                    onMouseLeave={() => setIsHoverConsult(false)}
                   >
                     <div
                       data-framer-component-type="SVG"
@@ -818,16 +827,21 @@ const Services = () => {
                       className="framer-z2mc4i flex-shrink-0 fill-black text-black"
                       aria-hidden="true"
                     >
-                      <div className="svgContainer w-full h-full aspect-auto">
-                        <svg className="w-full h-full" viewBox="0 0 1307 669">
-                          <use href="#svg1987753281_2559" />
-                        </svg>
-                      </div>
+                      <div
+                        className="svgContainer w-full h-full aspect-auto"
+                        style={{
+                          backgroundImage: `url(${aiChat})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }}
+                      />
                     </div>
-                    <div
-                      className="framer-yk9k1c border border-solid border-gray-800 rounded-xl backdrop-blur-sm shadow-md"
-                      data-border="true"
-                      data-framer-name="Cost"
+                    <MoveIndicator
+                      isActive={isHoverConsult}
+                      className="framer-yk9k1c"
+                      from={{ top: 180, left: 250 }}
+                      to={{ top: 230, left: 150 }}
+                      name="Cost"
                     >
                       <div
                         className="framer-xfg3ni flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline"
@@ -842,11 +856,13 @@ const Services = () => {
                           </span>
                         </p>
                       </div>
-                    </div>
-                    <div
-                      className="framer-ki5v1w border border-solid border-gray-800 rounded-xl backdrop-blur-sm shadow-md"
-                      data-border="true"
-                      data-framer-name="Efficiency"
+                    </MoveIndicator>
+                    <MoveIndicator
+                      isActive={isHoverConsult}
+                      className="framer-ki5v1w"
+                      from={{ top: 80, left: 80 }}
+                      to={{ top: 80, left: 180 }}
+                      name="Cost"
                     >
                       <div
                         className="framer-okiaas flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline"
@@ -861,7 +877,7 @@ const Services = () => {
                           </span>
                         </p>
                       </div>
-                    </div>
+                    </MoveIndicator>
                   </div>
                 </div>
               </div>
