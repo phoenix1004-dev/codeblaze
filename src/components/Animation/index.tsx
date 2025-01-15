@@ -43,6 +43,16 @@ export const CursorDiv: FC<MenuCursorProps> = ({ pos }) => {
   );
 };
 
+export const InitialCursorDiv: FC<MenuCursorProps> = ({ pos }) => {
+  return (
+    <motion.div
+      className="absolute z-0 h-[35px] bg-red border border-solid rounded-[6px]"
+      style={{ borderColor: "rgba(112, 190, 250, 0.75)" }}
+      animate={pos}
+    />
+  );
+};
+
 export const AnimationButton: FC<AnimationButtonProps> = ({ children }) => {
   return (
     <motion.div

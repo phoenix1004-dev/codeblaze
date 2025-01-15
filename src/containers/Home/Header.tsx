@@ -1,5 +1,5 @@
 import Nav from "../../components/Nav";
-import arrowRight from "../../assets/images/arrow-right.png";
+import { HeaderButtonGroup } from "../../components/Button";
 
 const Header = () => {
   return (
@@ -67,11 +67,8 @@ const Header = () => {
               data-border="true"
               data-framer-name="Contact"
             >
-              <div
-                className="framer-1yffje0 border border-solid border-[#222222] bg-[#161616] rounded-[5px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0.75)]"
-                data-border="true"
-              />
-              <a
+              <HeaderButtonGroup />
+              {/* <a
                 className="framer-mv39o0 framer-a2hxmi rounded-[5px]"
                 data-framer-name="Services"
                 data-highlight="true"
@@ -120,7 +117,7 @@ const Header = () => {
                     />
                   </div>
                 </div>
-              </a>
+              </a> */}
             </div>
           </div>
           <div
