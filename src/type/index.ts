@@ -43,3 +43,8 @@ export type MEMBER = {
   pos: string;
   name: string;
 };
+
+export type REVIEW = {
+  person: MEMBER;
+  comment: string;
+};
