@@ -24,7 +24,7 @@ const Home = () => {
     >
       <div className="framer-IqNBt framer-vrYYp framer-NrkXy framer-l50WH framer-V74Ls framer-uKIIJ framer-Fw2Wf framer-72rtr7 min-h-screen !w-auto">
         <div className="framer-k2s3e6-container" />
-        <div className="framer-ogrscq-container hidden-5tblbe !opacity-0 !-translate-x-1/2 !-translate-y-[100px]">
+        <div className="framer-ogrscq-container hidden-5tblbe">
           <nav
             className="framer-eE9h1 framer-uKIIJ framer-ux1xcs framer-v-ux1xcs border border-solid border-[rgb(34,34,34)] bg-[rgb(15,15,15)] rounded-[10px]"
             data-border="true"
