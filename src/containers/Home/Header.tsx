@@ -22,10 +22,10 @@ const Header = () => {
                 className="framer-dt8d5q outline-none flex flex-col justify-start flex-shrink-0 opacity-100 transform-none text-[#0099ff] underline"
                 data-framer-component-type="RichTextContainer"
               >
-                <h1 className="framer-text font-[Inter Tight] text-white font-medium tracking-[-3px]">
+                <h1 className="framer-text text-white font-medium tracking-[-3px]">
                   <span
                     data-text-fill="true"
-                    className="framer-text leading-normal text-[150px] bg-gradient-to-r from-white to-[#70bafa]"
+                    className="framer-text leading-normal text-[150px] bg-gradient-to-r from-white to-[#70bafa] text-center"
                   >
                     Halo AI studio.
                   </span>
@@ -36,10 +36,11 @@ const Header = () => {
                 data-framer-component-type="RichTextContainer"
               >
                 <p
-                  className="framer-text framer-styles-preset-85tvh7"
+                  className="framer-text framer-styles-preset-85tvh7 !text-[20px]"
                   data-styles-preset="FhU5qX9WL"
                 >
-                  We develop custom AI solutions for innovative companies.
+                  Welcome to CodeBlaze – Revolutionizing Web Development with
+                  AI-Powered Tools
                 </p>
               </div>
             </div>
@@ -47,7 +48,7 @@ const Header = () => {
           {isLoading && (
             <div className="framer-alsw2r-container opacity-100">
               <div
-                className="framer-Y4gfO framer-uKIIJ framer-w31wm framer-v-w31wm border border-solid border-[#222222] bg-[#0f0f0f] rounded-[10px]"
+                className="framer-Y4gfO framer-uKIIJ framer-w31wm framer-v-w31wm border border-solid border-[#222222] bg-[#0f0f0f] rounded-[10px] !pl-[5px]"
                 data-border="true"
                 data-framer-name="Contact"
               >
