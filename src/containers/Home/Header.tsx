@@ -2,6 +2,7 @@ import ToggleNav from "../../components/Nav/ToggleNav";
 import { HeaderButtonGroup } from "../../components/Button";
 import { useState } from "react";
 import { InitialLoading } from "../../components/Animation";
+import GradientEffect from "../../components/GradientBg";
 
 const Header = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -76,6 +77,7 @@ const Header = () => {
             data-framer-name="Gradient Frame Bottom"
           />
         </header>
+        <GradientEffect />
       </div>
     </div>
   );
