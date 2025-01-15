@@ -11,8 +11,9 @@ export const NAV_MENU: MenuLink[] = [
 ];
 
 export const HEADER_BUTTON_LIST: HEADER_BUTTON[] = [
-  { title: "our services", link: "./#services", icon: null },
+  { key: 0, title: "our services", link: "./#services", icon: null },
   {
+    key: 1,
     title: "contact us",
     link: "./#contact",
     icon: arrowRight,

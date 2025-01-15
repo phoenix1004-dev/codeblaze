@@ -9,6 +9,7 @@ type ButtonProps = {
 
 type HeaderButtonProps = {
   item: HEADER_BUTTON;
+  currentPos: CursorPosition;
   setPosition: (pos: CursorPosition) => void;
 };
 
@@ -23,7 +24,11 @@ export const NormalButton: FC<ButtonProps> = ({ children }) => {
   );
 };
 
-export const HeaderButton: FC<HeaderButtonProps> = ({ item, setPosition }) => {
+export const HeaderButton: FC<HeaderButtonProps> = ({
+  item,
+  currentPos,
+  setPosition,
+}) => {
   const ref = useRef<HTMLAnchorElement>(null);
 
   const setPos = () => {
@@ -58,7 +63,12 @@ export const HeaderButton: FC<HeaderButtonProps> = ({ item, setPosition }) => {
         <p className="framer-text font-[Switzer] text-white text-[14px] tracking-[0px]">
           <span
             data-text-fill="true"
-            className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
+            className={
+              (currentPos.left === 0 && item.key === 0) ||
+              (currentPos.left > 0 && item.key === 1)
+                ? "framer-text bg-gradient-to-r from-white to-[#70befa]"
+                : "framer-text bg-[#9c9c9c]"
+            }
           >
             {item.title}
           </span>
@@ -94,7 +104,12 @@ export const HeaderButtonGroup = () => {
     <>
       <InitialCursorDiv pos={position} />
       {HEADER_BUTTON_LIST.map((item: HEADER_BUTTON, index: number) => (
-        <HeaderButton key={index} item={item} setPosition={setPosition} />
+        <HeaderButton
+          key={index}
+          item={item}
+          currentPos={position}
+          setPosition={setPosition}
+        />
       ))}
     </>
   );

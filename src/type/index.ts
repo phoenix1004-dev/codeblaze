@@ -4,6 +4,7 @@ export type MenuLink = {
 };
 
 export type HEADER_BUTTON = {
+  key: number;
   title: string;
   link: string;
   icon: any;
