@@ -1,3 +1,5 @@
+import { AnimationButton } from "../../components/Animation";
+
 const Contact = () => {
   return (
     <section
@@ -127,7 +129,7 @@ const Contact = () => {
                         className="__cf_email__"
                         data-cfemail="2d44434b426d454c4142034e4240"
                       >
-                        [email&#160;protected]
+                        info.com
                       </span>
                     </h3>
                   </div>
@@ -143,7 +145,7 @@ const Contact = () => {
                         className="__cf_email__"
                         data-cfemail="0a63646c654a626b666524696567"
                       >
-                        [email&#160;protected]
+                        info.com
                       </span>
                     </h3>
                   </div>
@@ -317,40 +319,34 @@ const Contact = () => {
               </div>
             </label>
             <div className="framer-wlm6qx-container">
-              <button
-                type="submit"
-                className="framer-gWCwD framer-1gjtrw7 framer-v-1gjtrw7 bg-[var(--token-dfd29766-9b54-40dd-9398-e62b74c1aefb,rgb(34,34,34))] rounded-[10px] !w-full opacity-100"
-                data-framer-name="Default 1"
-                data-highlight="true"
-                data-reset="button"
-                tabIndex={0}
-              >
-                <div
-                  className="framer-2rjhaj outline-none flex flex-col justify-start flex-shrink-0"
-                  data-framer-component-type="RichTextContainer"
+              <AnimationButton>
+                <button
+                  type="submit"
+                  className="framer-gWCwD framer-1gjtrw7 framer-v-1gjtrw7 bg-[var(--token-dfd29766-9b54-40dd-9398-e62b74c1aefb,rgb(34,34,34))] rounded-[10px] !w-full opacity-100"
+                  data-framer-name="Default 1"
+                  data-highlight="true"
+                  data-reset="button"
+                  tabIndex={0}
                 >
-                  <p className="framer-text text-[14px] tracking-[0px]">
-                    <span
-                      data-text-fill="true"
-                      className="framer-text bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(112,190,250)]"
-                    >
-                      Submit
-                    </span>
-                  </p>
-                </div>
-                <div
-                  className="framer-mq5eeo rounded-[10px]"
-                  data-framer-name="Stroke"
-                  style={{
-                    background:
-                      "radial-gradient(25% 50% at 50% 100%, var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e, rgb(112, 190, 250)) 0%, rgba(171, 171, 171, 0) 100%)",
-                  }}
-                ></div>
-                <div
-                  className="framer-14bqof7 bg-[rgb(22,22,22)] rounded-[8px]"
-                  data-framer-name="Fill"
-                ></div>
-              </button>
+                  <div
+                    className="framer-2rjhaj outline-none flex flex-col justify-start flex-shrink-0"
+                    data-framer-component-type="RichTextContainer"
+                  >
+                    <p className="framer-text text-[14px] tracking-[0px]">
+                      <span
+                        data-text-fill="true"
+                        className="framer-text bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(112,190,250)]"
+                      >
+                        Submit
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    className="framer-14bqof7 bg-[rgb(22,22,22)] rounded-[8px]"
+                    data-framer-name="Fill"
+                  ></div>
+                </button>
+              </AnimationButton>
             </div>
           </form>
         </div>
