@@ -68,56 +68,6 @@ const Header = () => {
               data-framer-name="Contact"
             >
               <HeaderButtonGroup />
-              {/* <a
-                className="framer-mv39o0 framer-a2hxmi rounded-[5px]"
-                data-framer-name="Services"
-                data-highlight="true"
-                href="./#services"
-              >
-                <div
-                  className="framer-166wdlw outline-none flex flex-col justify-start flex-shrink-0 text-[#0099ff] no-underline transform-none"
-                  data-framer-component-type="RichTextContainer"
-                >
-                  <h4
-                    className="framer-text framer-styles-preset-1nt88v3"
-                    data-styles-preset="e67rss72C"
-                  >
-                    our services
-                  </h4>
-                </div>
-              </a>
-              <a
-                className="framer-1frhuhs framer-a2hxmi rounded-[5px]"
-                data-framer-name="Contact"
-                href="./#contact"
-              >
-                <div
-                  className="framer-cevu97 outline-none flex flex-col justify-start flex-shrink-0 text-white text-[#0099ff] underline transform-none"
-                  data-framer-component-type="RichTextContainer"
-                >
-                  <p className="framer-text font-[Switzer] text-white text-[14px] tracking-[0px]">
-                    <span
-                      data-text-fill="true"
-                      className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
-                    >
-                      contact us
-                    </span>
-                  </p>
-                </div>
-                <div className="framer-9xgqfi" data-framer-name="Arrow">
-                  <div
-                    className="absolute inset-0 rounded-inherit"
-                    data-framer-background-image-wrapper="true"
-                  >
-                    <img
-                      className="block w-full h-full rounded-inherit object-center object-cover"
-                      decoding="async"
-                      src={arrowRight}
-                      alt="arrow-right"
-                    />
-                  </div>
-                </div>
-              </a> */}
             </div>
           </div>
           <div
