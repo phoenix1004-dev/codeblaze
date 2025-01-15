@@ -33,7 +33,7 @@ export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   );
 };
 
-export const MenuCursor: FC<MenuCursorProps> = ({ pos }) => {
+export const CursorDiv: FC<MenuCursorProps> = ({ pos }) => {
   return (
     <motion.div
       className="absolute z-0 h-[35px] bg-red border border-solid rounded-[6px]"
