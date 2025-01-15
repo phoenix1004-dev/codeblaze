@@ -370,12 +370,39 @@ export const RealCursorPointer = () => {
 };
 
 export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
+  const [step, setStep] = useState<number>(0);
+
+  const spanAnimates = [
+    { y: 0, opacity: 1 },
+    { y: 0, opacity: 1 },
+    { y: -225, opacity: 0 },
+  ];
+  const borderAnimates = [{}, { x: 0, opacity: 1 }, { x: 308, opacity: 0 }];
+
+  useEffect(() => {
+    if (step <= 2) return;
+    setIsLoading(true);
+  }, [setIsLoading, step]);
+
   return (
-    <motion.span
-      data-text-fill="true"
-      className="framer-text leading-normal text-[150px] bg-gradient-to-r from-white to-[#70bafa]"
-    >
-      Halo
-    </motion.span>
+    <div className="relative h-[225px] overflow-hidden">
+      <motion.span
+        data-text-fill="true"
+        className="framer-text relative leading-normal text-[150px] bg-gradient-to-r from-white to-[#70befa]"
+        initial={{ y: 225, opacity: 0 }}
+        animate={spanAnimates[step]}
+        transition={{ duration: 1 }}
+        onAnimationComplete={() => setStep((prev) => prev + 1)}
+      >
+        Halo
+      </motion.span>
+      <motion.div
+        className="absolute w-[308px] h-0.5 bottom-6 bg-gradient-to-r from-white to-[#70bafa]"
+        initial={{ x: -308, opacity: 0 }}
+        animate={borderAnimates[step]}
+        transition={{ duration: 1 }}
+        onAnimationComplete={() => setStep((prev) => prev + 1)}
+      />
+    </div>
   );
 };
