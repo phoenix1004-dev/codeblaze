@@ -113,3 +113,23 @@ export const HeaderButtonGroup = () => {
     </>
   );
 };
+
+export const MobileToggleMenuButton = () => {
+  return (
+    <div
+      className="framer-1v41qs5 border border-solid border-[rgb(34,34,34)] bg-[rgb(15,15,15)] rounded-lg shadow-none"
+      data-border="true"
+      data-framer-name="Menu"
+      data-highlight="true"
+      tabIndex={0}
+    >
+      <div
+        className="framer-d0shrp transform -translate-x-1/2 -translate-y-1/2"
+        data-framer-name="Hamburger menu"
+      >
+        <div className="framer-53qt6p bg-[rgb(112,190,250)] rounded-[1px] transform-none"></div>
+        <div className="framer-npc2cw bg-[rgb(112,190,250)] rounded-[1px] transform-none"></div>
+      </div>
+    </div>
+  );
+};

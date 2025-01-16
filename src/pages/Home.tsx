@@ -13,6 +13,7 @@ import ReviewContainer from "../containers/Home/Reviews";
 import { RealCursorPointer } from "../components/Animation";
 import FixedNav from "../components/Nav/FixedNav";
 import { useState } from "react";
+import { MobileToggleMenuButton } from "../components/Button";
 
 const Home = () => {
   const [isHoverTeam, setIsHoverTeam] = useState<boolean>(false);
@@ -38,15 +39,16 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 hidden-72rtr7 hidden-ncoutt">
-          <div className="framer-c341if-container hidden-72rtr7 hidden-wbkh13 hidden-r5chz7 hidden-ncoutt opacity-0 transform -translate-y-[100px]">
+        <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 hidden-72rtr7 hidden-ncoutt hidden">
+          <div className="framer-c341if-container hidden-72rtr7 hidden-wbkh13 hidden-r5chz7 hidden-ncoutt opacity-100">
             <div
-              className="framer-hEVRE framer-PZPbf framer-17q0614 framer-v-17q0614 border-[1px] border-solid border-transparent bg-gradient-radial from-transparent to-transparent rounded-bl-lg rounded-br-lg w-full"
+              className="framer-hEVRE framer-PZPbf framer-17q0614 framer-v-17q0614 border-[1px] border-solid border-transparent bg-gradient-radial from-transparent to-transparent rounded-bl-lg rounded-br-lg !w-full"
               data-border="true"
               data-framer-name="Phone Navigation"
             >
               <div className="framer-wmhqws" data-framer-name="Menu closed">
                 <Logo />
+                <MobileToggleMenuButton />
               </div>
             </div>
           </div>

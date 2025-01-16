@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <div className="framer-13gmy9c-container" id="header">
-      <div className="ssr-variant hidden-r5chz7 hidden-5tblbe hidden-ncoutt">
+      <div className="ssr-variant hidden-r5chz7 hidden-5tblbe hidden-ncoutt !contents">
         <header
           className="framer-qcVxT framer-V74Ls framer-1fi3t7c framer-v-qn2nt5 !bg-[#0a0a0a] !h-full !w-full"
           data-framer-name="Loading Animation Part 1 - 1440 &amp; 1200"

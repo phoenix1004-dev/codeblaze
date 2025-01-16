@@ -2,7 +2,10 @@ import { AnimationButton } from "../../Animation";
 
 const SubMenu = () => {
   return (
-    <div className="framer-s59e38" data-framer-name="Get this template">
+    <div
+      className="framer-s59e38 !hidden lg:!flex"
+      data-framer-name="Get this template"
+    >
       <div className="framer-1u65l8y" data-framer-name="Filler" />
       <AnimationButton>
         <div className="framer-1g2rjbk-container">
