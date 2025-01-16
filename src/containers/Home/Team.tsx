@@ -1,8 +1,20 @@
-import { Slider } from "../../components/Animation";
+import { FC, useState } from "react";
+import { MemberIndicator, Slider } from "../../components/Animation";
 import { TeamMember } from "../../constants/Team";
 import { MEMBER } from "../../type";
 
-const Team = () => {
+type Props = {
+  setIsHoverTeam: (v: boolean) => void;
+};
+
+const Team: FC<Props> = ({ setIsHoverTeam }) => {
+  const [selectedMember, setSelectedMember] = useState<string>("");
+
+  const hoverTeamCard = (name: string) => {
+    setSelectedMember(name);
+    setIsHoverTeam(name !== "");
+  };
+
   return (
     <section
       className="framer-pfyxhs"
@@ -37,10 +49,16 @@ const Team = () => {
                 <ul className="flex w-full h-full max-w-full max-h-full place-items-center m-0 p-0 list-none indent-0 gap-[25px] relative flex-row will-change-transform translate-x-[-0px]">
                   <Slider dir="left" time={30} pos="-50%">
                     {TeamMember.map((item: MEMBER, index: number) => (
-                      <li key={index} className="w-[350px !mx-[20px]">
+                      <li
+                        key={index}
+                        className="w-[350px !mx-[20px]"
+                        style={{ cursor: selectedMember === "" ? "" : "none" }}
+                      >
                         <div
                           className="framer-15o1hg6-container w-[350px] flex-shrink-0"
                           data-framer-cursor="1kzuhhy"
+                          onMouseEnter={() => hoverTeamCard(item.name)}
+                          onMouseLeave={() => hoverTeamCard("")}
                         >
                           <div
                             className="framer-PCfLc framer-NrkXy framer-1psfxqf framer-v-1psfxqf border border-solid border-[1px] border-[rgb(34,34,34)] rounded-[10px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)] h-full w-full"
@@ -111,6 +129,8 @@ const Team = () => {
                         <div
                           className="framer-15o1hg6-container w-[350px] flex-shrink-0"
                           data-framer-cursor="1kzuhhy"
+                          onMouseEnter={() => hoverTeamCard(item.name)}
+                          onMouseLeave={() => hoverTeamCard("")}
                         >
                           <div
                             className="framer-PCfLc framer-NrkXy framer-1psfxqf framer-v-1psfxqf border border-solid border-[1px] border-[rgb(34,34,34)] rounded-[10px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)] h-full w-full"
@@ -183,6 +203,7 @@ const Team = () => {
           </div>
         </div>
       </div>
+      <MemberIndicator name={selectedMember} />
     </section>
   );
 };

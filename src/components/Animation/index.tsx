@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React, { FC, ReactNode, useEffect, useState } from "react";
 import { CURSOR_POSITION, POINTER, RECT_CURSOR, STAR } from "../../type";
+import { arrowRight } from "../../assets/image";
 
 type HoverMoveTopProps = {
   isActive: boolean;
@@ -79,6 +80,10 @@ type MoveIndicatorProps = {
   className: string;
   name: string;
   children: ReactNode;
+};
+
+type MemberIndicatorProps = {
+  name: string;
 };
 
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
@@ -342,7 +347,7 @@ export const RotateButton: FC<RotateButtonProps> = ({ isActive }) => {
   );
 };
 
-export const RealCursorPointer = () => {
+export const RealCursorPointer = ({ isActive }: { isActive: boolean }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -361,6 +366,7 @@ export const RealCursorPointer = () => {
     <motion.div
       className="fixed top-0 left-0 w-4 h-4 bg-[#70befa] rounded-full pointer-events-none z-[9999]"
       style={{
+        opacity: isActive ? 1 : 0,
         translateX: "-50%",
         translateY: "-50%",
       }}
@@ -372,7 +378,7 @@ export const RealCursorPointer = () => {
         type: "spring",
         stiffness: 300,
         damping: 20,
-        duration: 0.01,
+        duration: 0.2,
       }}
     />
   );
@@ -394,7 +400,7 @@ export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
   }, [setIsLoading, step]);
 
   return (
-    <div className="relative h-[225px] overflow-hidden">
+    <div className="relative h-[225px] overflow-hidden z-[9999]">
       <motion.span
         data-text-fill="true"
         className="framer-text relative leading-normal text-[150px] bg-gradient-to-r from-white to-[#70befa]"
@@ -492,6 +498,52 @@ export const MoveIndicator: FC<MoveIndicatorProps> = ({
       animate={isActive ? to : from}
     >
       {children}
+    </motion.div>
+  );
+};
+
+export const MemberIndicator: FC<MemberIndicatorProps> = ({ name }) => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <motion.div
+      className={`fixed top-0 left-0 border border-solid border-[#70befa] rounded-[8px] z-[10] !p-[10px] pointer-events-none ${
+        name === "" ? "hidden" : "flex"
+      }`}
+      style={{
+        backgroundColor: "rgba(250, 250, 250, 0.1)",
+        translateX: "-50%",
+        translateY: "-50%",
+      }}
+      animate={{ x: cursorPosition.x, y: cursorPosition.y }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+        duration: 0.2,
+      }}
+    >
+      <p className="framer-text gap-2 justify-center font-sans text-white text-base tracking-normal">
+        <span
+          data-text-fill="true"
+          className="framer-text bg-gradient-to-r from-white to-blue-400"
+        >
+          {name}
+        </span>
+      </p>
+      <img className="w-4 h-4" src={arrowRight} alt="member-indicator" />
     </motion.div>
   );
 };

@@ -12,8 +12,11 @@ import Footer from "../components/Footer";
 import ReviewContainer from "../containers/Home/Reviews";
 import { RealCursorPointer } from "../components/Animation";
 import FixedNav from "../components/Nav/FixedNav";
+import { useState } from "react";
 
 const Home = () => {
+  const [isHoverTeam, setIsHoverTeam] = useState<boolean>(false);
+
   return (
     <div
       data-framer-ssr-released-at="2024-11-18T17:03:50.809Z"
@@ -58,7 +61,7 @@ const Home = () => {
           <Services />
           <Process />
           <Satistics />
-          <Team />
+          <Team setIsHoverTeam={setIsHoverTeam} />
           <Price />
           <ReviewContainer />
           <FAQ />
@@ -66,7 +69,7 @@ const Home = () => {
           <Footer />
         </div>
       </div>
-      <RealCursorPointer />
+      <RealCursorPointer isActive={!isHoverTeam} />
     </div>
   );
 };
