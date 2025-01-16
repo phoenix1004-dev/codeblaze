@@ -2,9 +2,9 @@ import { logo } from "../../../assets/image";
 
 const LogoImage = () => {
   return (
-    <div className="framer-kom92n" data-framer-name="Logo Image">
+    <div className="framer-kom92n !w-[250px]" data-framer-name="Logo Image">
       <div
-        className="absolute rounded-inherit top-0 right-0 bottom-0 left-0"
+        className="absolute rounded-inherit top-0 right-0 bottom-0 left-0 flex"
         data-framer-background-image-wrapper="true"
       >
         <img

@@ -7,6 +7,15 @@ import {
   InitialAppearance,
 } from "../../components/Animation";
 import CodeBox from "../../components/CodeBox";
+import {
+  codeblaze,
+  nativescript,
+  react,
+  remix,
+  typescript,
+  vite,
+  vue,
+} from "../../assets/image";
 
 const Process = () => {
   const [isHoverAnalyze, setIsHoverAnalyze] = useState<boolean>(false);
@@ -34,7 +43,7 @@ const Process = () => {
             data-text-fill="true"
             className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))] !text-[35px] sm:!text-[48px] md:!text-[80px] xl:text-[100px]"
           >
-            The process
+            Develop <b>100x</b> Faster
           </span>
         </h2>
       </InitialAppearance>
@@ -75,8 +84,8 @@ const Process = () => {
                         >
                           <img
                             decoding="async"
-                            src="https://framerusercontent.com/images/CSr01inYFSNcBiRsiHyP21guEk.png"
-                            alt="logo"
+                            src={codeblaze}
+                            alt="codeblaze"
                             className="block w-full h-full rounded-inherit object-contain object-center"
                           />
                         </div>
@@ -95,8 +104,8 @@ const Process = () => {
                         >
                           <img
                             decoding="async"
-                            src="https://framerusercontent.com/images/ElXA9BRDlk1EUYX76fVdPRGVs.png"
-                            alt="sand-box"
+                            src={react}
+                            alt="react"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                           />
                         </div>
@@ -140,12 +149,8 @@ const Process = () => {
                           <img
                             decoding="async"
                             sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                            srcSet="
-                                    https://framerusercontent.com/images/fV5eKM828WIq0uUi1QspK4cUrEw.png?scale-down-to=512 512w,
-                                    https://framerusercontent.com/images/fV5eKM828WIq0uUi1QspK4cUrEw.png                   643w
-                                  "
-                            src="https://framerusercontent.com/images/fV5eKM828WIq0uUi1QspK4cUrEw.png"
-                            alt="motion"
+                            src={vite}
+                            alt="vite"
                             className="block w-full h-full rounded-inherit object-contain object-center"
                             data-framer-original-sizes="30px"
                           />
@@ -166,13 +171,8 @@ const Process = () => {
                           <img
                             decoding="async"
                             sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                            srcSet="
-                                    https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png?scale-down-to=512   512w,
-                                    https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png?scale-down-to=1024 1024w,
-                                    https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png                    1600w
-                                  "
-                            src="https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png"
-                            alt="boat"
+                            src={vue}
+                            alt="vue"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                             data-framer-original-sizes="30px"
                           />
@@ -201,13 +201,8 @@ const Process = () => {
                           <img
                             decoding="async"
                             sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                            srcSet="
-                                    https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png?scale-down-to=512   512w,
-                                    https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png?scale-down-to=1024 1024w,
-                                    https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png                    2048w
-                                  "
-                            src="https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png"
-                            alt="setting"
+                            src={typescript}
+                            alt="typescript"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                             data-framer-original-sizes="30px"
                           />
@@ -235,8 +230,8 @@ const Process = () => {
                         >
                           <img
                             decoding="async"
-                            src="https://framerusercontent.com/images/s7l8usru7RBaoSRsHO4uzGVD3k.png"
-                            alt="chatgpt"
+                            src={nativescript}
+                            alt="nativescript"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                           />
                         </div>
@@ -255,8 +250,8 @@ const Process = () => {
                         >
                           <img
                             decoding="async"
-                            src="https://framerusercontent.com/images/eIDifEepcllMTSnFfdMm68QyzI.png"
-                            alt="notion"
+                            src={remix}
+                            alt="remix"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                           />
                         </div>
@@ -298,7 +293,7 @@ const Process = () => {
                     className="framer-text framer-styles-preset-6ghdir"
                     data-styles-preset="E4lBliITk"
                   >
-                    Analyze
+                    Intelligent A.I Workflow
                   </h3>
                 </div>
               </div>
@@ -310,8 +305,10 @@ const Process = () => {
                   className="framer-text framer-styles-preset-1otixq8"
                   data-styles-preset="Z8KnRQzQq"
                 >
-                  We start with a thorough analysis of your current workflows to
-                  see how AI could improve your processes.
+                  Codeblaze autonomously analyzes your project requirements,
+                  identifying workflows, goals, and outcomes with precision.
+                  This AI-driven assessment ensures every aspect of your
+                  development is aligned with your needs from the start.
                 </p>
               </div>
             </div>
@@ -379,7 +376,7 @@ const Process = () => {
                     className="framer-text framer-styles-preset-6ghdir"
                     data-styles-preset="E4lBliITk"
                   >
-                    Build &amp; Implement
+                    Automated Code Generator
                   </h3>
                 </div>
               </div>
@@ -391,9 +388,10 @@ const Process = () => {
                   className="framer-text framer-styles-preset-1otixq8"
                   data-styles-preset="Z8KnRQzQq"
                 >
-                  Then, our developers will start crafting custom AI-solutions
-                  for your company, continuously prioritising quality and
-                  safety.
+                  Codeblaze AI takes your input—whether a text prompt, voice
+                  command, or image—and generates complete, functional code for
+                  your application. The process is fully automated, delivering
+                  deployment-ready solutions without any manual intervention.
                 </p>
               </div>
             </div>
@@ -430,7 +428,7 @@ const Process = () => {
                       data-framer-component-type="RichTextContainer"
                     >
                       <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[#9b9b9b]">
-                        Update available
+                        Codeblaze Savings
                       </p>
                     </div>
                     <div className="framer-12ok1dm-container transform translate-y-[-50%]">
@@ -457,7 +455,7 @@ const Process = () => {
                                 data-text-fill="true"
                                 className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                               >
-                                Update
+                                HUGE
                               </span>
                             </h4>
                           </div>
@@ -507,7 +505,7 @@ const Process = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                             >
-                              -11%
+                              -90%
                             </span>
                           </p>
                         </div>
@@ -534,7 +532,7 @@ const Process = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                             >
-                              +8%
+                              +300%
                             </span>
                           </p>
                         </div>
@@ -561,7 +559,7 @@ const Process = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                             >
-                              +25%
+                              +800%
                             </span>
                           </p>
                         </div>
@@ -588,7 +586,7 @@ const Process = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                             >
-                              +38%
+                              +1000%
                             </span>
                           </p>
                         </div>
@@ -629,7 +627,7 @@ const Process = () => {
                     className="framer-text framer-styles-preset-6ghdir"
                     data-styles-preset="E4lBliITk"
                   >
-                    Maintain &amp; improve
+                    Seamless Upgrades
                   </h3>
                 </div>
               </div>
@@ -641,8 +639,10 @@ const Process = () => {
                   className="framer-text framer-styles-preset-1otixq8"
                   data-styles-preset="Z8KnRQzQq"
                 >
-                  After deployment, our team will keep working hard by providing
-                  support and continuously improving the implemented solutions.
+                  After deployment, codeblaze empowers users to upgrade their
+                  projects with ease. By simply providing additional prompts,
+                  the AI generates updates and enhancements, ensuring your
+                  application evolves effortlessly to meet changing need.
                 </p>
               </div>
             </div>

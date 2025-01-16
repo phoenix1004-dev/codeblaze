@@ -69,7 +69,7 @@ const Satistics = () => {
                   data-text-fill="true"
                   className="framer-text bg-gradient-to-r from-white to-blue-400 text-[75px] font-medium leading-none tracking-normal"
                 >
-                  93+
+                  1000+
                 </span>
               </h2>
             </div>
@@ -87,7 +87,12 @@ const Satistics = () => {
               className="framer-text framer-styles-preset-1otixq8"
               data-styles-preset="Z8KnRQzQq"
             >
-              We've successfully completed 93 top-tier projects.
+              We’ve successfully completed over 1,000 high-quality projects
+              during our alpha phase. Each project showcases Codeblaze’s
+              efficiency and precision, providing fully functional,
+              production-ready applications in record time. Our AI-driven
+              platform continues to deliver exceptional results that exceed
+              client expectations.
             </p>
           </div>
           <div
@@ -147,7 +152,12 @@ const Satistics = () => {
                 className="framer-text framer-styles-preset-1otixq8"
                 data-styles-preset="Z8KnRQzQq"
               >
-                We ensure a 100% satisfaction level for our clients.
+                Our dedication to innovation and quality has resulted in a 100%
+                satisfaction rate among our clients. Codeblaze streamlines the
+                development process, enabling businesses to launch faster while
+                maintaining the highest standards of performance and
+                reliability. Every client becomes a partner in our journey to
+                revolutionize development.
               </p>
             </div>
             <div
@@ -190,7 +200,7 @@ const Satistics = () => {
                     data-text-fill="true"
                     className="framer-text bg-gradient-to-r from-white to-[#70B0FA] font-inter-tight text-[75px] font-medium tracking-normal leading-tight"
                   >
-                    3h
+                    10h
                   </span>
                 </h2>
               </div>
@@ -208,8 +218,12 @@ const Satistics = () => {
                 className="framer-text framer-styles-preset-1otixq8"
                 data-styles-preset="Z8KnRQzQq"
               >
-                Our solutions save our clients an average of 3 hours of work per
-                day.
+                Codeblaze reduces development time by 90%, achieving in 1 hour
+                what typically takes a senior developer 10 hours. By automating
+                the entire process, our platform saves significant time while
+                maintaining precision and delivering production-ready results.
+                This efficiency empowers teams to focus on strategy and
+                innovation rather than tedious coding tasks.
               </p>
             </div>
             <div
@@ -252,7 +266,7 @@ const Satistics = () => {
                     data-text-fill="true"
                     className="framer-text bg-gradient-to-r from-white to-[#70B0FA] font-inter-tight text-[75px] font-medium tracking-normal leading-tight"
                   >
-                    80k
+                    20k
                   </span>
                 </h2>
               </div>
@@ -270,7 +284,11 @@ const Satistics = () => {
                 className="framer-text framer-styles-preset-1otixq8"
                 data-styles-preset="Z8KnRQzQq"
               >
-                Our solutions save our clients an average of $80.000 per month.
+                Our platform helps clients save an average of $20,000 per month
+                by reducing labor costs and optimizing workflows. With
+                Codeblaze’s fully automated processes, businesses can achieve
+                high-quality results at a fraction of the traditional
+                development cost, making innovation accessible to all.
               </p>
             </div>
             <div

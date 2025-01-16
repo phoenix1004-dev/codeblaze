@@ -3,9 +3,9 @@ import LogoText from "./LogoText";
 
 const Logo = () => {
   return (
-    <div className="framer-1n2yrmf" data-framer-name="Logo">
+    <div className="framer-1n2yrmf !w-[130px]" data-framer-name="Logo">
       <LogoImage />
-      <LogoText />
+      {/* <LogoText /> */}
     </div>
   );
 };

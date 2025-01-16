@@ -13,13 +13,7 @@ import {
 } from "../../constants/Workflow";
 import { IMAGE } from "../../type";
 import WorkflowItem from "../../components/Image/Workflow";
-import {
-  aiChat,
-  arrowUp,
-  expend,
-  googleMeet,
-  person1,
-} from "../../assets/image";
+import { aiChat, arrowUp, person1 } from "../../assets/image";
 
 const Services = () => {
   const [isHoverChatbot, setIsHoverChatbot] = useState<boolean>(false);
@@ -107,7 +101,7 @@ const Services = () => {
                           className="framer-text framer-styles-preset-1otixq8 !text-[12px] sm:!text-[16px]"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          Message AI Assistant…
+                          Message AI Coding Assistant…
                         </p>
                       </div>
                       <div
@@ -147,62 +141,9 @@ const Services = () => {
                         className="w-full h-full"
                         isActive={isHoverChatbot}
                         from={0}
-                        to={-75}
+                        to={-155}
                       >
                         <div className="w-full h-full overflow-visable relative">
-                          <div
-                            className="framer-1q8fu0c border-solid border-[#222222] border-[1px] rounded-[5px]"
-                            data-border="true"
-                            data-framer-name="Google meeting"
-                          >
-                            <div
-                              className="framer-ivt88i"
-                              data-framer-name="Text"
-                            >
-                              <div className="framer-wsk78n">
-                                <div
-                                  className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                  data-framer-background-image-wrapper="true"
-                                >
-                                  <img
-                                    decoding="async"
-                                    sizes="(min-width: 1440px) 20px, (min-width: 999px) and (max-width: 1199px) 20px, (min-width: 1200px) and (max-width: 1439px) 20px, (max-width: 809px) 20px, (min-width: 810px) and (max-width: 998px) 20px"
-                                    src={googleMeet}
-                                    alt="google-meet"
-                                    className="block w-full h-full rounded-none object-center object-cover"
-                                    data-framer-original-sizes="20px"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                className="framer-1kosht4 outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#0099ff] no-underline"
-                                data-framer-component-type="RichTextContainer"
-                              >
-                                <p
-                                  className="framer-text framer-styles-preset-1otixq8 !text-[12px] sm:!text-[16px]"
-                                  data-styles-preset="Z8KnRQzQq"
-                                >
-                                  Google Meet with John
-                                </p>
-                              </div>
-                            </div>
-                            <div
-                              className="framer-flbwfi transform translate-y-[-50%]"
-                              data-framer-name="Share icon"
-                            >
-                              <div
-                                className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                data-framer-background-image-wrapper="true"
-                              >
-                                <img
-                                  decoding="async"
-                                  src={expend}
-                                  alt="expend"
-                                  className="block w-full h-full rounded-none object-center object-cover"
-                                />
-                              </div>
-                            </div>
-                          </div>
                           <div
                             className="framer-1orlrx2 border-solid border-[#222222] border-[1px] rounded-[3px]"
                             data-border="true"
@@ -231,7 +172,7 @@ const Services = () => {
                                 data-text-fill="true"
                                 className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
                               >
-                                You
+                                AI-Driven Development
                               </span>
                             </p>
                           </div>
@@ -243,16 +184,9 @@ const Services = () => {
                               className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                               data-styles-preset="Z8KnRQzQq"
                             >
-                              Schedule a Google meeting with John for 3:45PM
-                              tomorrow!
-                            </p>
-                          </div>
-                          <div
-                            className="framer-1uc0yr3 outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#9c9c9c] text-[#0099ff] no-underline"
-                            data-framer-component-type="RichTextContainer"
-                          >
-                            <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-[#9c9c9c] font-['Switzer','Switzer Placeholder',sans-serif]">
-                              8:15 AM
+                              Transform your ideas into code with our AI
+                              assistant that generates and refines your projects
+                              in real-time
                             </p>
                           </div>
                           <div
@@ -278,16 +212,8 @@ const Services = () => {
                                 data-text-fill="true"
                                 className="framer-text bg-gradient-to-r from-white to-[#70baf9]"
                               >
-                                AI Assistant
+                                Full Stack in the Browser
                               </span>
-                            </p>
-                          </div>
-                          <div
-                            className="framer-1oon2c4 flex flex-col justify-start flex-shrink-0 text-[#9c9c9c] no-underline"
-                            data-framer-component-type="RichTextContainer"
-                          >
-                            <p className="framer-text text-left !text-[#9c9c9c] text-[15px] leading-[1.4em]">
-                              8:15 AM
                             </p>
                           </div>
                           <div
@@ -295,13 +221,131 @@ const Services = () => {
                             data-framer-component-type="RichTextContainer"
                           >
                             <p
-                              className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
+                              className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[10px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                               data-styles-preset="Z8KnRQzQq"
                             >
-                              I've successfully scheduled a Google meeting with
-                              John for
-                              <br className="framer-text hidden sm:block lg:hidden xl:block" />
-                              3:45PM tomorrow.
+                              Develop both frontend and backend applications
+                              directly in your browser, eliminating the need
+                              <br />
+                              for local setups
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          className="framer-1orlrx2 border-solid border-[#222222] border-[1px] rounded-[3px] !top-[180px]"
+                          data-border="true"
+                          data-framer-name="Memoji"
+                        >
+                          <div className="framer-a1nn5f">
+                            <div
+                              className="absolute rounded-none top-0 right-0 bottom-0 left-0"
+                              data-framer-background-image-wrapper="true"
+                            >
+                              <img
+                                decoding="async"
+                                src={person1}
+                                alt="Memoji Tim"
+                                className="block w-full h-full rounded-none object-center object-cover"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="framer-18z790b outline-none flex flex-col justify-start flex-shrink-0 transform-none text-white text-[#0099ff] underline !top-[180px]"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                            <span
+                              data-text-fill="true"
+                              className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
+                            >
+                              AI-Driven Development
+                            </span>
+                          </p>
+                        </div>
+                        <div
+                          className="framer-1kxseoo outline-none flex flex-col justify-start flex-shrink-0 opacity-75 transform-none text-[#0099ff] no-underline !top-[203px]"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p
+                            className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
+                            data-styles-preset="Z8KnRQzQq"
+                          >
+                            Transform your ideas into code with our AI assistant
+                            that generates and refines your projects in
+                            real-time
+                          </p>
+                        </div>
+                        <div
+                          className="framer-42xbc7 border border-solid border-[#222222] rounded-[3px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0.75)]"
+                          data-border="true"
+                          data-framer-name="AI Logo"
+                        >
+                          <div
+                            className="framer-1vbqghs outline-none flex flex-col justify-start flex-shrink-0 transform translate-x-[-50%] translate-y-[-50%]"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                              AI
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          className="framer-1orlrx2 border-solid border-[#222222] border-[1px] rounded-[3px] !top-[250px]"
+                          data-border="true"
+                          data-framer-name="Memoji"
+                        >
+                          <div className="framer-a1nn5f">
+                            <div
+                              className="absolute rounded-none top-0 right-0 bottom-0 left-0"
+                              data-framer-background-image-wrapper="true"
+                            >
+                              <img
+                                decoding="async"
+                                src={person1}
+                                alt="Memoji Tim"
+                                className="block w-full h-full rounded-none object-center object-cover"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="framer-18z790b outline-none flex flex-col justify-start flex-shrink-0 transform-none text-white text-[#0099ff] underline !top-[250px]"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                            <span
+                              data-text-fill="true"
+                              className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
+                            >
+                              AI-Driven Development
+                            </span>
+                          </p>
+                        </div>
+                        <div
+                          className="framer-1kxseoo outline-none flex flex-col justify-start flex-shrink-0 opacity-75 transform-none text-[#0099ff] no-underline !top-[270px]"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p
+                            className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
+                            data-styles-preset="Z8KnRQzQq"
+                          >
+                            Transform your ideas into code with our AI assistant
+                            that generates and refines your projects in
+                            real-time
+                          </p>
+                        </div>
+                        <div
+                          className="framer-42xbc7 border border-solid border-[#222222] rounded-[3px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0.75)]"
+                          data-border="true"
+                          data-framer-name="AI Logo"
+                        >
+                          <div
+                            className="framer-1vbqghs outline-none flex flex-col justify-start flex-shrink-0 transform translate-x-[-50%] translate-y-[-50%]"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                              AI
                             </p>
                           </div>
                         </div>
@@ -323,7 +367,7 @@ const Services = () => {
                     className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px]"
                     data-styles-preset="E4lBliITk"
                   >
-                    Chatbot Development
+                    Voice to Code
                   </h3>
                 </div>
                 <div
@@ -334,9 +378,12 @@ const Services = () => {
                     className="framer-text framer-styles-preset-1otixq8"
                     data-styles-preset="Z8KnRQzQq"
                   >
-                    We develop intelligent chatbots that leverage advanced NLP
-                    to elevate customer interactions and streamline your
-                    business processes.
+                    Transform your voice into powerful code with our Voice Code
+                    Module. Speak your ideas naturally, and our AI seamlessly
+                    generates clean, efficient code in real-time. Pair it with
+                    contextual suggestions to refine and optimize your code as
+                    you go. Experience coding reimagined with the simplicity of
+                    your voice.
                   </p>
                 </div>
               </div>
@@ -394,7 +441,7 @@ const Services = () => {
                           className="framer-text framer-styles-preset-1otixq8 !text-[15px]"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          Generate an image of…
+                          Text prompt your idea to life
                         </p>
                       </div>
                       <div
@@ -454,7 +501,7 @@ const Services = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-white to-[#70bffa]"
                             >
-                              Generating image…
+                              Generating Web App...
                             </span>
                           </h4>
                         </div>
@@ -476,7 +523,7 @@ const Services = () => {
                     className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px]"
                     data-styles-preset="E4lBliITk"
                   >
-                    Content Creation
+                    From Idea to Code
                   </h3>
                 </div>
                 <div
@@ -487,9 +534,11 @@ const Services = () => {
                     className="framer-text framer-styles-preset-1otixq8"
                     data-styles-preset="Z8KnRQzQq"
                   >
-                    Our content creation solutions effortlessly generate
-                    high-quality, engaging content according to your brand's
-                    guidelines to captivate your audience.
+                    Effortlessly build full-stack web applications with our AI
+                    Code Generator Module. Simply provide a text prompt, and our
+                    AI generates the complete code for your app, or drop an
+                    image or screenshot to transform it into functional code.
+                    Redefining development from concept to reality.
                   </p>
                 </div>
               </div>
@@ -585,10 +634,12 @@ const Services = () => {
                             data-framer-component-type="RichTextContainer"
                           >
                             <p
-                              className="framer-text framer-styles-preset-1otixq8"
+                              className="framer-text framer-styles-preset-1otixq8 !text-center"
                               data-styles-preset="Z8KnRQzQq"
                             >
-                              Automations
+                              programming
+                              <br />
+                              languages
                             </p>
                           </div>
                         </div>
@@ -616,7 +667,7 @@ const Services = () => {
                     className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px"
                     data-styles-preset="E4lBliITk"
                   >
-                    Workflow Automations
+                    Unlock Limitless Development
                   </h3>
                 </div>
                 <div
@@ -624,11 +675,14 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <p
-                    className="framer-text framer-styles-preset-1otixq8"
+                    className="framer-text framer-styles-preset-1otixq8 !w-[500px]"
                     data-styles-preset="Z8KnRQzQq"
                   >
-                    We automate your workflows to streamline repetitive tasks,
-                    enhance efficiency, save time, and eliminate errors.
+                    This extensive support enables seamless switching between
+                    languages and frameworks, empowering you to build, adapt,
+                    and innovate without limitations. OK now we need another
+                    section as a text block where they heading and a description
+                    about the blaze platform
                   </p>
                 </div>
               </div>
@@ -797,7 +851,7 @@ const Services = () => {
                     className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px"
                     data-styles-preset="E4lBliITk"
                   >
-                    LLM Development
+                    Seamless Browser-Based Development
                   </h3>
                 </div>
                 <div
@@ -808,8 +862,11 @@ const Services = () => {
                     className="framer-text framer-styles-preset-1otixq8"
                     data-styles-preset="Z8KnRQzQq"
                   >
-                    We develop Large Language Models that transform how your
-                    company interacts with data and customers.
+                    With codeblaze, you can install npm tools, run Node.js
+                    servers, interact with APIs, and deploy projects to
+                    production—all within your browser. This eliminates the need
+                    for complex local setups and allows for a more efficient and
+                    secure development process.
                   </p>
                 </div>
               </div>
@@ -913,7 +970,7 @@ const Services = () => {
                     className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px"
                     data-styles-preset="E4lBliITk"
                   >
-                    AI Consulting
+                    Enhance Efficiency, Reduce Costs
                   </h3>
                 </div>
                 <div
@@ -924,9 +981,11 @@ const Services = () => {
                     className="framer-text framer-styles-preset-1otixq8"
                     data-styles-preset="Z8KnRQzQq"
                   >
-                    Our experts provide strategic guidance, enabling your
-                    business to implement AI solutions that drive transformative
-                    growth.
+                    By automating tasks like package management and deployment,
+                    codeblaze minimizes interventions, leading to time savings
+                    and increased productivity. Its AI-powered debugging and
+                    error handling enhance efficiency, enabling developers to
+                    focus on building features.
                   </p>
                 </div>
               </div>

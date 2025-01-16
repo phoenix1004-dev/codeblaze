@@ -33,7 +33,7 @@ const FAQ = () => {
               data-text-fill="true"
               className="framer-text bg-gradient-to-r from-white to-blue-300 w-full text-center"
             >
-              Answers
+              FAQs
             </span>
           </h2>
         </div>
@@ -55,7 +55,7 @@ const FAQ = () => {
           from={{ top: 0, left: 0 }}
           to={{ top: 0, left: 0 }}
           delay={0.3}
-          time={1}
+          time={5}
         >
           <div className="ssr-variant hidden-r5chz7 hidden-ncoutt !contents">
             <div
