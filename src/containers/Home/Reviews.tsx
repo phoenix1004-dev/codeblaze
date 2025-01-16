@@ -46,7 +46,7 @@ const ReviewContainer = () => {
                   }}
                 >
                   <ul className="flex w-full h-full max-w-full max-h-full justify-center items-center m-0 p-0 list-none text-indent-none gap-5 relative flex-row will-change-transform transform-none">
-                    <Slider dir="left" time={40}>
+                    <Slider dir="left" time={80}>
                       {Reviews.map((review: REVIEW, index: number) => (
                         <li key={index} className="w-[390px]">
                           <div className="framer-akowz5-container w-[390px] flex-shrink-0">
@@ -238,7 +238,7 @@ const ReviewContainer = () => {
                   }}
                 >
                   <ul className="flex w-full h-full max-w-full max-h-full items-center gap-5 p-0 m-0 list-none text-indent-none relative flex-row transform translate-x-0">
-                    <Slider dir="right" time={40}>
+                    <Slider dir="right" time={80}>
                       {Reviews.map((review: REVIEW, index: number) => (
                         <li key={index} className="w-[390px]">
                           <div className="framer-akowz5-container w-[390px] flex-shrink-0">

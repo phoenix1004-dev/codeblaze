@@ -147,62 +147,9 @@ const Services = () => {
                         className="w-full h-full"
                         isActive={isHoverChatbot}
                         from={0}
-                        to={-75}
+                        to={-155}
                       >
                         <div className="w-full h-full overflow-visable relative">
-                          <div
-                            className="framer-1q8fu0c border-solid border-[#222222] border-[1px] rounded-[5px]"
-                            data-border="true"
-                            data-framer-name="Google meeting"
-                          >
-                            <div
-                              className="framer-ivt88i"
-                              data-framer-name="Text"
-                            >
-                              <div className="framer-wsk78n hidden">
-                                <div
-                                  className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                  data-framer-background-image-wrapper="true"
-                                >
-                                  <img
-                                    decoding="async"
-                                    sizes="(min-width: 1440px) 20px, (min-width: 999px) and (max-width: 1199px) 20px, (min-width: 1200px) and (max-width: 1439px) 20px, (max-width: 809px) 20px, (min-width: 810px) and (max-width: 998px) 20px"
-                                    src={googleMeet}
-                                    alt="google-meet"
-                                    className="block w-full h-full rounded-none object-center object-cover"
-                                    data-framer-original-sizes="20px"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                className="framer-1kosht4 outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#0099ff] no-underline hidden"
-                                data-framer-component-type="RichTextContainer"
-                              >
-                                <p
-                                  className="framer-text framer-styles-preset-1otixq8 !text-[12px] sm:!text-[16px]"
-                                  data-styles-preset="Z8KnRQzQq"
-                                >
-                                  Google Meet with John
-                                </p>
-                              </div>
-                            </div>
-                            <div
-                              className="framer-flbwfi transform translate-y-[-50%]"
-                              data-framer-name="Share icon"
-                            >
-                              <div
-                                className="absolute rounded-none top-0 right-0 bottom-0 left-0"
-                                data-framer-background-image-wrapper="true"
-                              >
-                                <img
-                                  decoding="async"
-                                  src={expend}
-                                  alt="expend"
-                                  className="block w-full h-full rounded-none object-center object-cover"
-                                />
-                              </div>
-                            </div>
-                          </div>
                           <div
                             className="framer-1orlrx2 border-solid border-[#222222] border-[1px] rounded-[3px]"
                             data-border="true"
@@ -248,14 +195,6 @@ const Services = () => {
                               in real-time
                             </p>
                           </div>
-                          {/* <div
-                            className="framer-1uc0yr3 outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#9c9c9c] text-[#0099ff] no-underline !pl-[35px]"
-                            data-framer-component-type="RichTextContainer"
-                          >
-                            <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-[#9c9c9c] font-['Switzer','Switzer Placeholder',sans-serif]">
-                              Development
-                            </p>
-                          </div> */}
                           <div
                             className="framer-42xbc7 border border-solid border-[#222222] rounded-[3px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0.75)]"
                             data-border="true"
@@ -283,14 +222,6 @@ const Services = () => {
                               </span>
                             </p>
                           </div>
-                          {/* <div
-                            className="framer-1oon2c4 flex flex-col justify-start flex-shrink-0 text-[#9c9c9c] no-underline !pl-0"
-                            data-framer-component-type="RichTextContainer"
-                          >
-                            <p className="framer-text text-left !text-[#9c9c9c] text-[15px] leading-[1.4em]">
-                              in the Browser
-                            </p>
-                          </div> */}
                           <div
                             className="framer-13klyp5 flex flex-col justify-start opacity-75 text-[#0099ff] no-underline"
                             data-framer-component-type="RichTextContainer"
@@ -306,8 +237,8 @@ const Services = () => {
                             </p>
                           </div>
                         </div>
-                        {/* <div
-                          className="framer-1orlrx2 border-solid border-[#222222] border-[1px] rounded-[3px] !top-[170px]"
+                        <div
+                          className="framer-1orlrx2 border-solid border-[#222222] border-[1px] rounded-[3px] !top-[180px]"
                           data-border="true"
                           data-framer-name="Memoji"
                         >
@@ -326,7 +257,7 @@ const Services = () => {
                           </div>
                         </div>
                         <div
-                          className="framer-18z790b outline-none flex flex-col justify-start flex-shrink-0 transform-none text-white text-[#0099ff] underline !top-[170px]"
+                          className="framer-18z790b outline-none flex flex-col justify-start flex-shrink-0 transform-none text-white text-[#0099ff] underline !top-[180px]"
                           data-framer-component-type="RichTextContainer"
                         >
                           <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
@@ -334,30 +265,96 @@ const Services = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
                             >
-                              Real-Time
+                              AI-Driven Development
                             </span>
                           </p>
                         </div>
                         <div
-                          className="framer-1kxseoo outline-none flex flex-col justify-start flex-shrink-0 opacity-75 transform-none text-[#0099ff] no-underline !top-[200px]"
+                          className="framer-1kxseoo outline-none flex flex-col justify-start flex-shrink-0 opacity-75 transform-none text-[#0099ff] no-underline !top-[203px]"
                           data-framer-component-type="RichTextContainer"
                         >
                           <p
                             className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                             data-styles-preset="Z8KnRQzQq"
                           >
-                            Work alongside your team seamlessly with our
-                            real-time collaboration tools.
+                            Transform your ideas into code with our AI assistant
+                            that generates and refines your projects in
+                            real-time
                           </p>
                         </div>
                         <div
-                          className="framer-1uc0yr3 outline-none flex flex-col justify-start flex-shrink-0 transform-none text-[#9c9c9c] text-[#0099ff] no-underline !pl-[35px]"
+                          className="framer-42xbc7 border border-solid border-[#222222] rounded-[3px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0.75)]"
+                          data-border="true"
+                          data-framer-name="AI Logo"
+                        >
+                          <div
+                            className="framer-1vbqghs outline-none flex flex-col justify-start flex-shrink-0 transform translate-x-[-50%] translate-y-[-50%]"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                              AI
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          className="framer-1orlrx2 border-solid border-[#222222] border-[1px] rounded-[3px] !top-[250px]"
+                          data-border="true"
+                          data-framer-name="Memoji"
+                        >
+                          <div className="framer-a1nn5f">
+                            <div
+                              className="absolute rounded-none top-0 right-0 bottom-0 left-0"
+                              data-framer-background-image-wrapper="true"
+                            >
+                              <img
+                                decoding="async"
+                                src={person1}
+                                alt="Memoji Tim"
+                                className="block w-full h-full rounded-none object-center object-cover"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="framer-18z790b outline-none flex flex-col justify-start flex-shrink-0 transform-none text-white text-[#0099ff] underline !top-[250px]"
                           data-framer-component-type="RichTextContainer"
                         >
-                          <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-[#9c9c9c] font-['Switzer','Switzer Placeholder',sans-serif]">
-                            Collaboration
+                          <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                            <span
+                              data-text-fill="true"
+                              className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
+                            >
+                              AI-Driven Development
+                            </span>
                           </p>
-                        </div> */}
+                        </div>
+                        <div
+                          className="framer-1kxseoo outline-none flex flex-col justify-start flex-shrink-0 opacity-75 transform-none text-[#0099ff] no-underline !top-[270px]"
+                          data-framer-component-type="RichTextContainer"
+                        >
+                          <p
+                            className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
+                            data-styles-preset="Z8KnRQzQq"
+                          >
+                            Transform your ideas into code with our AI assistant
+                            that generates and refines your projects in
+                            real-time
+                          </p>
+                        </div>
+                        <div
+                          className="framer-42xbc7 border border-solid border-[#222222] rounded-[3px] shadow-[0_0_2px_0.5px_rgba(112,190,250,0.75)]"
+                          data-border="true"
+                          data-framer-name="AI Logo"
+                        >
+                          <div
+                            className="framer-1vbqghs outline-none flex flex-col justify-start flex-shrink-0 transform translate-x-[-50%] translate-y-[-50%]"
+                            data-framer-component-type="RichTextContainer"
+                          >
+                            <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left !text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                              AI
+                            </p>
+                          </div>
+                        </div>
                       </HoverMoveTop>
                     </div>
                   </div>

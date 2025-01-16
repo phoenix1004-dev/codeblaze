@@ -7,6 +7,15 @@ import {
   InitialAppearance,
 } from "../../components/Animation";
 import CodeBox from "../../components/CodeBox";
+import {
+  codeblaze,
+  nativescript,
+  react,
+  remix,
+  typescript,
+  vite,
+  vue,
+} from "../../assets/image";
 
 const Process = () => {
   const [isHoverAnalyze, setIsHoverAnalyze] = useState<boolean>(false);
@@ -75,8 +84,8 @@ const Process = () => {
                         >
                           <img
                             decoding="async"
-                            src="https://framerusercontent.com/images/CSr01inYFSNcBiRsiHyP21guEk.png"
-                            alt="logo"
+                            src={codeblaze}
+                            alt="codeblaze"
                             className="block w-full h-full rounded-inherit object-contain object-center"
                           />
                         </div>
@@ -95,8 +104,8 @@ const Process = () => {
                         >
                           <img
                             decoding="async"
-                            src="https://framerusercontent.com/images/ElXA9BRDlk1EUYX76fVdPRGVs.png"
-                            alt="sand-box"
+                            src={react}
+                            alt="react"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                           />
                         </div>
@@ -140,12 +149,8 @@ const Process = () => {
                           <img
                             decoding="async"
                             sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                            srcSet="
-                                    https://framerusercontent.com/images/fV5eKM828WIq0uUi1QspK4cUrEw.png?scale-down-to=512 512w,
-                                    https://framerusercontent.com/images/fV5eKM828WIq0uUi1QspK4cUrEw.png                   643w
-                                  "
-                            src="https://framerusercontent.com/images/fV5eKM828WIq0uUi1QspK4cUrEw.png"
-                            alt="motion"
+                            src={vite}
+                            alt="vite"
                             className="block w-full h-full rounded-inherit object-contain object-center"
                             data-framer-original-sizes="30px"
                           />
@@ -166,13 +171,8 @@ const Process = () => {
                           <img
                             decoding="async"
                             sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                            srcSet="
-                                    https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png?scale-down-to=512   512w,
-                                    https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png?scale-down-to=1024 1024w,
-                                    https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png                    1600w
-                                  "
-                            src="https://framerusercontent.com/images/UoxNo4jnBlSZBxPJAF4qftgrYz4.png"
-                            alt="boat"
+                            src={vue}
+                            alt="vue"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                             data-framer-original-sizes="30px"
                           />
@@ -201,13 +201,8 @@ const Process = () => {
                           <img
                             decoding="async"
                             sizes="(min-width: 1440px) 30px, (min-width: 999px) and (max-width: 1199px) 30px, (min-width: 1200px) and (max-width: 1439px) 30px, (max-width: 809px) 30px, (min-width: 810px) and (max-width: 998px) 30px"
-                            srcSet="
-                                    https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png?scale-down-to=512   512w,
-                                    https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png?scale-down-to=1024 1024w,
-                                    https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png                    2048w
-                                  "
-                            src="https://framerusercontent.com/images/HckOd2xJ67RzaG2caZs2ur1UHA.png"
-                            alt="setting"
+                            src={typescript}
+                            alt="typescript"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                             data-framer-original-sizes="30px"
                           />
@@ -235,8 +230,8 @@ const Process = () => {
                         >
                           <img
                             decoding="async"
-                            src="https://framerusercontent.com/images/s7l8usru7RBaoSRsHO4uzGVD3k.png"
-                            alt="chatgpt"
+                            src={nativescript}
+                            alt="nativescript"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                           />
                         </div>
@@ -255,8 +250,8 @@ const Process = () => {
                         >
                           <img
                             decoding="async"
-                            src="https://framerusercontent.com/images/eIDifEepcllMTSnFfdMm68QyzI.png"
-                            alt="notion"
+                            src={remix}
+                            alt="remix"
                             className="block w-full h-full rounded-inherit object-center object-cover"
                           />
                         </div>

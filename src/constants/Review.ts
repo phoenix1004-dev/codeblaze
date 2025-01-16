@@ -1,10 +1,21 @@
-import { person6, person7, person8, person9 } from "../assets/image";
+import {
+  person10,
+  person11,
+  person12,
+  person13,
+  person14,
+  person15,
+  person6,
+  person7,
+  person8,
+  person9,
+} from "../assets/image";
 import { REVIEW } from "../type";
 
 export const Reviews: REVIEW[] = [
   {
     person: {
-      avatar: person7,
+      avatar: person6,
       name: "Sarah Bennett",
       pos: "Lead Developer, TechNova Solutions",
     },
@@ -13,7 +24,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person6,
+      avatar: person7,
       name: "Jason Lee",
       pos: "Founder, Startify Ventures",
     },
@@ -40,7 +51,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person7,
+      avatar: person10,
       name: "Emma Johnson",
       pos: "CEO, GreenByte AI",
     },
@@ -49,7 +60,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person6,
+      avatar: person11,
       name: "Ahmed Khan",
       pos: "Project Manager, DigitOps",
     },
@@ -58,7 +69,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person8,
+      avatar: person12,
       name: "Linda Spencer",
       pos: "Product Owner, EdgeLogic",
     },
@@ -67,7 +78,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person9,
+      avatar: person13,
       name: "Carlos Ramirez",
       pos: "Co-Founder, InnovateLabs",
     },
@@ -76,7 +87,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person7,
+      avatar: person14,
       name: "Meera Patel",
       pos: "Software Consultant, DevSphere",
     },
@@ -85,7 +96,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person6,
+      avatar: person15,
       name: "Tom Edwards",
       pos: "Head of IT, BrightCore Solutions",
     },
@@ -94,7 +105,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person8,
+      avatar: person12,
       name: "Anna Wills",
       pos: "Freelance Web Developer",
     },
@@ -103,7 +114,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person9,
+      avatar: person8,
       name: "Daniel Choi",
       pos: "Founder, ScaleOps AI",
     },
