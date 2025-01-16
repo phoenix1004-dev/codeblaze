@@ -27,9 +27,9 @@ const Header = () => {
                   <span
                     data-text-fill="true"
                     className="framer-text !font-outfit leading-normal text-[30px] sm:text-[80px] md:text-[100px] lg:text-[130px] xl:text-[150px] bg-gradient-to-r from-white to-[#70bafa] text-center"
+                    style={{ fontStyle: "italic" }}
                   >
-                    <b>codeblaze</b> a.i engine.
-                    {/* <b>hello</b> */}
+                    <b>codeblazegit</b> a.i engine.
                   </span>
                 </h1>
               </div>
