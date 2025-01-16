@@ -13,13 +13,7 @@ import {
 } from "../../constants/Workflow";
 import { IMAGE } from "../../type";
 import WorkflowItem from "../../components/Image/Workflow";
-import {
-  aiChat,
-  arrowUp,
-  expend,
-  googleMeet,
-  person1,
-} from "../../assets/image";
+import { aiChat, arrowUp, person1 } from "../../assets/image";
 
 const Services = () => {
   const [isHoverChatbot, setIsHoverChatbot] = useState<boolean>(false);
