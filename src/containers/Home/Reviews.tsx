@@ -60,7 +60,7 @@ const ReviewContainer = () => {
                               data-framer-name="Review David Williams"
                             >
                               <div
-                                className="framer-14uifsb w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 rounded-[10px] bg-[rgba(10,10,10,0)]"
+                                className="framer-14uifsb w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#222222] rounded-[10px] bg-[rgba(10,10,10,0)]"
                                 data-border="true"
                                 data-framer-name="Review"
                               >
@@ -77,7 +77,7 @@ const ReviewContainer = () => {
                                 </div>
                               </div>
                               <div
-                                className="framer-ojz4y5 w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 rounded-[10px] bg-[rgba(10,10,10,0)]"
+                                className="framer-ojz4y5 w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#222222] rounded-[10px] bg-[rgba(10,10,10,0)]"
                                 data-border="true"
                                 data-framer-name="Person"
                               >
@@ -148,7 +148,7 @@ const ReviewContainer = () => {
                               data-framer-name="Review David Williams"
                             >
                               <div
-                                className="framer-14uifsb w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 rounded-[10px] bg-[rgba(10,10,10,0)]"
+                                className="framer-14uifsb w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#222222] rounded-[10px] bg-[rgba(10,10,10,0)]"
                                 data-border="true"
                                 data-framer-name="Review"
                               >
@@ -165,7 +165,7 @@ const ReviewContainer = () => {
                                 </div>
                               </div>
                               <div
-                                className="framer-ojz4y5 w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 rounded-[10px] bg-[rgba(10,10,10,0)]"
+                                className="framer-ojz4y5 w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#222222] rounded-[10px] bg-[rgba(10,10,10,0)]"
                                 data-border="true"
                                 data-framer-name="Person"
                               >
@@ -252,7 +252,7 @@ const ReviewContainer = () => {
                               data-framer-name="Review David Williams"
                             >
                               <div
-                                className="framer-14uifsb w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 rounded-[10px] bg-[rgba(10,10,10,0)]"
+                                className="framer-14uifsb w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#222222] rounded-[10px] bg-[rgba(10,10,10,0)]"
                                 data-border="true"
                                 data-framer-name="Review"
                               >
@@ -269,7 +269,7 @@ const ReviewContainer = () => {
                                 </div>
                               </div>
                               <div
-                                className="framer-ojz4y5 w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 rounded-[10px] bg-[rgba(10,10,10,0)]"
+                                className="framer-ojz4y5 w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#222222] rounded-[10px] bg-[rgba(10,10,10,0)]"
                                 data-border="true"
                                 data-framer-name="Person"
                               >
@@ -340,7 +340,7 @@ const ReviewContainer = () => {
                               data-framer-name="Review David Williams"
                             >
                               <div
-                                className="framer-14uifsb w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 rounded-[10px] bg-[rgba(10,10,10,0)]"
+                                className="framer-14uifsb w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#222222] rounded-[10px] bg-[rgba(10,10,10,0)]"
                                 data-border="true"
                                 data-framer-name="Review"
                               >
@@ -357,7 +357,7 @@ const ReviewContainer = () => {
                                 </div>
                               </div>
                               <div
-                                className="framer-ojz4y5 w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 rounded-[10px] bg-[rgba(10,10,10,0)]"
+                                className="framer-ojz4y5 w-full border border-solid border-t-1 border-b-1 border-l-1 border-r-1 border-[#222222] rounded-[10px] bg-[rgba(10,10,10,0)]"
                                 data-border="true"
                                 data-framer-name="Person"
                               >

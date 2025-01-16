@@ -1,4 +1,4 @@
-import { AnimationButton } from "../../components/Animation";
+import { AnimationButton, InitialAppearance } from "../../components/Animation";
 
 const Price = () => {
   return (
@@ -91,10 +91,13 @@ const Price = () => {
                 className="framer-1e3uv2o !flex-col xl:!flex-row"
                 data-framer-name="Pricing"
               >
-                <div
+                <InitialAppearance
                   className="framer-10udvia border-[1px] border-solid border-l-[1px] border-r-0 border-t-[1px] border-b-[1px] border-[#222222] bg-[radial-gradient(50%_25%_at_100%_0%,rgba(80,176,250,0.1)_0%,rgba(64,140,199,0.1)_36.5%,rgb(13,13,13)_100%)] rounded-[12px] opacity-100 !flex-none !w-full xl:!flex-1 xl:w-1"
                   data-border="true"
                   data-framer-name="Basic"
+                  from={{ top: 0, left: -100 }}
+                  to={{ top: 0, left: 0 }}
+                  time={1}
                 >
                   <div className="framer-1a4tbgs" data-framer-name="Titles">
                     <div
@@ -310,8 +313,8 @@ const Price = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div
+                </InitialAppearance>
+                <InitialAppearance
                   className="framer-alcu8 border-b border-t border-l-0 border-r-0 border-[#0f0f0f] rounded-[12px] opacity-100 !flex-none !w-full xl:!flex-1 xl:w-1"
                   style={{
                     transform: "perspective(1200px)",
@@ -320,6 +323,9 @@ const Price = () => {
                   }}
                   data-border="true"
                   data-framer-name="Professional"
+                  from={{ top: 100, left: 0 }}
+                  to={{ top: 0, left: 0 }}
+                  time={1}
                 >
                   <div className="framer-1i10zd2" data-framer-name="Titles">
                     <div
@@ -549,8 +555,8 @@ const Price = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div
+                </InitialAppearance>
+                <InitialAppearance
                   className="framer-csu9ng border-b border-l border-r border-t border-solid border-[#0f0f0f] rounded-[12px] opacity-100 !flex-none !w-full xl:!flex-1 xl:w-1"
                   style={{
                     background:
@@ -558,6 +564,9 @@ const Price = () => {
                   }}
                   data-border="true"
                   data-framer-name="Enterprise"
+                  from={{ top: 0, left: 100 }}
+                  to={{ top: 0, left: 0 }}
+                  time={1}
                 >
                   <div className="framer-1cc7hax" data-framer-name="Titles">
                     <div
@@ -774,7 +783,7 @@ const Price = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </InitialAppearance>
               </div>
             </div>
           </div>

@@ -1,3 +1,10 @@
+import {
+  FaInstagram,
+  FaTwitterSquare,
+  FaLinkedin,
+  FaFacebook,
+} from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer
@@ -29,7 +36,7 @@ const Footer = () => {
                     data-text-fill="true"
                     className="framer-text bg-gradient-to-r from-white to-[#70bfea]"
                   >
-                    Get the Halo newsletter
+                    Contact
                   </span>
                 </h3>
               </div>
@@ -42,8 +49,7 @@ const Footer = () => {
                 className="framer-text framer-styles-preset-1otixq8"
                 data-styles-preset="Z8KnRQzQq"
               >
-                Subscribe to get the latest updates on AI into your inbox every
-                month.
+                Have questions? Reach out to us at support@codeblaze.ai.
               </p>
             </div>
           </div>
@@ -163,6 +169,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <FaInstagram color="white" />
                     <div
                       className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
                       data-framer-component-type="RichTextContainer"
@@ -186,6 +193,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <FaTwitterSquare color="white" />
                     <div
                       className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
                       data-framer-component-type="RichTextContainer"
@@ -209,6 +217,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <FaLinkedin color="white" />
                     <div
                       className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
                       data-framer-component-type="RichTextContainer"
@@ -232,6 +241,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <FaFacebook color="white" />
                     <div
                       className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
                       data-framer-component-type="RichTextContainer"
@@ -245,27 +255,6 @@ const Footer = () => {
                     </div>
                   </a>
                 </div>
-              </div>
-              <div className="framer-94wwb1-container">
-                <a
-                  className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
-                  data-framer-name="Footer Link"
-                  href="https://www.facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
-                    data-framer-component-type="RichTextContainer"
-                  >
-                    <p
-                      className="framer-text framer-styles-preset-1otixq8"
-                      data-styles-preset="Z8KnRQzQq"
-                    >
-                      Facebook
-                    </p>
-                  </div>
-                </a>
               </div>
             </div>
             <div
@@ -302,7 +291,7 @@ const Footer = () => {
                         className="framer-text framer-styles-preset-1otixq8"
                         data-styles-preset="Z8KnRQzQq"
                       >
-                        Services
+                        Home
                       </p>
                     </div>
                   </a>
@@ -313,7 +302,7 @@ const Footer = () => {
                   <a
                     className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
                     data-framer-name="Footer Link"
-                    href="./#process"
+                    href="./#about"
                     target="_blank"
                   >
                     <div
@@ -324,7 +313,7 @@ const Footer = () => {
                         className="framer-text framer-styles-preset-1otixq8"
                         data-styles-preset="Z8KnRQzQq"
                       >
-                        Process
+                        About
                       </p>
                     </div>
                   </a>
@@ -335,7 +324,7 @@ const Footer = () => {
                   <a
                     className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
                     data-framer-name="Footer Link"
-                    href="./#team"
+                    href="./#"
                     target="_blank"
                   >
                     <div
@@ -346,29 +335,7 @@ const Footer = () => {
                         className="framer-text framer-styles-preset-1otixq8"
                         data-styles-preset="Z8KnRQzQq"
                       >
-                        Team
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="ssr-variant hidden-5tblbe">
-                <div className="framer-6ck0wv-container">
-                  <a
-                    className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
-                    data-framer-name="Footer Link"
-                    href="./#pricing"
-                    target="_blank"
-                  >
-                    <div
-                      className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1otixq8"
-                        data-styles-preset="Z8KnRQzQq"
-                      >
-                        Pricing
+                        Features
                       </p>
                     </div>
                   </a>
@@ -423,7 +390,7 @@ const Footer = () => {
                   <a
                     className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
                     data-framer-name="Footer Link"
-                    href="./404"
+                    href="./#"
                     target="_blank"
                   >
                     <div
@@ -434,7 +401,7 @@ const Footer = () => {
                         className="framer-text framer-styles-preset-1otixq8"
                         data-styles-preset="Z8KnRQzQq"
                       >
-                        404
+                        Terms & Conditions
                       </p>
                     </div>
                   </a>

@@ -86,6 +86,16 @@ type MemberIndicatorProps = {
   name: string;
 };
 
+type InitialAppearanceProps = {
+  className?: string;
+  style?: any;
+  from: POINTER;
+  to: POINTER;
+  time: number;
+  delay?: number;
+  children: ReactNode;
+};
+
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   isActive,
   from,
@@ -544,6 +554,29 @@ export const MemberIndicator: FC<MemberIndicatorProps> = ({ name }) => {
         </span>
       </p>
       <img className="w-4 h-4" src={arrowRight} alt="member-indicator" />
+    </motion.div>
+  );
+};
+
+export const InitialAppearance: FC<InitialAppearanceProps> = ({
+  className = "",
+  style = {},
+  from,
+  to,
+  time,
+  delay = 0,
+  children,
+}) => {
+  return (
+    <motion.div
+      className={className}
+      style={style}
+      initial={{ ...from, opacity: 0 }}
+      whileInView={{ ...to, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: delay, duration: time, ease: "easeOut" }}
+    >
+      {children}
     </motion.div>
   );
 };

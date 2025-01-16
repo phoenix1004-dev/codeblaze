@@ -4,6 +4,7 @@ import {
   AnalyzeBox,
   AnimationButton,
   HoverMoveTop,
+  InitialAppearance,
 } from "../../components/Animation";
 import CodeBox from "../../components/CodeBox";
 
@@ -18,9 +19,12 @@ const Process = () => {
       id="process"
       data-name="Process"
     >
-      <div
+      <InitialAppearance
         className="framer-1b77ta1 flex flex-col justify-start shrink-0 opacity-100 [transform:perspective(1200px)]"
         data-framer-component-type="RichTextContainer"
+        from={{ top: 0, left: 0 }}
+        to={{ top: 0, left: 0 }}
+        time={1}
       >
         <h2
           className="framer-text framer-styles-preset-15mg8bp"
@@ -33,18 +37,21 @@ const Process = () => {
             The process
           </span>
         </h2>
-      </div>
+      </InitialAppearance>
       <div
         className="framer-1u2zz68 !flex-col lg:!flex-row"
         data-framer-name="Process Steps"
         data-name="Process Steps"
       >
         <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-          <div
+          <InitialAppearance
             className="framer-xovc6q opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             data-border="true"
             data-framer-name="01 Analyze"
             data-name="01 Analyze"
+            from={{ top: 100, left: 0 }}
+            to={{ top: 0, left: 0 }}
+            time={1}
           >
             <div className="framer-1canol3">
               <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
@@ -313,14 +320,18 @@ const Process = () => {
               data-framer-name="Gradient"
               data-name="Gradient"
             ></div>
-          </div>
+          </InitialAppearance>
         </div>
         <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-          <div
+          <InitialAppearance
             className="framer-q5m83g opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             data-border="true"
             data-framer-name="02 Build &amp; Implement"
             data-name="02 Build &amp; Implement"
+            from={{ top: 100, left: 0 }}
+            to={{ top: 0, left: 0 }}
+            delay={1}
+            time={1}
           >
             <div
               className="framer-144ce2s"
@@ -386,14 +397,18 @@ const Process = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </InitialAppearance>
         </div>
         <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-          <div
+          <InitialAppearance
             className="framer-lrrs13 opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             data-border="true"
             data-framer-name="03 Maintain &amp; Improve"
             data-name="03 Maintain &amp; Improve"
+            from={{ top: 100, left: 0 }}
+            to={{ top: 0, left: 0 }}
+            delay={2}
+            time={1}
           >
             <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
               <div
@@ -636,7 +651,7 @@ const Process = () => {
               data-framer-name="Gradient"
               data-name="Gradient"
             ></div>
-          </div>
+          </InitialAppearance>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import {
   AnimationButton,
   HoverMoveTop,
+  InitialAppearance,
   MoveIndicator,
   ShootingStar,
   Slider,
@@ -33,10 +34,13 @@ const Services = () => {
       data-name="Services"
     >
       <div className="framer-2dblr4" data-framer-name="Title" data-name="Title">
-        <div
+        <InitialAppearance
           className="framer-1i20ah outline-none flex flex-col justify-start flex-shrink-0 opacity-100"
           style={{ transform: "prespective(1200px)" }}
           data-framer-component-type="RichTextContainer"
+          from={{ top: 0, left: 0 }}
+          to={{ top: 0, left: 0 }}
+          time={1}
         >
           <h2
             className="framer-text framer-styles-preset-15mg8bp !text-[20px] sm:!text-[36px] md:!text-[48px] xl:text-[80px]"
@@ -49,7 +53,7 @@ const Services = () => {
               Why Choose CodeBlaze?
             </span>
           </h2>
-        </div>
+        </InitialAppearance>
       </div>
       <div
         className="framer-8hvpax"
@@ -62,11 +66,14 @@ const Services = () => {
           data-name="1 - 2"
         >
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-            <div
+            <InitialAppearance
               className="framer-1r8dea6 opacity-100 transform-none !flex-none !w-full  lg:!flex-1 lg:!w-1"
               data-border="true"
               data-framer-name="Chatbot Development"
               data-name="Chatbot Development"
+              from={{ top: 0, left: -100 }}
+              to={{ top: 0, left: 0 }}
+              time={1}
             >
               <div
                 className="framer-k7zq9y hidden-5tblbe"
@@ -338,15 +345,18 @@ const Services = () => {
                 data-framer-name="Gradient"
                 data-name="Gradient"
               />
-            </div>
+            </InitialAppearance>
           </div>
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-            <div
+            <InitialAppearance
               className="framer-5nicsv opacity-100 transform translate-x-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
               style={{ transform: "prespective(1200px)" }}
               data-border="true"
               data-framer-name="Content creation"
               data-name="Content creation"
+              from={{ top: 0, left: 100 }}
+              to={{ top: 0, left: 0 }}
+              time={1}
             >
               <div
                 className="framer-vvtanx hidden-5tblbe"
@@ -488,7 +498,7 @@ const Services = () => {
                 data-framer-name="Gradient"
                 data-name="Gradient"
               />
-            </div>
+            </InitialAppearance>
           </div>
         </div>
         <div
@@ -497,11 +507,14 @@ const Services = () => {
           data-name="3 - 4 - 5"
         >
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-            <div
+            <InitialAppearance
               className="framer-38uxhd opacity-100"
               data-border="true"
               data-framer-name="Workflow Automations"
               data-name="Workflow Automations"
+              from={{ top: 0, left: -100 }}
+              to={{ top: 0, left: 0 }}
+              time={1}
             >
               <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
                 <div className="framer-1a2s7tn-container">
@@ -624,15 +637,18 @@ const Services = () => {
                 data-framer-name="Gradient"
                 data-name="Gradient"
               ></div>
-            </div>
+            </InitialAppearance>
           </div>
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-            <div
+            <InitialAppearance
               className="framer-tvfugu opacity-100 transform translate-y-[50px]"
               style={{ transform: "perspective(1200px)" }}
               data-border="true"
               data-framer-name="LLM Development"
               data-name="LLM Development"
+              from={{ top: 100, left: 0 }}
+              to={{ top: 0, left: 0 }}
+              time={1}
             >
               <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
                 <div className="framer-h6vlzy-container !w-full h-full">
@@ -802,15 +818,18 @@ const Services = () => {
                 data-framer-name="Gradient"
                 data-name="Gradient"
               />
-            </div>
+            </InitialAppearance>
           </div>
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-            <div
+            <InitialAppearance
               className="framer-1b4n1sp opacity-100"
               style={{ transform: "prespective(1200px)" }}
               data-border="true"
               data-framer-name="AI Consulting"
               data-name="AI Consulting"
+              from={{ top: 0, left: 100 }}
+              to={{ top: 0, left: 0 }}
+              time={1}
             >
               <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
                 <div className="framer-m30icq-container">
@@ -916,7 +935,7 @@ const Services = () => {
                 data-framer-name="Gradient"
                 data-name="Gradient"
               ></div>
-            </div>
+            </InitialAppearance>
           </div>
         </div>
       </div>
