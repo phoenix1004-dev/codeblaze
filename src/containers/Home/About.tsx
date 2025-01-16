@@ -10,7 +10,7 @@ const About = () => {
       data-name="About"
     >
       <InitialAppearance
-        className="framer-od6gw3 translate-y-6 sm:translate-y-2 lg:-translate-y-10"
+        className="framer-od6gw3 -translate-y-12"
         data-framer-name="Text &amp; Button"
         data-name="Text &amp; Button"
         from={{ top: 30, left: 0 }}
