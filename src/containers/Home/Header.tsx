@@ -26,7 +26,7 @@ const Header = () => {
                 <h1 className="framer-text text-white font-medium tracking-[-3px]">
                   <span
                     data-text-fill="true"
-                    className="framer-text leading-normal text-[150px] bg-gradient-to-r from-white to-[#70bafa] text-center"
+                    className="framer-text leading-normal text-[30px] sm:text-[80px] md:text-[100px] lg:text-[130px] xl:text-[150px] bg-gradient-to-r from-white to-[#70bafa] text-center"
                   >
                     Halo AI studio.
                   </span>
@@ -37,7 +37,7 @@ const Header = () => {
                 data-framer-component-type="RichTextContainer"
               >
                 <p
-                  className="framer-text framer-styles-preset-85tvh7 !text-[20px]"
+                  className="framer-text framer-styles-preset-85tvh7 !text-[20px] !whitespace-normal !text-center"
                   data-styles-preset="FhU5qX9WL"
                 >
                   Welcome to CodeBlaze – Revolutionizing Web Development with

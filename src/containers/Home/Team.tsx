@@ -27,7 +27,7 @@ const Team: FC<Props> = ({ setIsHoverTeam }) => {
         data-framer-component-type="RichTextContainer"
       >
         <h2
-          className="framer-text framer-styles-preset-15mg8bp"
+          className="framer-text framer-styles-preset-15mg8bp !text-[35px] sm:!text-[48px] md:!text-[64px] xl:text-[100px]"
           data-styles-preset="IXKxaceG9"
         >
           <span
@@ -38,10 +38,10 @@ const Team: FC<Props> = ({ setIsHoverTeam }) => {
           </span>
         </h2>
       </div>
-      <div className="ssr-variant hidden-5tblbe">
+      <div className="ssr-variant hidden-5tblbe !contents">
         <div className="framer-187tqvi-container">
           <div
-            className="framer-lj12j framer-g3iu9v framer-v-g3iu9v w-full"
+            className="framer-lj12j framer-g3iu9v framer-v-g3iu9v !w-full"
             data-framer-name="Team Ticker"
           >
             <div className="framer-99rgx0-container">

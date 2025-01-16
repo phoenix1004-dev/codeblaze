@@ -9,7 +9,7 @@ const About = () => {
       data-name="About"
     >
       <div
-        className="framer-od6gw3"
+        className="framer-od6gw3 translate-y-6 sm:translate-y-2 lg:-translate-y-10"
         data-framer-name="Text &amp; Button"
         data-name="Text &amp; Button"
       >
@@ -22,7 +22,7 @@ const About = () => {
               <h3 className="framer-text !leading-normal">
                 <span
                   data-text-fill="true"
-                  className="framer-text bg-gradient-to-r from-white to-[#70bffa] text-white text-center text-[48px] font-medium tracking-normal w-full"
+                  className="framer-text bg-gradient-to-r from-white to-[#70bffa] text-white text-center text-[18px] sm:text-[28px] md:text-[36px] lg:text-[48px] font-medium tracking-normal w-full"
                 >
                   Build, deploy, and collaborate seamlessly with our
                   browser-based platform designed for the future of web
@@ -70,14 +70,14 @@ const About = () => {
       </div>
       <div className="ssr-variant hidden-wbkh13 hidden-5tblbe hidden-72rtr7 hidden-ncoutt !contents">
         <div
-          className="framer-pox1sj outline-none flex flex-col justify-start shrink-0 transform !-translate-x-1/2"
+          className="framer-pox1sj outline-none flex flex-col justify-start shrink-0 transform !-translate-x-1/2 !bottom-0 lg:bottom-0"
           data-framer-name="Background Text"
           data-framer-component-type="RichTextContainer"
         >
           <p>
             <span
               data-text-fill="true"
-              className="framer-text bg-gradient-to-t from-[rgba(255,_255,_255,_0.2)] to-[#70bffa] font-inter text-white text-[400px] font-medium tracking-[-1.5px]"
+              className="framer-text bg-gradient-to-t from-[rgba(255,_255,_255,_0.2)] to-[#70bffa] font-inter text-white text-[150px] sm:text-[250px] md:text-[300px] lg:text-[400px] font-medium tracking-[-1.5px]"
             >
               Halo
             </span>

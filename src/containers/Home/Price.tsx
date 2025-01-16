@@ -14,7 +14,7 @@ const Price = () => {
           data-framer-component-type="RichTextContainer"
         >
           <h2
-            className="framer-text framer-styles-preset-15mg8bp"
+            className="framer-text framer-styles-preset-15mg8bp !text-[35px] sm:!text-[48px] md:!text-[64px] xl:text-[100px]"
             data-styles-preset="IXKxaceG9"
           >
             <span
@@ -37,7 +37,7 @@ const Price = () => {
           </p>
         </div>
       </div>
-      <div className="ssr-variant hidden-5tblbe">
+      <div className="ssr-variant hidden-5tblbe !contents">
         <div className="framer-1a4uvrj-container">
           <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 hidden-ncoutt !contents">
             <div
@@ -87,9 +87,12 @@ const Price = () => {
                   </div>
                 </div>
               </div>
-              <div className="framer-1e3uv2o" data-framer-name="Pricing">
+              <div
+                className="framer-1e3uv2o !flex-col xl:!flex-row"
+                data-framer-name="Pricing"
+              >
                 <div
-                  className="framer-10udvia border-[1px] border-solid border-l-[1px] border-r-0 border-t-[1px] border-b-[1px] border-[#222222] bg-[radial-gradient(50%_25%_at_100%_0%,rgba(80,176,250,0.1)_0%,rgba(64,140,199,0.1)_36.5%,rgb(13,13,13)_100%)] rounded-[12px] opacity-100"
+                  className="framer-10udvia border-[1px] border-solid border-l-[1px] border-r-0 border-t-[1px] border-b-[1px] border-[#222222] bg-[radial-gradient(50%_25%_at_100%_0%,rgba(80,176,250,0.1)_0%,rgba(64,140,199,0.1)_36.5%,rgb(13,13,13)_100%)] rounded-[12px] opacity-100 !flex-none !w-full xl:!flex-1 xl:w-1"
                   data-border="true"
                   data-framer-name="Basic"
                 >
@@ -309,7 +312,7 @@ const Price = () => {
                   </div>
                 </div>
                 <div
-                  className="framer-alcu8 border-b border-t border-l-0 border-r-0 border-[#0f0f0f] rounded-[12px] opacity-100"
+                  className="framer-alcu8 border-b border-t border-l-0 border-r-0 border-[#0f0f0f] rounded-[12px] opacity-100 !flex-none !w-full xl:!flex-1 xl:w-1"
                   style={{
                     transform: "perspective(1200px)",
                     background:
@@ -548,7 +551,7 @@ const Price = () => {
                   </div>
                 </div>
                 <div
-                  className="framer-csu9ng border-b border-l border-r border-t border-solid border-[#0f0f0f] rounded-[12px] opacity-100"
+                  className="framer-csu9ng border-b border-l border-r border-t border-solid border-[#0f0f0f] rounded-[12px] opacity-100 !flex-none !w-full xl:!flex-1 xl:w-1"
                   style={{
                     background:
                       "radial-gradient(50% 25% at 0% 0%, rgba(80, 176, 250, 0.1) 0%, rgba(64, 140, 199, 0.1) 36.486486486486484%, var(--token-dfa0f935-df64-49a6-bd04-21d89df786a9, rgb(13, 13, 13)) 100%)",

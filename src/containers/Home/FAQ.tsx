@@ -25,7 +25,7 @@ const FAQ = () => {
           data-framer-component-type="RichTextContainer"
         >
           <h2
-            className="framer-text framer-styles-preset-15mg8bp"
+            className="framer-text framer-styles-preset-15mg8bp !text-[35px] sm:!text-[48px] md:!text-[64px] xl:text-[100px]"
             data-styles-preset="IXKxaceG9"
           >
             <span
@@ -48,15 +48,15 @@ const FAQ = () => {
           </p>
         </div>
       </div>
-      <div className="ssr-variant hidden-5tblbe">
+      <div className="ssr-variant hidden-5tblbe !contents">
         <div className="framer-1uaresl-container opacity-100 transform perspective-[1200px]">
-          <div className="ssr-variant hidden-r5chz7 hidden-ncoutt">
+          <div className="ssr-variant hidden-r5chz7 hidden-ncoutt !contents">
             <div
               className="framer-pngwa framer-1dtgz92 framer-v-1dtgz92 rounded-[20px] !w-full"
               data-framer-name="Desktop 1440 &amp; 1200"
             >
               <div className="framer-93fu28" data-framer-name="Left row">
-                <div className="grid grid-cols-2 gap-4 w-full">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
                   {QAs.map((item: QA, index: number) => (
                     <QABox
                       key={index}

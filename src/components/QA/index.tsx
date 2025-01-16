@@ -25,10 +25,11 @@ const QABox: FC<Props> = ({ className, item }) => {
       >
         <div
           className="framer-1kse8k3 flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline space-y-0"
+          style={{ maxWidth: "90%" }}
           data-framer-component-type="RichTextContainer"
         >
           <p
-            className="framer-text framer-styles-preset-85tvh7"
+            className="framer-text framer-styles-preset-85tvh7 !whitespace-normal"
             data-styles-preset="FhU5qX9WL"
           >
             {item.qu}

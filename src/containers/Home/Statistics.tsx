@@ -17,7 +17,7 @@ const Satistics = () => {
         >
           <span
             data-text-fill="true"
-            className="framer-text bg-gradient-to-r from-white to-[#70bfea]"
+            className="framer-text bg-gradient-to-r from-white to-[#70bfea] !text-[35px] sm:!text-[48px] md:!text-[64px] xl:text-[100px]"
           >
             Our statistics
           </span>
@@ -29,12 +29,12 @@ const Satistics = () => {
         data-name="Gradient Overlay"
       />
       <div
-        className="framer-jnpwsh"
+        className="framer-jnpwsh !flex-col lg:!flex-row"
         data-framer-name="Statistics"
         data-name="Statistics"
       >
         <div
-          className="framer-qhahhd opacity-100"
+          className="framer-qhahhd opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
           style={{ transform: "prespective(1200px" }}
           data-border="true"
           data-framer-name="Projects Completed"
@@ -51,7 +51,7 @@ const Satistics = () => {
               Projects completed
             </h3>
           </div>
-          <div className="ssr-variant hidden-r5chz7 hidden-5tblbe hidden-ncoutt">
+          <div className="ssr-variant hidden-r5chz7 hidden-5tblbe hidden-ncoutt !contents">
             <div
               className="framer-1w70u9r outline-none flex flex-col justify-start flex-shrink-0 transform-none"
               data-framer-component-type="RichTextContainer"
@@ -88,9 +88,9 @@ const Satistics = () => {
             data-name="Gradient"
           />
         </div>
-        <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
+        <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
           <div
-            className="framer-1nseq65 opacity-100"
+            className="framer-1nseq65 opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             style={{ transform: "prespective(1200px)" }}
             data-border="true"
             data-framer-name="Satisfied Customers"
@@ -107,7 +107,7 @@ const Satistics = () => {
                 Satisfied customers
               </h3>
             </div>
-            <div className="ssr-variant hidden-r5chz7">
+            <div className="ssr-variant hidden-r5chz7 !contents">
               <div
                 className="framer-1qxsy3a outline-none flex flex-col justify-start flex-shrink-0 transform-none"
                 data-framer-component-type="RichTextContainer"
@@ -145,9 +145,9 @@ const Satistics = () => {
             ></div>
           </div>
         </div>
-        <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
+        <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
           <div
-            className="framer-1d2qu70 opacity-100"
+            className="framer-1d2qu70 opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             style={{ transform: "prespective(1200px)" }}
             data-border="true"
             data-framer-name="Hours Saved per day"
@@ -164,7 +164,7 @@ const Satistics = () => {
                 Hours saved per day
               </h3>
             </div>
-            <div className="ssr-variant hidden-r5chz7">
+            <div className="ssr-variant hidden-r5chz7 !contents">
               <div
                 className="framer-1fhc7aj outline-none flex flex-col justify-start flex-shrink-0 transform-none"
                 data-framer-component-type="RichTextContainer"
@@ -203,9 +203,9 @@ const Satistics = () => {
             ></div>
           </div>
         </div>
-        <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
+        <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
           <div
-            className="framer-1v7rpl6 opacity-100"
+            className="framer-1v7rpl6 opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             style={{ transform: "prespective(1200px)" }}
             data-border="true"
             data-framer-name="Cost Saved per Month"
@@ -222,7 +222,7 @@ const Satistics = () => {
                 Cost saved per month
               </h3>
             </div>
-            <div className="ssr-variant hidden-r5chz7">
+            <div className="ssr-variant hidden-r5chz7 !contents">
               <div
                 className="framer-m2d1c5 outline-none flex flex-col justify-start flex-shrink-0 transform-none"
                 data-framer-component-type="RichTextContainer"

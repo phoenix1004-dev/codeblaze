@@ -39,7 +39,7 @@ const Services = () => {
           data-framer-component-type="RichTextContainer"
         >
           <h2
-            className="framer-text framer-styles-preset-15mg8bp"
+            className="framer-text framer-styles-preset-15mg8bp !text-[20px] sm:!text-[36px] md:!text-[48px] xl:text-[80px]"
             data-styles-preset="IXKxaceG9"
           >
             <span
@@ -57,13 +57,13 @@ const Services = () => {
         data-name="Services"
       >
         <div
-          className="framer-kwc3xg"
+          className="framer-kwc3xg !flex-col lg:!flex-row"
           data-framer-name="1 - 2"
           data-name="1 - 2"
         >
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
-              className="framer-1r8dea6 opacity-100 transform-none"
+              className="framer-1r8dea6 opacity-100 transform-none !flex-none !w-full  lg:!flex-1 lg:!w-1"
               data-border="true"
               data-framer-name="Chatbot Development"
               data-name="Chatbot Development"
@@ -93,11 +93,11 @@ const Services = () => {
                       data-framer-name="Chatbar"
                     >
                       <div
-                        className="framer-1c5lsn9 outline-none flex flex-col justify-start flex-shrink-0 transform translate-y-[-50%] text-[#0099ff] no-underline"
+                        className="framer-1c5lsn9 outline-none flex flex-col justify-start flex-shrink-0 transform translate-y-[-50%] text-[#0099ff] no-underline !left-[60px] sm:!left-[80px]"
                         data-framer-component-type="RichTextContainer"
                       >
                         <p
-                          className="framer-text framer-styles-preset-1otixq8"
+                          className="framer-text framer-styles-preset-1otixq8 !text-[12px] sm:!text-[16px]"
                           data-styles-preset="Z8KnRQzQq"
                         >
                           Message AI Assistant…
@@ -172,7 +172,7 @@ const Services = () => {
                                 data-framer-component-type="RichTextContainer"
                               >
                                 <p
-                                  className="framer-text framer-styles-preset-1otixq8"
+                                  className="framer-text framer-styles-preset-1otixq8 !text-[12px] sm:!text-[16px]"
                                   data-styles-preset="Z8KnRQzQq"
                                 >
                                   Google Meet with John
@@ -233,7 +233,7 @@ const Services = () => {
                             data-framer-component-type="RichTextContainer"
                           >
                             <p
-                              className="framer-text framer-styles-preset-1otixq8"
+                              className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                               data-styles-preset="Z8KnRQzQq"
                             >
                               Schedule a Google meeting with John for 3:45PM
@@ -288,12 +288,12 @@ const Services = () => {
                             data-framer-component-type="RichTextContainer"
                           >
                             <p
-                              className="framer-text framer-styles-preset-1otixq8"
+                              className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                               data-styles-preset="Z8KnRQzQq"
                             >
                               I've successfully scheduled a Google meeting with
                               John for
-                              <br className="framer-text" />
+                              <br className="framer-text hidden sm:block lg:hidden xl:block" />
                               3:45PM tomorrow.
                             </p>
                           </div>
@@ -313,7 +313,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px]"
                     data-styles-preset="E4lBliITk"
                   >
                     Chatbot Development
@@ -342,7 +342,7 @@ const Services = () => {
           </div>
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
-              className="framer-5nicsv opacity-100 transform translate-x-100"
+              className="framer-5nicsv opacity-100 transform translate-x-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
               style={{ transform: "prespective(1200px)" }}
               data-border="true"
               data-framer-name="Content creation"
@@ -463,7 +463,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px]"
                     data-styles-preset="E4lBliITk"
                   >
                     Content Creation
@@ -496,7 +496,7 @@ const Services = () => {
           data-framer-name="3 - 4 - 5"
           data-name="3 - 4 - 5"
         >
-          <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
+          <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
               className="framer-38uxhd opacity-100"
               data-border="true"
@@ -600,7 +600,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px"
                     data-styles-preset="E4lBliITk"
                   >
                     Workflow Automations
@@ -626,7 +626,7 @@ const Services = () => {
               ></div>
             </div>
           </div>
-          <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
+          <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
               className="framer-tvfugu opacity-100 transform translate-y-[50px]"
               style={{ transform: "perspective(1200px)" }}
@@ -778,7 +778,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px"
                     data-styles-preset="E4lBliITk"
                   >
                     LLM Development
@@ -804,7 +804,7 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
+          <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
               className="framer-1b4n1sp opacity-100"
               style={{ transform: "prespective(1200px)" }}
@@ -891,7 +891,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px"
                     data-styles-preset="E4lBliITk"
                   >
                     AI Consulting
