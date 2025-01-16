@@ -1,4 +1,4 @@
-import { AnimationButton } from "../../components/Animation";
+import { AnimationButton, InitialAppearance } from "../../components/Animation";
 
 const About = () => {
   return (
@@ -8,10 +8,13 @@ const About = () => {
       id="about"
       data-name="About"
     >
-      <div
+      <InitialAppearance
         className="framer-od6gw3 translate-y-6 sm:translate-y-2 lg:-translate-y-10"
         data-framer-name="Text &amp; Button"
         data-name="Text &amp; Button"
+        from={{ top: 30, left: 0 }}
+        to={{ top: 0, left: 0 }}
+        time={0.5}
       >
         <div className="framer-wt8gf5" data-framer-name="Text" data-name="Text">
           <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 hidden-5tblbe hidden-ncoutt !contents">
@@ -67,7 +70,7 @@ const About = () => {
             </div>
           </AnimationButton>
         </div>
-      </div>
+      </InitialAppearance>
       <div className="ssr-variant hidden-wbkh13 hidden-5tblbe hidden-72rtr7 hidden-ncoutt !contents">
         <div
           className="framer-pox1sj outline-none flex flex-col justify-start shrink-0 transform !-translate-x-1/2 !bottom-0 lg:bottom-0"

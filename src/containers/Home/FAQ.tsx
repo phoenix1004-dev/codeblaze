@@ -1,3 +1,4 @@
+import { InitialAppearance } from "../../components/Animation";
 import QABox from "../../components/QA";
 import { QAs } from "../../constants/QAs";
 import { QA } from "../../type";
@@ -49,7 +50,13 @@ const FAQ = () => {
         </div>
       </div>
       <div className="ssr-variant hidden-5tblbe !contents">
-        <div className="framer-1uaresl-container opacity-100 transform perspective-[1200px]">
+        <InitialAppearance
+          className="framer-1uaresl-container opacity-100 transform perspective-[1200px]"
+          from={{ top: 0, left: 0 }}
+          to={{ top: 0, left: 0 }}
+          delay={0.3}
+          time={1}
+        >
           <div className="ssr-variant hidden-r5chz7 hidden-ncoutt !contents">
             <div
               className="framer-pngwa framer-1dtgz92 framer-v-1dtgz92 rounded-[20px] !w-full"
@@ -68,7 +75,7 @@ const FAQ = () => {
               </div>
             </div>
           </div>
-        </div>
+        </InitialAppearance>
       </div>
     </section>
   );

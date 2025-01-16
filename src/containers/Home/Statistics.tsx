@@ -1,3 +1,5 @@
+import { InitialAppearance } from "../../components/Animation";
+
 const Satistics = () => {
   return (
     <section
@@ -6,10 +8,13 @@ const Satistics = () => {
       id="statistics"
       data-name="Statistics"
     >
-      <div
+      <InitialAppearance
         className="framer-j92mbs outline-none flex flex-col justify-start flex-shrink-0 opacity-100"
         style={{ transform: "prespective(1200px)" }}
         data-framer-component-type="RichTextContainer"
+        from={{ top: 0, left: 0 }}
+        to={{ top: 0, left: 0 }}
+        time={1}
       >
         <h2
           className="framer-text framer-styles-preset-15mg8bp"
@@ -22,7 +27,7 @@ const Satistics = () => {
             Our statistics
           </span>
         </h2>
-      </div>
+      </InitialAppearance>
       <div
         className="framer-1p3o734"
         data-framer-name="Gradient Overlay"
@@ -33,12 +38,15 @@ const Satistics = () => {
         data-framer-name="Statistics"
         data-name="Statistics"
       >
-        <div
+        <InitialAppearance
           className="framer-qhahhd opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
           style={{ transform: "prespective(1200px" }}
           data-border="true"
           data-framer-name="Projects Completed"
           data-name="Projects Completed"
+          from={{ top: 100, left: 0 }}
+          to={{ top: 0, left: 0 }}
+          time={0.3}
         >
           <div
             className="framer-o5cyk3 outline-none flex flex-col justify-start flex-shrink-0 transform-none"
@@ -87,14 +95,18 @@ const Satistics = () => {
             data-framer-name="Gradient"
             data-name="Gradient"
           />
-        </div>
+        </InitialAppearance>
         <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-          <div
+          <InitialAppearance
             className="framer-1nseq65 opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             style={{ transform: "prespective(1200px)" }}
             data-border="true"
             data-framer-name="Satisfied Customers"
             data-name="Satisfied Customers"
+            from={{ top: 100, left: 0 }}
+            to={{ top: 0, left: 0 }}
+            delay={0.3}
+            time={0.3}
           >
             <div
               className="framer-vhlhk6 outline-none flex flex-col justify-start flex-shrink-0 transform-none"
@@ -143,15 +155,19 @@ const Satistics = () => {
               data-framer-name="Gradient"
               data-name="Gradient"
             ></div>
-          </div>
+          </InitialAppearance>
         </div>
         <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-          <div
+          <InitialAppearance
             className="framer-1d2qu70 opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             style={{ transform: "prespective(1200px)" }}
             data-border="true"
             data-framer-name="Hours Saved per day"
             data-name="Hours Saved per day"
+            from={{ top: 100, left: 0 }}
+            to={{ top: 0, left: 0 }}
+            delay={0.6}
+            time={0.3}
           >
             <div
               className="framer-5vs0k6 outline-none flex flex-col justify-start flex-shrink-0 transform-none"
@@ -201,15 +217,19 @@ const Satistics = () => {
               data-framer-name="Gradient"
               data-name="Gradient"
             ></div>
-          </div>
+          </InitialAppearance>
         </div>
         <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
-          <div
+          <InitialAppearance
             className="framer-1v7rpl6 opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             style={{ transform: "prespective(1200px)" }}
             data-border="true"
             data-framer-name="Cost Saved per Month"
             data-role="Cost Saved per Month"
+            from={{ top: 100, left: 0 }}
+            to={{ top: 0, left: 0 }}
+            delay={0.9}
+            time={0.3}
           >
             <div
               className="framer-3rt3ru outline-none flex flex-col justify-start flex-shrink-0 transform-none"
@@ -258,7 +278,7 @@ const Satistics = () => {
               data-framer-name="Gradient"
               data-role="Gradient"
             ></div>
-          </div>
+          </InitialAppearance>
         </div>
       </div>
     </section>
