@@ -24,7 +24,7 @@ const LogoText = () => {
                 data-text-fill="true"
                 className="framer-text bg-white text-[22px]"
               >
-                Halo
+                codeblaze
               </span>
             </p>
           </div>
@@ -39,7 +39,7 @@ const LogoText = () => {
                 data-text-fill="true"
                 className="framer-text bg-white text-[22px]"
               >
-                Halo
+                codeblaze
               </span>
             </p>
           </div>

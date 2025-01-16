@@ -12,7 +12,7 @@ const QABox: FC<Props> = ({ className, item }) => {
 
   return (
     <div
-      className="framer-dgUsn framer-V74Ls framer-l50WH framer-slbiny framer-v-slbiny border border-solid border-gray-800 bg-gray-900 rounded-[10px] shadow-md !w-full"
+      className="framer-dgUsn framer-V74Ls framer-l50WH framer-slbiny framer-v-slbiny border border-solid border-gray-800 bg-gray-900 rounded-[10px] shadow-md !w-full !bg-[#0c0c0c]"
       data-border="true"
       data-framer-name="Question closed"
       onMouseDown={() => setIsHover((prev) => !prev)}

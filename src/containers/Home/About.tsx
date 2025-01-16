@@ -28,8 +28,8 @@ const About = () => {
                   className="framer-text bg-gradient-to-r from-white to-[#70bffa] text-white text-center text-[18px] sm:text-[28px] md:text-[36px] lg:text-[48px] font-medium tracking-normal w-full"
                 >
                   Build, deploy, and collaborate seamlessly with our
-                  browser-based platform designed for the future of web
-                  development.
+                  browser-based platform designed for the future of fullstack
+                  web development.
                 </span>
               </h3>
             </div>
@@ -62,7 +62,7 @@ const About = () => {
                       data-text-fill="true"
                       className="framer-text bg-gradient-to-r from-white to-[#70bffa] font-switzer text-white text-[14px] tracking-normal"
                     >
-                      Get in touch
+                      Sign Up Now
                     </span>
                   </h4>
                 </div>
@@ -82,7 +82,7 @@ const About = () => {
               data-text-fill="true"
               className="framer-text bg-gradient-to-t from-[rgba(255,_255,_255,_0.2)] to-[#70bffa] font-inter text-white text-[150px] sm:text-[250px] md:text-[300px] lg:text-[400px] font-medium tracking-[-1.5px]"
             >
-              Halo
+              codeblaze
             </span>
           </p>
         </div>

@@ -50,7 +50,7 @@ const Price = () => {
                 data-framer-name="Subscriptions - Choice"
               >
                 <div
-                  className="framer-ooxt3h border border-solid border-[rgb(34,34,34)] bg-[rgb(22,22,22)] rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+                  className="framer-ooxt3h border border-solid border-[rgb(34,34,34)] bg-[rgb(22,22,22)] rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)] !w-[200px]"
                   data-border="true"
                 ></div>
                 <div
@@ -66,7 +66,7 @@ const Price = () => {
                         data-text-fill="true"
                         className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
                       >
-                        Monthly
+                        Monthly pay as you use
                       </span>
                     </p>
                   </div>
@@ -82,7 +82,7 @@ const Price = () => {
                     data-framer-component-type="RichTextContainer"
                   >
                     <p className="framer-text !text-[rgb(156,156,156)] text-[14px]">
-                      Annually (-20% )
+                      Annually
                     </p>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ const Price = () => {
                           data-text-fill="true"
                           className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
                         >
-                          Basic
+                          Pro
                         </span>
                       </p>
                     </div>
@@ -123,7 +123,7 @@ const Price = () => {
                             data-text-fill="true"
                             className="framer-text bg-gradient-to-r from-white to-[#70bafa] text-[40px] font-medium"
                           >
-                            €750
+                            $10
                           </span>
                         </h3>
                       </div>
@@ -147,7 +147,8 @@ const Price = () => {
                         className="framer-text framer-styles-preset-1otixq8"
                         data-styles-preset="Z8KnRQzQq"
                       >
-                        For businesses looking to start with AI and automations.
+                        Ideal for hobbyists and casual users for light,
+                        exploratory use.
                       </p>
                     </div>
                   </div>
@@ -230,7 +231,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          Basic chatbots &amp; LLMs
+                          Advanced chatbots &amp; LLMs
                         </p>
                       </div>
                     </div>
@@ -256,7 +257,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          5 monthly workflow automations
+                          Monthly workflow automations
                         </p>
                       </div>
                     </div>
@@ -282,7 +283,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          50 monhtly content creation requests
+                          5 million coding tokens
                         </p>
                       </div>
                     </div>
@@ -337,7 +338,7 @@ const Price = () => {
                           data-text-fill="true"
                           className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
                         >
-                          Professional
+                          Pro 25
                         </span>
                       </p>
                     </div>
@@ -351,7 +352,7 @@ const Price = () => {
                             data-text-fill="true"
                             className="framer-text bg-gradient-to-r from-white to-[#70bafa] text-[40px] font-medium"
                           >
-                            €1.500
+                            $25
                           </span>
                         </h3>
                       </div>
@@ -375,8 +376,8 @@ const Price = () => {
                         className="framer-text framer-styles-preset-1otixq8"
                         data-styles-preset="Z8KnRQzQq"
                       >
-                        For businesses looking to outperform their competition
-                        with AI and automations.
+                        Designed for professionals who need to use Bolt a few
+                        times per week.
                       </p>
                     </div>
                   </div>
@@ -444,7 +445,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          2 developers
+                          1 developer
                         </p>
                       </div>
                     </div>
@@ -470,7 +471,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          Custom chatbots &amp; LLMs
+                          Advanced chatbots &amp; LLMs
                         </p>
                       </div>
                     </div>
@@ -496,7 +497,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          15 monthly workflow automations
+                          Monthly workflow automations
                         </p>
                       </div>
                     </div>
@@ -523,7 +524,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          100 monhtly content creation requests
+                          12.5 million coding tokens
                         </p>
                       </div>
                     </div>
@@ -578,7 +579,7 @@ const Price = () => {
                           data-text-fill="true"
                           className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
                         >
-                          Enterprise
+                          Pro 50
                         </span>
                       </p>
                     </div>
@@ -592,7 +593,7 @@ const Price = () => {
                             data-text-fill="true"
                             className="framer-text bg-gradient-to-r from-white to-[#70bafa] text-[40px] font-medium"
                           >
-                            €3.000
+                            $50
                           </span>
                         </h3>
                       </div>
@@ -616,8 +617,8 @@ const Price = () => {
                         className="framer-text framer-styles-preset-1otixq8"
                         data-styles-preset="Z8KnRQzQq"
                       >
-                        For businesses looking to fully leverage AI and
-                        automations to become an industry leader.
+                        Perfect for heavy users looking to enhance daily
+                        workflows.
                       </p>
                     </div>
                   </div>
@@ -674,7 +675,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          3 developers
+                          1 developer
                         </p>
                       </div>
                     </div>
@@ -700,7 +701,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          Custom chatbots &amp; LLMs
+                          Advanced chatbots &amp; LLMs
                         </p>
                       </div>
                     </div>
@@ -726,7 +727,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          Unlimited workflow automations
+                          Monthly workflow automations
                         </p>
                       </div>
                     </div>
@@ -752,7 +753,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          Unlimited content creation requests
+                          25 million coding tokens
                         </p>
                       </div>
                     </div>
@@ -778,7 +779,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-1otixq8"
                           data-styles-preset="Z8KnRQzQq"
                         >
-                          Cancel &amp; pause anytime
+                          Cancel anytime
                         </p>
                       </div>
                     </div>

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        switzer: ["Switzer", "Switzer Placeholder", "sans-serif"],
+        outfit: ["Outfit", "sans-serif"],
       },
       colors: {
         primary: "rgb(112, 190, 250)",

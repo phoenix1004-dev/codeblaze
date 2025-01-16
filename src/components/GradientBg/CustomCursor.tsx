@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const style: React.CSSProperties = {
   position: "absolute",
   background:
-    "radial-gradient(circle at center, rgba(140, 100, 255, 0.8) 0, rgba(140, 100, 255, 0) 50%) no-repeat ",
+    "radial-gradient(circle at center, rgba(238, 98, 224, 0.8) 0, rgba(140, 100, 255, 0) 50%) no-repeat ",
   mixBlendMode: "hard-light",
 
   width: "100%",

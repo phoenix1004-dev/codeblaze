@@ -34,7 +34,7 @@ const Process = () => {
             data-text-fill="true"
             className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))] !text-[35px] sm:!text-[48px] md:!text-[80px] xl:text-[100px]"
           >
-            The process
+            Develop <b>100x</b> Faster
           </span>
         </h2>
       </InitialAppearance>
@@ -298,7 +298,7 @@ const Process = () => {
                     className="framer-text framer-styles-preset-6ghdir"
                     data-styles-preset="E4lBliITk"
                   >
-                    Analyze
+                    Intelligent A.I Workflow
                   </h3>
                 </div>
               </div>
@@ -310,8 +310,10 @@ const Process = () => {
                   className="framer-text framer-styles-preset-1otixq8"
                   data-styles-preset="Z8KnRQzQq"
                 >
-                  We start with a thorough analysis of your current workflows to
-                  see how AI could improve your processes.
+                  Codeblaze autonomously analyzes your project requirements,
+                  identifying workflows, goals, and outcomes with precision.
+                  This AI-driven assessment ensures every aspect of your
+                  development is aligned with your needs from the start.
                 </p>
               </div>
             </div>
@@ -379,7 +381,7 @@ const Process = () => {
                     className="framer-text framer-styles-preset-6ghdir"
                     data-styles-preset="E4lBliITk"
                   >
-                    Build &amp; Implement
+                    Automated Code Generator
                   </h3>
                 </div>
               </div>
@@ -391,9 +393,10 @@ const Process = () => {
                   className="framer-text framer-styles-preset-1otixq8"
                   data-styles-preset="Z8KnRQzQq"
                 >
-                  Then, our developers will start crafting custom AI-solutions
-                  for your company, continuously prioritising quality and
-                  safety.
+                  Codeblaze AI takes your input—whether a text prompt, voice
+                  command, or image—and generates complete, functional code for
+                  your application. The process is fully automated, delivering
+                  deployment-ready solutions without any manual intervention.
                 </p>
               </div>
             </div>
@@ -430,7 +433,7 @@ const Process = () => {
                       data-framer-component-type="RichTextContainer"
                     >
                       <p className="framer-text [--font-selector:RFM7Switzer-regular] font-[Switzer,'Switzer Placeholder',sans-serif] text-[15px] tracking-[0px] leading-[1.4em] text-left !text-[#9b9b9b]">
-                        Update available
+                        Codeblaze Savings
                       </p>
                     </div>
                     <div className="framer-12ok1dm-container transform translate-y-[-50%]">
@@ -457,7 +460,7 @@ const Process = () => {
                                 data-text-fill="true"
                                 className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                               >
-                                Update
+                                HUGE
                               </span>
                             </h4>
                           </div>
@@ -507,7 +510,7 @@ const Process = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                             >
-                              -11%
+                              -90%
                             </span>
                           </p>
                         </div>
@@ -534,7 +537,7 @@ const Process = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                             >
-                              +8%
+                              +300%
                             </span>
                           </p>
                         </div>
@@ -561,7 +564,7 @@ const Process = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                             >
-                              +25%
+                              +800%
                             </span>
                           </p>
                         </div>
@@ -588,7 +591,7 @@ const Process = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
                             >
-                              +38%
+                              +1000%
                             </span>
                           </p>
                         </div>
@@ -629,7 +632,7 @@ const Process = () => {
                     className="framer-text framer-styles-preset-6ghdir"
                     data-styles-preset="E4lBliITk"
                   >
-                    Maintain &amp; improve
+                    Seamless Upgrades
                   </h3>
                 </div>
               </div>
@@ -641,8 +644,10 @@ const Process = () => {
                   className="framer-text framer-styles-preset-1otixq8"
                   data-styles-preset="Z8KnRQzQq"
                 >
-                  After deployment, our team will keep working hard by providing
-                  support and continuously improving the implemented solutions.
+                  After deployment, codeblaze empowers users to upgrade their
+                  projects with ease. By simply providing additional prompts,
+                  the AI generates updates and enhancements, ensuring your
+                  application evolves effortlessly to meet changing need.
                 </p>
               </div>
             </div>
