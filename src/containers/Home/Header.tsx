@@ -2,7 +2,6 @@ import ToggleNav from "../../components/Nav/ToggleNav";
 import { HeaderButtonGroup } from "../../components/Button";
 import { useState } from "react";
 import { InitialLoading } from "../../components/Animation";
-import GradientEffect from "../../components/GradientBg";
 
 const Header = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -16,6 +15,16 @@ const Header = () => {
           data-highlight="true"
         >
           {!isLoading && <InitialLoading setIsLoading={setIsLoading} />}
+          {isLoading && (
+            <video
+              loop
+              preload="auto"
+              muted
+              autoPlay
+              className="absolute cursor-auto w-full h-full rounded-none block object-cover bg-transparent object-center"
+              src="https://framerusercontent.com/assets/UEcewUs0sO1esTagR1XENajYHSY.mp4"
+            />
+          )}
           <ToggleNav />
           {isLoading && (
             <div className="framer-co01ly" data-framer-name="Header text">
@@ -26,10 +35,9 @@ const Header = () => {
                 <h1 className="framer-text text-white font-medium tracking-[-3px]">
                   <span
                     data-text-fill="true"
-                    className="framer-text !font-outfit leading-normal text-[30px] sm:text-[80px] md:text-[100px] lg:text-[130px] xl:text-[150px] bg-gradient-to-r from-white to-[#70bafa] text-center"
-                    style={{ fontStyle: "italic" }}
+                    className="framer-text !font-outfit leading-normal text-[30px] sm:text-[80px] md:text-[100px] lg:text-[120px] xl:text-[140px] bg-gradient-to-r from-white to-[#70bafa] text-center"
                   >
-                    <b>codeblazegit</b> a.i engine.
+                    <b>Codeblaze</b> a.i engine.
                   </span>
                 </h1>
               </div>
@@ -77,7 +85,7 @@ const Header = () => {
             data-framer-name="Gradient Frame Bottom"
           />
         </header>
-        <GradientEffect />
+        {/* <GradientEffect /> */}
       </div>
     </div>
   );
