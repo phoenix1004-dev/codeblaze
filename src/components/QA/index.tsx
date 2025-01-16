@@ -24,7 +24,7 @@ const QABox: FC<Props> = ({ className, item }) => {
         tabIndex={0}
       >
         <div
-          className="framer-1kse8k3 flex flex-col justify-start flex-shrink-0 text-blue-500 underline space-y-0"
+          className="framer-1kse8k3 flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline space-y-0"
           data-framer-component-type="RichTextContainer"
         >
           <p
