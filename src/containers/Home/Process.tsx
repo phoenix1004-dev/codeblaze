@@ -28,20 +28,20 @@ const Process = () => {
         >
           <span
             data-text-fill="true"
-            className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))]"
+            className="framer-text bg-gradient-to-r from-[var(--token-e312cf2d-478c-4df0-9124-23464ed48b15,rgb(255,255,255))] to-[var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e,rgb(112,190,250))] !text-[35px] sm:!text-[48px] md:!text-[80px] xl:text-[100px]"
           >
             The process
           </span>
         </h2>
       </div>
       <div
-        className="framer-1u2zz68"
+        className="framer-1u2zz68 !flex-col lg:!flex-row"
         data-framer-name="Process Steps"
         data-name="Process Steps"
       >
         <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
           <div
-            className="framer-xovc6q opacity-100"
+            className="framer-xovc6q opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             data-border="true"
             data-framer-name="01 Analyze"
             data-name="01 Analyze"
@@ -317,7 +317,7 @@ const Process = () => {
         </div>
         <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
           <div
-            className="framer-q5m83g opacity-100"
+            className="framer-q5m83g opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             data-border="true"
             data-framer-name="02 Build &amp; Implement"
             data-name="02 Build &amp; Implement"
@@ -390,7 +390,7 @@ const Process = () => {
         </div>
         <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
           <div
-            className="framer-lrrs13 opacity-100"
+            className="framer-lrrs13 opacity-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
             data-border="true"
             data-framer-name="03 Maintain &amp; Improve"
             data-name="03 Maintain &amp; Improve"

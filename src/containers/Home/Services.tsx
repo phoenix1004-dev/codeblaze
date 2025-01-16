@@ -1,11 +1,9 @@
-import arrowUp from "../../assets/images/arrow-up.png";
-import googleMeet from "../../assets/images/google-meet.png";
-import expend from "../../assets/images/expend.png";
-import person1 from "../../assets/images/person/person1.png";
 import { useState } from "react";
 import {
   AnimationButton,
   HoverMoveTop,
+  MoveIndicator,
+  ShootingStar,
   Slider,
 } from "../../components/Animation";
 import {
@@ -14,10 +12,18 @@ import {
 } from "../../constants/Workflow";
 import { IMAGE } from "../../type";
 import WorkflowItem from "../../components/Image/Workflow";
+import {
+  aiChat,
+  arrowUp,
+  expend,
+  googleMeet,
+  person1,
+} from "../../assets/image";
 
 const Services = () => {
   const [isHoverChatbot, setIsHoverChatbot] = useState<boolean>(false);
   const [isHoverLLM, setIsHoverLLM] = useState<boolean>(false);
+  const [isHoverConsult, setIsHoverConsult] = useState<boolean>(false);
 
   return (
     <section
@@ -33,7 +39,7 @@ const Services = () => {
           data-framer-component-type="RichTextContainer"
         >
           <h2
-            className="framer-text framer-styles-preset-15mg8bp"
+            className="framer-text framer-styles-preset-15mg8bp !text-[20px] sm:!text-[36px] md:!text-[48px] xl:text-[80px]"
             data-styles-preset="IXKxaceG9"
           >
             <span
@@ -51,13 +57,13 @@ const Services = () => {
         data-name="Services"
       >
         <div
-          className="framer-kwc3xg"
+          className="framer-kwc3xg !flex-col lg:!flex-row"
           data-framer-name="1 - 2"
           data-name="1 - 2"
         >
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
-              className="framer-1r8dea6 opacity-100 transform-none"
+              className="framer-1r8dea6 opacity-100 transform-none !flex-none !w-full  lg:!flex-1 lg:!w-1"
               data-border="true"
               data-framer-name="Chatbot Development"
               data-name="Chatbot Development"
@@ -80,16 +86,18 @@ const Services = () => {
                     }}
                   >
                     <div
-                      className="framer-1r7gfum bg-[#0f0f0f] rounded-[5px] border-solid border-[#222222] border-[1px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0)]"
+                      className={`framer-1r7gfum bg-[#0f0f0f] rounded-[5px] border-solid border-[1px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0)] ${
+                        isHoverChatbot ? "border-[#70befa]" : "border-[#222222]"
+                      }`}
                       data-border="true"
                       data-framer-name="Chatbar"
                     >
                       <div
-                        className="framer-1c5lsn9 outline-none flex flex-col justify-start flex-shrink-0 transform translate-y-[-50%] text-[#0099ff] no-underline"
+                        className="framer-1c5lsn9 outline-none flex flex-col justify-start flex-shrink-0 transform translate-y-[-50%] text-[#0099ff] no-underline !left-[60px] sm:!left-[80px]"
                         data-framer-component-type="RichTextContainer"
                       >
                         <p
-                          className="framer-text framer-styles-preset-1otixq8"
+                          className="framer-text framer-styles-preset-1otixq8 !text-[12px] sm:!text-[16px]"
                           data-styles-preset="Z8KnRQzQq"
                         >
                           Message AI Assistant…
@@ -164,7 +172,7 @@ const Services = () => {
                                 data-framer-component-type="RichTextContainer"
                               >
                                 <p
-                                  className="framer-text framer-styles-preset-1otixq8"
+                                  className="framer-text framer-styles-preset-1otixq8 !text-[12px] sm:!text-[16px]"
                                   data-styles-preset="Z8KnRQzQq"
                                 >
                                   Google Meet with John
@@ -225,7 +233,7 @@ const Services = () => {
                             data-framer-component-type="RichTextContainer"
                           >
                             <p
-                              className="framer-text framer-styles-preset-1otixq8"
+                              className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                               data-styles-preset="Z8KnRQzQq"
                             >
                               Schedule a Google meeting with John for 3:45PM
@@ -280,12 +288,12 @@ const Services = () => {
                             data-framer-component-type="RichTextContainer"
                           >
                             <p
-                              className="framer-text framer-styles-preset-1otixq8"
+                              className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                               data-styles-preset="Z8KnRQzQq"
                             >
                               I've successfully scheduled a Google meeting with
                               John for
-                              <br className="framer-text" />
+                              <br className="framer-text hidden sm:block lg:hidden xl:block" />
                               3:45PM tomorrow.
                             </p>
                           </div>
@@ -305,7 +313,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px]"
                     data-styles-preset="E4lBliITk"
                   >
                     Chatbot Development
@@ -334,7 +342,7 @@ const Services = () => {
           </div>
           <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
-              className="framer-5nicsv opacity-100 transform translate-x-100"
+              className="framer-5nicsv opacity-100 transform translate-x-100 !flex-none !w-full lg:!flex-1 lg:!w-1"
               style={{ transform: "prespective(1200px)" }}
               data-border="true"
               data-framer-name="Content creation"
@@ -409,9 +417,7 @@ const Services = () => {
                 >
                   <div className="framer-yda9mq-container">
                     <div className="w-full h-full overflow-hidden bg-[#0f0f0f] transform translate-z-0 rounded-none relative">
-                      <div id="One">
-                        <canvas className="w-full h-full absolute"></canvas>
-                      </div>
+                      <ShootingStar />
                     </div>
                   </div>
                   <div className="framer-1cco58z-container">
@@ -457,7 +463,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px]"
                     data-styles-preset="E4lBliITk"
                   >
                     Content Creation
@@ -490,7 +496,7 @@ const Services = () => {
           data-framer-name="3 - 4 - 5"
           data-name="3 - 4 - 5"
         >
-          <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
+          <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
               className="framer-38uxhd opacity-100"
               data-border="true"
@@ -594,7 +600,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px"
                     data-styles-preset="E4lBliITk"
                   >
                     Workflow Automations
@@ -620,7 +626,7 @@ const Services = () => {
               ></div>
             </div>
           </div>
-          <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
+          <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
               className="framer-tvfugu opacity-100 transform translate-y-[50px]"
               style={{ transform: "perspective(1200px)" }}
@@ -631,7 +637,7 @@ const Services = () => {
               <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
                 <div className="framer-h6vlzy-container !w-full h-full">
                   <div
-                    className="framer-xrZ8E framer-l50WH framer-wb8ig1 framer-v-wb8ig1"
+                    className="framer-xrZ8E framer-l50WH framer-wb8ig1 framer-v-wb8ig1 !w-full"
                     data-framer-name="Desktop 1440 &amp; Tablet 999"
                     onMouseEnter={() => {
                       setIsHoverLLM(true);
@@ -772,7 +778,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px"
                     data-styles-preset="E4lBliITk"
                   >
                     LLM Development
@@ -798,7 +804,7 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
+          <div className="ssr-variant hidden-5tblbe hidden-ncoutt !contents">
             <div
               className="framer-1b4n1sp opacity-100"
               style={{ transform: "prespective(1200px)" }}
@@ -809,8 +815,10 @@ const Services = () => {
               <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 !contents">
                 <div className="framer-m30icq-container">
                   <div
-                    className="framer-LXnkX framer-o3waff framer-v-o3waff w-full h-full"
+                    className="framer-LXnkX framer-o3waff framer-v-o3waff !w-full h-full"
                     data-framer-name="Desktop 1440 &amp; 1200 &amp; Phone 390"
+                    onMouseEnter={() => setIsHoverConsult(true)}
+                    onMouseLeave={() => setIsHoverConsult(false)}
                   >
                     <div
                       data-framer-component-type="SVG"
@@ -819,16 +827,21 @@ const Services = () => {
                       className="framer-z2mc4i flex-shrink-0 fill-black text-black"
                       aria-hidden="true"
                     >
-                      <div className="svgContainer w-full h-full aspect-auto">
-                        <svg className="w-full h-full" viewBox="0 0 1307 669">
-                          <use href="#svg1987753281_2559" />
-                        </svg>
-                      </div>
+                      <div
+                        className="svgContainer w-full h-full aspect-auto"
+                        style={{
+                          backgroundImage: `url(${aiChat})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }}
+                      />
                     </div>
-                    <div
-                      className="framer-yk9k1c border border-solid border-gray-800 rounded-xl backdrop-blur-sm shadow-md"
-                      data-border="true"
-                      data-framer-name="Cost"
+                    <MoveIndicator
+                      isActive={isHoverConsult}
+                      className="framer-yk9k1c"
+                      from={{ top: 180, left: 250 }}
+                      to={{ top: 230, left: 150 }}
+                      name="Cost"
                     >
                       <div
                         className="framer-xfg3ni flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline"
@@ -843,11 +856,13 @@ const Services = () => {
                           </span>
                         </p>
                       </div>
-                    </div>
-                    <div
-                      className="framer-ki5v1w border border-solid border-gray-800 rounded-xl backdrop-blur-sm shadow-md"
-                      data-border="true"
-                      data-framer-name="Efficiency"
+                    </MoveIndicator>
+                    <MoveIndicator
+                      isActive={isHoverConsult}
+                      className="framer-ki5v1w"
+                      from={{ top: 80, left: 80 }}
+                      to={{ top: 80, left: 180 }}
+                      name="Cost"
                     >
                       <div
                         className="framer-okiaas flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline"
@@ -862,7 +877,7 @@ const Services = () => {
                           </span>
                         </p>
                       </div>
-                    </div>
+                    </MoveIndicator>
                   </div>
                 </div>
               </div>
@@ -876,7 +891,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir !text-[28px] sm:!text-[35px"
                     data-styles-preset="E4lBliITk"
                   >
                     AI Consulting

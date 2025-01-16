@@ -16,7 +16,7 @@ const ReviewContainer = () => {
           data-framer-component-type="RichTextContainer"
         >
           <h2
-            className="framer-text framer-styles-preset-15mg8bp"
+            className="framer-text framer-styles-preset-15mg8bp !text-[35px] sm:!text-[48px] md:!text-[64px] xl:text-[100px]"
             data-styles-preset="IXKxaceG9"
           >
             <span
@@ -28,9 +28,9 @@ const ReviewContainer = () => {
           </h2>
         </div>
       </div>
-      <div className="ssr-variant hidden-5tblbe">
+      <div className="ssr-variant hidden-5tblbe !contents">
         <div className="framer-ylbj83-container">
-          <div className="ssr-variant hidden-r5chz7">
+          <div className="ssr-variant hidden-r5chz7 !contents">
             <div
               className="framer-14vzB framer-1q3x6i0 framer-v-1q3x6i0 !w-full"
               data-framer-name="Desktop 1440 &amp; 1200"

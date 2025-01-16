@@ -3,6 +3,7 @@ import { HoverMoveTop } from "../../Animation";
 
 const LogoText = () => {
   const [isActive, setIsActive] = useState<boolean>(false);
+
   return (
     <div className="framer-1oprh4s-container opacity-100">
       <a

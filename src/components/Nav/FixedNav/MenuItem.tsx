@@ -1,6 +1,6 @@
 import { FC, useRef } from "react";
-import { CURSOR_POSITION, MENULINK } from "../../type";
-import { NormalButton } from "../Button";
+import { CURSOR_POSITION, MENULINK } from "../../../type";
+import { NormalButton } from "../../Button";
 
 type MenuItemProps = {
   item: MENULINK;
@@ -24,7 +24,7 @@ const MenuItem: FC<MenuItemProps> = ({ item, currentPos, setPosition }) => {
 
   return (
     <a
-      className="framer-65wbii framer-11p22wi rounded-[5px]"
+      className="framer-lu3rjb framer-1rmjqro rounded-[5px]"
       data-framer-name="Services"
       data-highlight="true"
       href={item.link}
@@ -33,7 +33,7 @@ const MenuItem: FC<MenuItemProps> = ({ item, currentPos, setPosition }) => {
       onMouseLeave={setInitialPos}
     >
       <div
-        className="framer-q0svcg outline-none flex flex-col justify-start flex-shrink-0 [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] transform-none"
+        className="framer-p69owj outline-none flex flex-col justify-start flex-shrink-0 [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] transform-none"
         data-framer-component-type="RichTextContainer"
       >
         <NormalButton>{item.title}</NormalButton>

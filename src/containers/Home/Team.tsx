@@ -1,8 +1,20 @@
-import { Slider } from "../../components/Animation";
+import { FC, useState } from "react";
+import { MemberIndicator, Slider } from "../../components/Animation";
 import { TeamMember } from "../../constants/Team";
 import { MEMBER } from "../../type";
 
-const Team = () => {
+type Props = {
+  setIsHoverTeam: (v: boolean) => void;
+};
+
+const Team: FC<Props> = ({ setIsHoverTeam }) => {
+  const [selectedMember, setSelectedMember] = useState<string>("");
+
+  const hoverTeamCard = (name: string) => {
+    setSelectedMember(name);
+    setIsHoverTeam(name !== "");
+  };
+
   return (
     <section
       className="framer-pfyxhs"
@@ -15,7 +27,7 @@ const Team = () => {
         data-framer-component-type="RichTextContainer"
       >
         <h2
-          className="framer-text framer-styles-preset-15mg8bp"
+          className="framer-text framer-styles-preset-15mg8bp !text-[35px] sm:!text-[48px] md:!text-[64px] xl:text-[100px]"
           data-styles-preset="IXKxaceG9"
         >
           <span
@@ -26,10 +38,10 @@ const Team = () => {
           </span>
         </h2>
       </div>
-      <div className="ssr-variant hidden-5tblbe">
+      <div className="ssr-variant hidden-5tblbe !contents">
         <div className="framer-187tqvi-container">
           <div
-            className="framer-lj12j framer-g3iu9v framer-v-g3iu9v w-full"
+            className="framer-lj12j framer-g3iu9v framer-v-g3iu9v !w-full"
             data-framer-name="Team Ticker"
           >
             <div className="framer-99rgx0-container">
@@ -37,10 +49,16 @@ const Team = () => {
                 <ul className="flex w-full h-full max-w-full max-h-full place-items-center m-0 p-0 list-none indent-0 gap-[25px] relative flex-row will-change-transform translate-x-[-0px]">
                   <Slider dir="left" time={30} pos="-50%">
                     {TeamMember.map((item: MEMBER, index: number) => (
-                      <li key={index} className="w-[350px !mx-[20px]">
+                      <li
+                        key={index}
+                        className="w-[350px !mx-[20px]"
+                        style={{ cursor: selectedMember === "" ? "" : "none" }}
+                      >
                         <div
                           className="framer-15o1hg6-container w-[350px] flex-shrink-0"
                           data-framer-cursor="1kzuhhy"
+                          onMouseEnter={() => hoverTeamCard(item.name)}
+                          onMouseLeave={() => hoverTeamCard("")}
                         >
                           <div
                             className="framer-PCfLc framer-NrkXy framer-1psfxqf framer-v-1psfxqf border border-solid border-[1px] border-[rgb(34,34,34)] rounded-[10px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)] h-full w-full"
@@ -111,6 +129,8 @@ const Team = () => {
                         <div
                           className="framer-15o1hg6-container w-[350px] flex-shrink-0"
                           data-framer-cursor="1kzuhhy"
+                          onMouseEnter={() => hoverTeamCard(item.name)}
+                          onMouseLeave={() => hoverTeamCard("")}
                         >
                           <div
                             className="framer-PCfLc framer-NrkXy framer-1psfxqf framer-v-1psfxqf border border-solid border-[1px] border-[rgb(34,34,34)] rounded-[10px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)] h-full w-full"
@@ -183,6 +203,7 @@ const Team = () => {
           </div>
         </div>
       </div>
+      <MemberIndicator name={selectedMember} />
     </section>
   );
 };

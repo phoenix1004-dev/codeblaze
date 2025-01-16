@@ -1,21 +1,22 @@
-import Nav from "../../components/Nav";
+import ToggleNav from "../../components/Nav/ToggleNav";
 import { HeaderButtonGroup } from "../../components/Button";
 import { useState } from "react";
 import { InitialLoading } from "../../components/Animation";
+import GradientEffect from "../../components/GradientBg";
 
 const Header = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   return (
     <div className="framer-13gmy9c-container" id="header">
-      <div className="ssr-variant hidden-r5chz7 hidden-5tblbe hidden-ncoutt">
+      <div className="ssr-variant hidden-r5chz7 hidden-5tblbe hidden-ncoutt !contents">
         <header
           className="framer-qcVxT framer-V74Ls framer-1fi3t7c framer-v-qn2nt5 !bg-[#0a0a0a] !h-full !w-full"
           data-framer-name="Loading Animation Part 1 - 1440 &amp; 1200"
           data-highlight="true"
         >
           {!isLoading && <InitialLoading setIsLoading={setIsLoading} />}
-          <Nav />
+          <ToggleNav />
           {isLoading && (
             <div className="framer-co01ly" data-framer-name="Header text">
               <div
@@ -25,7 +26,7 @@ const Header = () => {
                 <h1 className="framer-text text-white font-medium tracking-[-3px]">
                   <span
                     data-text-fill="true"
-                    className="framer-text leading-normal text-[150px] bg-gradient-to-r from-white to-[#70bafa] text-center"
+                    className="framer-text leading-normal text-[30px] sm:text-[80px] md:text-[100px] lg:text-[130px] xl:text-[150px] bg-gradient-to-r from-white to-[#70bafa] text-center"
                   >
                     Halo AI studio.
                   </span>
@@ -36,7 +37,7 @@ const Header = () => {
                 data-framer-component-type="RichTextContainer"
               >
                 <p
-                  className="framer-text framer-styles-preset-85tvh7 !text-[20px]"
+                  className="framer-text framer-styles-preset-85tvh7 !text-[20px] !whitespace-normal !text-center"
                   data-styles-preset="FhU5qX9WL"
                 >
                   Welcome to CodeBlaze – Revolutionizing Web Development with
@@ -76,6 +77,7 @@ const Header = () => {
             data-framer-name="Gradient Frame Bottom"
           />
         </header>
+        <GradientEffect />
       </div>
     </div>
   );

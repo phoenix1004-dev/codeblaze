@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React, { FC, ReactNode, useEffect, useState } from "react";
-import { CURSOR_POSITION, POINTER, RECT_CURSOR } from "../../type";
+import { CURSOR_POSITION, POINTER, RECT_CURSOR, STAR } from "../../type";
+import { arrowRight } from "../../assets/image";
 
 type HoverMoveTopProps = {
   isActive: boolean;
@@ -70,6 +71,19 @@ type RotateButtonProps = {
 
 type InitialLoadingProps = {
   setIsLoading: (res: boolean) => void;
+};
+
+type MoveIndicatorProps = {
+  isActive: boolean;
+  from: POINTER;
+  to: POINTER;
+  className: string;
+  name: string;
+  children: ReactNode;
+};
+
+type MemberIndicatorProps = {
+  name: string;
 };
 
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
@@ -333,7 +347,7 @@ export const RotateButton: FC<RotateButtonProps> = ({ isActive }) => {
   );
 };
 
-export const RealCursorPointer = () => {
+export const RealCursorPointer = ({ isActive }: { isActive: boolean }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -352,6 +366,7 @@ export const RealCursorPointer = () => {
     <motion.div
       className="fixed top-0 left-0 w-4 h-4 bg-[#70befa] rounded-full pointer-events-none z-[9999]"
       style={{
+        opacity: isActive ? 1 : 0,
         translateX: "-50%",
         translateY: "-50%",
       }}
@@ -363,7 +378,7 @@ export const RealCursorPointer = () => {
         type: "spring",
         stiffness: 300,
         damping: 20,
-        duration: 0.01,
+        duration: 0.2,
       }}
     />
   );
@@ -385,7 +400,7 @@ export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
   }, [setIsLoading, step]);
 
   return (
-    <div className="relative h-[225px] overflow-hidden">
+    <div className="relative h-[225px] overflow-hidden z-[9999]">
       <motion.span
         data-text-fill="true"
         className="framer-text relative leading-normal text-[150px] bg-gradient-to-r from-white to-[#70befa]"
@@ -404,5 +419,131 @@ export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
         onAnimationComplete={() => setStep((prev) => prev + 1)}
       />
     </div>
+  );
+};
+
+export const ShootingStar = () => {
+  const [stars, setStars] = useState<STAR[]>([]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const angle = Math.random() * 360;
+      const distance = Math.random() * 300 + 100;
+      const newStar = {
+        id: Date.now(),
+        angle,
+        distance,
+        duration: Math.random() * 2 + 10,
+      };
+
+      setStars((prevStars) => [...prevStars, newStar]);
+
+      setTimeout(() => {
+        setStars((prevStars) =>
+          prevStars.filter((star) => star.id !== newStar.id)
+        );
+      }, (newStar.duration + 0.5) * 1000);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="relative w-full h-full overflow-hidden">
+      {stars.map((star) => {
+        const endX = Math.cos((star.angle * Math.PI) / 180) * star.distance;
+        const endY = Math.sin((star.angle * Math.PI) / 180) * star.distance;
+
+        return (
+          <motion.div
+            key={star.id}
+            initial={{
+              x: 0,
+              y: 0,
+              opacity: 1,
+            }}
+            animate={{
+              x: endX,
+              y: endY,
+              opacity: 0,
+            }}
+            transition={{
+              duration: star.duration,
+              ease: "easeOut",
+            }}
+            className="absolute top-1/2 left-1/2 w-[2px] h-[2px] bg-white rounded-full translate-x-1/2 translate-y-1/2"
+            style={{
+              boxShadow: "0 0 8px rgba(255, 255, 255, 0.8)",
+            }}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+export const MoveIndicator: FC<MoveIndicatorProps> = ({
+  isActive,
+  from,
+  to,
+  className,
+  name,
+  children,
+}) => {
+  return (
+    <motion.div
+      className={`${className} border border-solid border-gray-800 rounded-xl backdrop-blur-sm shadow-md`}
+      data-border="true"
+      data-framer-name={name}
+      animate={isActive ? to : from}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const MemberIndicator: FC<MemberIndicatorProps> = ({ name }) => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <motion.div
+      className={`fixed top-0 left-0 border border-solid border-[#70befa] rounded-[8px] z-[10] !p-[10px] pointer-events-none ${
+        name === "" ? "hidden" : "flex"
+      }`}
+      style={{
+        backgroundColor: "rgba(250, 250, 250, 0.1)",
+        translateX: "-50%",
+        translateY: "-50%",
+      }}
+      animate={{ x: cursorPosition.x, y: cursorPosition.y }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+        duration: 0.2,
+      }}
+    >
+      <p className="framer-text gap-2 justify-center font-sans text-white text-base tracking-normal">
+        <span
+          data-text-fill="true"
+          className="framer-text bg-gradient-to-r from-white to-blue-400"
+        >
+          {name}
+        </span>
+      </p>
+      <img className="w-4 h-4" src={arrowRight} alt="member-indicator" />
+    </motion.div>
   );
 };

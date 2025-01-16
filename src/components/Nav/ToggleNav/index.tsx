@@ -1,10 +1,10 @@
-import Logo from "../Logo/Logo2";
+import Logo from "../../Logo/Logo2";
 import MenuList from "./MenuList";
 import SubMenu from "./SubMenu";
 
-const Nav = () => {
+const ToggleNav = () => {
   return (
-    <div className="framer-83vgnn-container opacity-100 will-change-transform">
+    <div className="framer-83vgnn-container opacity-100 will-change-transform !hidden lg:!flex">
       <nav
         className="framer-xM5rw framer-uKIIJ framer-1gv67ej framer-v-1gv67ej !h-full !w-full"
         data-framer-name="Home"
@@ -17,4 +17,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default ToggleNav;

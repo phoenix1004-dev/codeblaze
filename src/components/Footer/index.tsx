@@ -119,7 +119,7 @@ const Footer = () => {
                     className="framer-beasfa flex flex-col justify-start shrink-0 text-white !top-0 !left-0"
                     data-framer-component-type="RichTextContainer"
                   >
-                    <p className="framer-text font-[Inter Tight] !text-[35px] font-medium !text-white">
+                    <p className="framer-text !font-switzer !text-[35px] font-medium !text-white">
                       Halo
                     </p>
                   </div>
@@ -127,7 +127,7 @@ const Footer = () => {
                     className="framer-18yxgjg flex flex-col justify-start shrink-0 text-white transform -translate-x-1/2"
                     data-framer-component-type="RichTextContainer"
                   >
-                    <p className="framer-text font-[Inter Tight] text-[35px] font-medium text-white">
+                    <p className="framer-text !font-switzer text-[35px] font-medium text-white">
                       Halo
                     </p>
                   </div>
