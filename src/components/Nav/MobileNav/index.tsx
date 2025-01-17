@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { logo } from "../../../assets/image";
+import { codeblaze2 } from "../../../assets/image";
 import { NAV_MENU } from "../../../constants/Link";
 import { MENULINK } from "../../../type";
 
@@ -15,7 +15,7 @@ const MobileNav: React.FC = () => {
   return (
     <nav className="fixed top-0 w-full top-0 left-0 right-0 h-[40px] !bg-black z-[9999] lg:hidden">
       <div className="h-full flex items-center">
-        <img className="w-[100px]" src={logo} alt="log" />
+        <img className="w-[100px]" src={codeblaze2} alt="log" />
         <GiHamburgerMenu
           className="absolute right-4"
           size={20}

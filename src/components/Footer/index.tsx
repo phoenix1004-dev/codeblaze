@@ -1,4 +1,4 @@
-import { codeblaze2, logo } from "../../assets/image";
+import { codeblaze2 } from "../../assets/image";
 import { SOCIALMEDIA_LINK_LIST } from "../../constants/Link";
 import { SOCIALMEDIA } from "../../type";
 
