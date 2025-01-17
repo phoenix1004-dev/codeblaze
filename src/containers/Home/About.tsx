@@ -14,42 +14,78 @@ const About = () => {
       id="about"
       data-name="About"
     >
-      <Slider dir="left" time={20}>
-        <div className="flex gap-10 my-10 overflow-hidden">
-          {FlowIcons.map((item: IMAGE, index: number) => (
-            <img
-              className="w-[50px] h-[50px]"
-              key={index}
-              src={item.image}
-              alt={item.alt}
-            />
-          ))}
-          {FlowIcons.map((item: IMAGE, index: number) => (
-            <img
-              className="w-[50px] h-[50px]"
-              key={index}
-              src={item.image}
-              alt={item.alt}
-            />
-          ))}
-          {FlowIcons.map((item: IMAGE, index: number) => (
-            <img
-              className="w-[50px] h-[50px]"
-              key={index}
-              src={item.image}
-              alt={item.alt}
-            />
-          ))}
-          {FlowIcons.map((item: IMAGE, index: number) => (
-            <img
-              className="w-[50px] h-[50px]"
-              key={index}
-              src={item.image}
-              alt={item.alt}
-            />
-          ))}
+      <div className="absolute w-full h-[130px] top-0">
+        <div className="relative w-full h-full overflow-x-hidden">
+          <Slider dir="left" time={40}>
+            <div className="flex gap-10 my-10">
+              {FlowIcons.map((item: IMAGE, index: number) => (
+                <img
+                  className="w-[50px] h-[50px]"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                />
+              ))}
+              {FlowIcons.map((item: IMAGE, index: number) => (
+                <img
+                  className="w-[50px] h-[50px]"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                />
+              ))}
+              {FlowIcons.map((item: IMAGE, index: number) => (
+                <img
+                  className="w-[50px] h-[50px]"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                />
+              ))}
+              {FlowIcons.map((item: IMAGE, index: number) => (
+                <img
+                  className="w-[50px] h-[50px]"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                />
+              ))}
+              {FlowIcons.map((item: IMAGE, index: number) => (
+                <img
+                  className="w-[50px] h-[50px]"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                />
+              ))}
+              {FlowIcons.map((item: IMAGE, index: number) => (
+                <img
+                  className="w-[50px] h-[50px]"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                />
+              ))}
+              {FlowIcons.map((item: IMAGE, index: number) => (
+                <img
+                  className="w-[50px] h-[50px]"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                />
+              ))}
+              {FlowIcons.map((item: IMAGE, index: number) => (
+                <img
+                  className="w-[50px] h-[50px]"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                />
+              ))}
+            </div>
+          </Slider>
         </div>
-      </Slider>
+      </div>
       <InitialAppearance
         className="framer-od6gw3 -translate-y-12"
         data-framer-name="Text &amp; Button"
