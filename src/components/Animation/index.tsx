@@ -427,7 +427,7 @@ export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
         transition={{ duration: 1 }}
         onAnimationComplete={() => setStep((prev) => prev + 1)}
       >
-        Codeblaze
+        codeblaze
       </motion.span>
       <motion.div
         className="absolute w-full h-0.5 bottom-0 bg-gradient-to-r from-white to-[#70bafa]"
