@@ -410,7 +410,7 @@ export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
     { y: 0, opacity: 1 },
     { y: -225, opacity: 0 },
   ];
-  const borderAnimates = [{}, { x: 0, opacity: 1 }, { x: 308, opacity: 0 }];
+  const borderAnimates = [{}, { x: 0, opacity: 1 }, { x: 408, opacity: 0 }];
 
   useEffect(() => {
     if (step <= 2) return;
@@ -418,20 +418,20 @@ export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
   }, [setIsLoading, step]);
 
   return (
-    <div className="relative h-[225px] overflow-hidden z-[9999]">
+    <div className="relative h-auto overflow-hidden z-[9999]">
       <motion.span
         data-text-fill="true"
-        className="framer-text relative leading-normal text-[150px] bg-gradient-to-r from-white to-[#70befa]"
+        className="framer-text relative leading-normal text-[64px] md:text-[90px] lg:text-[120px] bg-gradient-to-r from-white to-[#70befa]"
         initial={{ y: 225, opacity: 0 }}
         animate={spanAnimates[step]}
         transition={{ duration: 1 }}
         onAnimationComplete={() => setStep((prev) => prev + 1)}
       >
-        Halo
+        Codeblaze
       </motion.span>
       <motion.div
-        className="absolute w-[308px] h-0.5 bottom-6 bg-gradient-to-r from-white to-[#70bafa]"
-        initial={{ x: -308, opacity: 0 }}
+        className="absolute w-full h-0.5 bottom-0 bg-gradient-to-r from-white to-[#70bafa]"
+        initial={{ x: -408, opacity: 0 }}
         animate={borderAnimates[step]}
         transition={{ duration: 1 }}
         onAnimationComplete={() => setStep((prev) => prev + 1)}

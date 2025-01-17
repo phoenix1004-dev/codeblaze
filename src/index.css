@@ -12,13 +12,13 @@
 
 body {
   margin: 0;
-  font-family: "Outfit", sans-serif !important;
+  font-family: "Outfit" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "Outfit", sans-serif !important;
+  font-family: "Outfit" !important;
 }
 
 @keyframes moveInCircle {

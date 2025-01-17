@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        outfit: ["Playfair", "Display"],
+        outfit: ["outfit"],
+        playfair: ["Playfair", "Display"],
       },
       colors: {
         primary: "rgb(112, 190, 250)",

@@ -409,7 +409,7 @@ const Footer = () => {
                 Template by
                 <br className="framer-text" />
                 <a
-                  className="framer-text framer-styles-preset-57rakp !font-outfit !mb-[5px]"
+                  className="framer-text framer-styles-preset-57rakp !mb-[5px]"
                   data-styles-preset="zMpsiMOLk"
                   href="https://x.com/Bregmantibor"
                   target="_blank"
@@ -419,7 +419,7 @@ const Footer = () => {
                 </a>
                 <br className="framer-text" />
                 <a
-                  className="framer-text framer-styles-preset-57rakp !font-outfit"
+                  className="framer-text framer-styles-preset-57rakp"
                   data-styles-preset="zMpsiMOLk"
                   href="https://bluestar.supply/"
                   target="_blank"
