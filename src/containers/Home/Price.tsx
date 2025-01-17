@@ -161,7 +161,7 @@ const Price = () => {
                             data-text-fill="true"
                             className="framer-text bg-gradient-to-r from-white to-[#70bafa] text-[40px] font-medium"
                           >
-                            $10
+                            {isMonthly ? "$10" : "$100"}
                           </span>
                         </h3>
                       </div>
@@ -390,7 +390,7 @@ const Price = () => {
                             data-text-fill="true"
                             className="framer-text bg-gradient-to-r from-white to-[#70bafa] text-[40px] font-medium"
                           >
-                            $25
+                            {isMonthly ? "$25" : "$250"}
                           </span>
                         </h3>
                       </div>
@@ -631,7 +631,7 @@ const Price = () => {
                             data-text-fill="true"
                             className="framer-text bg-gradient-to-r from-white to-[#70bafa] text-[40px] font-medium"
                           >
-                            $50
+                            {isMonthly ? "$50" : "$500"}
                           </span>
                         </h3>
                       </div>

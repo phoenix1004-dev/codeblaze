@@ -1,4 +1,4 @@
-import { logo } from "../../assets/image";
+import { codeblaze2, logo } from "../../assets/image";
 import { SOCIALMEDIA_LINK_LIST } from "../../constants/Link";
 import { SOCIALMEDIA } from "../../type";
 
@@ -104,7 +104,7 @@ const Footer = () => {
               >
                 <img
                   decoding="async"
-                  src={logo}
+                  src={codeblaze2}
                   alt="logo"
                   className="block w-full h-full rounded-none object-center object-contain"
                 />
