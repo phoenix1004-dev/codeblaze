@@ -15,7 +15,7 @@ const Price = () => {
   const [status, setStatus] = useState<PriceCursor>({
     top: 7,
     left: 7,
-    width: 200,
+    width: 175,
   });
 
   return (
@@ -70,7 +70,7 @@ const Price = () => {
                 <div
                   className="framer-kkh85t rounded-[5px]"
                   data-framer-name="Monthly"
-                  onMouseDown={() => setStatus({ top: 7, left: 7, width: 200 })}
+                  onMouseDown={() => setStatus({ top: 7, left: 7, width: 175 })}
                 >
                   <div
                     className="framer-c1924z outline-none flex flex-col justify-start flex-shrink-0"
@@ -92,7 +92,7 @@ const Price = () => {
                   data-highlight="true"
                   tabIndex={0}
                   onMouseDown={() =>
-                    setStatus({ top: 7, left: 220, width: 90 })
+                    setStatus({ top: 7, left: 190, width: 90 })
                   }
                 >
                   <div
@@ -172,7 +172,7 @@ const Price = () => {
                   </div>
                   <div className="framer-15iun8t-container">
                     <a
-                      className="framer-Q2WxL framer-1dermg9 framer-v-1dermg9 framer-2yz7lg border border-solid border-[rgb(34, 34, 34)] bg-[rgb(22, 22, 22)] rounded-[7px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)] !w-full"
+                      className="framer-Q2WxL framer-1dermg9 framer-v-1dermg9 framer-2yz7lg border border-solid border-[#222222] bg-[rgb(22, 22, 22)] rounded-[7px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)] !w-full"
                       data-border="true"
                       data-framer-name="Button Pricing"
                       href="./#contact"
@@ -642,7 +642,7 @@ const Price = () => {
                   </div>
                   <div className="framer-kfb8s8-container">
                     <a
-                      className="framer-Q2WxL framer-1dermg9 framer-v-1dermg9 framer-2yz7lg border border-solid border-[rgb(34, 34, 34)] bg-[rgb(22, 22, 22)] rounded-[7px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)] w-full"
+                      className="framer-Q2WxL framer-1dermg9 framer-v-1dermg9 framer-2yz7lg border border-solid border-[#222222] bg-[rgb(22, 22, 22)] rounded-[7px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0)] !w-full"
                       data-border="true"
                       data-framer-name="Button Pricing"
                       href="./#contact"

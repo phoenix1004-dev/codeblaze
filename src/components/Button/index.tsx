@@ -40,8 +40,8 @@ export const HeaderButton: FC<HeaderButtonProps> = ({
 
   const setInitialPos = () => {
     setPosition({
-      left: 123,
-      width: 136,
+      left: 109,
+      width: 126,
       opacity: 1,
     });
   };
@@ -94,8 +94,8 @@ export const HeaderButton: FC<HeaderButtonProps> = ({
 
 export const HeaderButtonGroup = () => {
   const [position, setPosition] = useState<CURSOR_POSITION>({
-    left: 123,
-    width: 136,
+    left: 109,
+    width: 126,
     opacity: 1,
   });
 
