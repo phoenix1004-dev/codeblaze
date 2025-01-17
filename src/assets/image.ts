@@ -1,18 +1,5 @@
 import arrowRight from "./images/icon/arrow-right.png";
 import arrowUp from "./images/icon/arrow-up.png";
-import googleMeet from "./images/tech/google-meet.png";
-import expend from "./images/tech/expend.png";
-import chatgpt from "./images/tech/chatgpt.png";
-import setting from "./images/tech/setting.png";
-import boat from "./images/tech/boat.png";
-import figma from "./images/tech/figma.png";
-import discord from "./images/tech/discord.png";
-import slack from "./images/tech/slack.png";
-import github from "./images/tech/github.png";
-import star from "./images/tech/star.png";
-import sandbox from "./images/tech/sandbox.png";
-import email from "./images/tech/email.png";
-import notion from "./images/tech/notion.png";
 import logo from "./images/logo.png";
 import aiChat from "./images/background/ai-chat.png";
 import angular from "./images/logos/angular.svg";
@@ -69,20 +56,7 @@ export {
   bgCodeblaze,
   codeblaze,
   deployment,
-  googleMeet,
-  expend,
-  chatgpt,
-  setting,
-  boat,
-  figma,
-  discord,
-  slack,
-  github,
-  email,
-  star,
   logo,
-  sandbox,
-  notion,
   collaboration,
   aiChat,
   person1,
