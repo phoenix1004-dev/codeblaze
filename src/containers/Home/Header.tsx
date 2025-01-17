@@ -35,7 +35,7 @@ const Header = () => {
                 <h1 className="framer-text text-white font-medium tracking-[-3px]">
                   <span
                     data-text-fill="true"
-                    className="framer-text !font-outfit leading-normal text-[27px] sm:text-[64px] md:text-[76px] lg:text-[100px] xl:text-[140px] bg-gradient-to-r from-white to-[#70bafa] text-center"
+                    className="framer-text !font-playfair leading-normal text-[27px] sm:text-[64px] md:text-[76px] lg:text-[100px] xl:text-[140px] bg-gradient-to-r from-white to-[#70bafa] text-center"
                   >
                     <b>Codeblaze</b> a.i engine.
                   </span>
@@ -46,7 +46,7 @@ const Header = () => {
                 data-framer-component-type="RichTextContainer"
               >
                 <p
-                  className="framer-text framer-styles-preset-85tvh7  !whitespace-normal !text-center !font-outfit text-[17px] sm:!text-[36px] md:!text-[42px] lg:!text-[48px] xl:!text-[64px]"
+                  className="framer-text framer-styles-preset-85tvh7  !whitespace-normal !text-center !font-playfair text-[17px] sm:!text-[36px] md:!text-[42px] lg:!text-[48px] xl:!text-[64px]"
                   data-styles-preset="FhU5qX9WL"
                 >
                   now anybody easily develop fullstack web apps in just seconds.

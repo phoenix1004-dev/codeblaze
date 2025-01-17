@@ -15,7 +15,7 @@ const Price = () => {
   const [status, setStatus] = useState<PriceCursor>({
     top: 7,
     left: 7,
-    width: 175,
+    width: 180,
   });
 
   return (
@@ -70,7 +70,7 @@ const Price = () => {
                 <div
                   className="framer-kkh85t rounded-[5px]"
                   data-framer-name="Monthly"
-                  onMouseDown={() => setStatus({ top: 7, left: 7, width: 175 })}
+                  onMouseDown={() => setStatus({ top: 7, left: 7, width: 180 })}
                 >
                   <div
                     className="framer-c1924z outline-none flex flex-col justify-start flex-shrink-0"
@@ -92,7 +92,7 @@ const Price = () => {
                   data-highlight="true"
                   tabIndex={0}
                   onMouseDown={() =>
-                    setStatus({ top: 7, left: 190, width: 90 })
+                    setStatus({ top: 7, left: 200, width: 90 })
                   }
                 >
                   <div
