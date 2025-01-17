@@ -21,6 +21,7 @@ const Header = () => {
               preload="auto"
               muted
               autoPlay
+              playsInline
               className="absolute cursor-auto w-full h-full rounded-none block object-cover bg-transparent object-center"
               src="https://framerusercontent.com/assets/UEcewUs0sO1esTagR1XENajYHSY.mp4"
             />
