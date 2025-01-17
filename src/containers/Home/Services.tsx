@@ -746,16 +746,18 @@ const Services = () => {
                         className="framer-1lr30jg flex flex-col justify-start flex-shrink-0 text-white text-blue-500 underline"
                         data-framer-component-type="RichTextContainer"
                       >
-                        <p className="framer-text text-white text-left text-sm leading-6 font-sans">
+                        <p className="framer-text text-white text-left text-sm leading-6">
                           <span
                             data-text-fill="true"
-                            className="framer-text bg-gradient-to-r from-white to-blue-400 text-left text-sm leading-6 font-sans"
+                            className="framer-text bg-gradient-to-r from-white to-blue-400 text-left text-[12px] leading-[15px]"
+                            style={{ textAlign: "end" }}
                           >
-                            Where do Quokka's live?
+                            Develop <br className="hidden lg:block xl:hidden" />{" "}
+                            a food delivery platform <br /> like uber eats
                           </span>
                         </p>
                       </div>
-                      <div
+                      {/* <div
                         className="framer-13xn7j8 flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline"
                         data-framer-component-type="RichTextContainer"
                       >
@@ -765,7 +767,7 @@ const Services = () => {
                         >
                           Quokka's live on Rottnest Island.
                         </p>
-                      </div>
+                      </div> */}
                     </div>
                     <div
                       className="framer-1srgmwy border border-solid border-[#222222] bg-[#0f0f0f] rounded-[5px]"

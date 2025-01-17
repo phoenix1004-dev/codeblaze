@@ -14,7 +14,7 @@ const About = () => {
       id="about"
       data-name="About"
     >
-      <div className="absolute w-full h-[130px] top-0">
+      <div className="absolute w-full h-[130px] top-0 left-0">
         <div className="relative w-full h-full overflow-x-hidden">
           <Slider dir="left" time={40}>
             <div className="flex gap-10 my-10">

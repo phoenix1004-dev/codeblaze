@@ -62,11 +62,9 @@ const Contact = () => {
                     className="framer-text framer-styles-preset-85tvh7"
                     data-styles-preset="FhU5qX9WL"
                   >
-                    Keizersgracht 520, 1017EK
+                    Menlo Park, CA 9402
                     <br className="framer-text" />
-                    Amsterdam
-                    <br className="framer-text" />
-                    The Netherlands
+                    United States
                   </p>
                 </div>
                 <div className="framer-1m1bqqb">
@@ -109,9 +107,9 @@ const Contact = () => {
                   </span>
                 </p>
               </div>
-              <div className="framer-1fz61wk-container !w-full">
+              <div className="framer-1fz61wk-container !w-full !h-[20px]">
                 <a
-                  className="framer-AOsUx framer-NrkXy framer-b8oikg framer-v-b8oikg framer-962nx5 !w-[300px]"
+                  className="framer-AOsUx framer-NrkXy framer-b8oikg framer-v-b8oikg framer-962nx5 !w-[300px] !h-[20px]"
                   data-framer-name="Button Email"
                   href="/cdn-cgi/l/email-protection#11787f777e51657462653f727e7c"
                   target="_blank"
@@ -122,7 +120,7 @@ const Contact = () => {
                     data-framer-component-type="RichTextContainer"
                   >
                     <h3
-                      className="framer-text framer-styles-preset-6ghdir"
+                      className="framer-text framer-styles-preset-6ghdir !text-[16px]"
                       data-styles-preset="E4lBliITk"
                     >
                       <span
@@ -232,7 +230,7 @@ const Contact = () => {
                   type="tel"
                   required
                   data-name="Phone"
-                  placeholder="+31 (0) 20 343 9223"
+                  placeholder="+1 555 1234 123"
                   className="framer-form-input framer-form-input-empty"
                 />
               </div>
@@ -257,7 +255,7 @@ const Contact = () => {
                 <textarea
                   required
                   data-name="Message"
-                  placeholder="Hi team Halo! I'm reaching out for..."
+                  placeholder="Hi codeblaze team! I'm reaching out for..."
                   className="framer-form-input"
                 ></textarea>
               </div>

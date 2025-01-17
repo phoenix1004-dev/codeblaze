@@ -12,6 +12,7 @@ type PriceCursor = {
 };
 
 const Price = () => {
+  const [isMonthly, setIsMonthly] = useState<boolean>(true);
   const [status, setStatus] = useState<PriceCursor>({
     top: 7,
     left: 7,
@@ -70,7 +71,10 @@ const Price = () => {
                 <div
                   className="framer-kkh85t rounded-[5px]"
                   data-framer-name="Monthly"
-                  onMouseDown={() => setStatus({ top: 7, left: 7, width: 180 })}
+                  onMouseDown={() => {
+                    setStatus({ top: 7, left: 7, width: 180 });
+                    setIsMonthly(true);
+                  }}
                 >
                   <div
                     className="framer-c1924z outline-none flex flex-col justify-start flex-shrink-0"
@@ -79,7 +83,11 @@ const Price = () => {
                     <p className="framer-text text-white text-sm leading-normal">
                       <span
                         data-text-fill="true"
-                        className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
+                        className={`framer-text ${
+                          isMonthly
+                            ? "bg-gradient-to-r from-white to-[#70bafa]"
+                            : "!bg-[#9c9c9c]"
+                        }`}
                       >
                         Monthly pay as you use
                       </span>
@@ -91,17 +99,29 @@ const Price = () => {
                   data-framer-name="Annually"
                   data-highlight="true"
                   tabIndex={0}
-                  onMouseDown={() =>
-                    setStatus({ top: 7, left: 200, width: 90 })
-                  }
+                  onMouseDown={() => {
+                    setStatus({ top: 7, left: 200, width: 90 });
+                    setIsMonthly(false);
+                  }}
                 >
                   <div
                     className="framer-l1hrhw flex flex-col justify-start flex-shrink-0 text-[#9c9c9c]"
                     data-framer-component-type="RichTextContainer"
                   >
-                    <p className="framer-text !text-[rgb(156,156,156)] text-[14px]">
-                      Annually
-                    </p>
+                    {isMonthly ? (
+                      <p className="framer-text !text-[rgb(156,156,156)] text-[14px]">
+                        Annually
+                      </p>
+                    ) : (
+                      <p className="framer-text text-white text-sm leading-normal">
+                        <span
+                          data-text-fill="true"
+                          className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
+                        >
+                          Annually
+                        </span>
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -153,7 +173,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-85tvh7"
                           data-styles-preset="FhU5qX9WL"
                         >
-                          /month
+                          {isMonthly ? "/month" : "/year"}
                         </p>
                       </div>
                     </div>
@@ -382,7 +402,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-85tvh7"
                           data-styles-preset="FhU5qX9WL"
                         >
-                          /month
+                          {isMonthly ? "/month" : "/year"}
                         </p>
                       </div>
                     </div>
@@ -623,7 +643,7 @@ const Price = () => {
                           className="framer-text framer-styles-preset-85tvh7"
                           data-styles-preset="FhU5qX9WL"
                         >
-                          /month
+                          {isMonthly ? "/month" : "/year"}
                         </p>
                       </div>
                     </div>
