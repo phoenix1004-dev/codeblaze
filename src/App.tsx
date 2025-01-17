@@ -6,6 +6,8 @@ import Term from "./pages/Term";
 import "./App.css";
 import Disclaimer from "./pages/Disclaimer";
 import Cookie from "./pages/Cookie";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path="/term" element={<Term />} />
       <Route path="/disclaimer" element={<Disclaimer />} />
       <Route path="/cookie" element={<Cookie />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   );
 }
