@@ -24,7 +24,7 @@ const Header = () => {
               muted
               autoPlay
               playsInline
-              className="absolute right-0 cursor-auto h-full rounded-none block object-cover bg-transparent object-center"
+              className="absolute right-[-10px] cursor-auto h-full rounded-none block object-cover bg-transparent object-center"
               src={bgVideo}
             />
           )}
@@ -46,15 +46,19 @@ const Header = () => {
                 style={{ width: "60%", alignContent: "center" }}
               >
                 <div
-                  className="framer-co01ly !pl-[80px]"
+                  className="framer-co01ly !pl-[20px] lg:!pl-[80px]"
                   style={{ alignItems: "start" }}
                   data-framer-name="Header text"
                 >
                   <div className="flex gap-3 ml-2">
                     <AnimationButton>
-                      <p className="text-white px-1 py-0.5">Beta Launch</p>
+                      <p className="text-white px-1 py-0.5 text-[10px]">
+                        Beta Launch
+                      </p>
                     </AnimationButton>
-                    <p className="text-white">apply for early access</p>
+                    <p className="text-white text-center text-[10px]">
+                      apply for early access
+                    </p>
                   </div>
                   <div
                     className="framer-dt8d5q outline-none flex flex-col justify-start flex-shrink-0 opacity-100 transform-none text-[#0099ff] underline"
@@ -63,7 +67,7 @@ const Header = () => {
                     <h1 className="framer-text text-white font-medium tracking-[-3px]">
                       <span
                         data-text-fill="true"
-                        className="framer-text leading-[130px] text-[27px] sm:text-[40px] md:text-[50px] lg:text-[64px] xl:text-[120px] bg-gradient-to-r from-white to-[#70bafa]"
+                        className="framer-text leading-[20px] sm:leading-[40px] md:leading-[50px] lg:leading-[64px] xl:leading-[90px] 2xl:leading-[120px] text-[20px] sm:text-[40px] md:text-[50px] lg:text-[64px] xl:text-[90px] 2xl:text-[120px] bg-gradient-to-r from-white to-[#70bafa]"
                         style={{ fontWeight: 500 }}
                       >
                         Develop fullstack
@@ -81,7 +85,7 @@ const Header = () => {
                     data-framer-component-type="RichTextContainer"
                   >
                     <p
-                      className="framer-text framer-styles-preset-85tvh7  !whitespace-normal !text-center text-[12px] sm:!text-[16px] md:!text-[20px] lg:!text-[26px] xl:!text-[30px]"
+                      className="framer-text framer-styles-preset-85tvh7  !whitespace-normal text-[12px] sm:!text-[16px] md:!text-[20px] lg:!text-[26px] xl:!text-[30px]"
                       data-styles-preset="FhU5qX9WL"
                     >
                       Rapidly ideate, create, and deploy powerful platforms in

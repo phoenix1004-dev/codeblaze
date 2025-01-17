@@ -60,13 +60,13 @@ const Footer = () => {
                   type="email"
                   data-name="email"
                   placeholder="name@email.com"
-                  className="v1 framer-custom-input appearance-none w-full h-auto outline-none border-none px-4.5 py-2.5 rounded-md text-sm font-normal leading-none bg-transparent text-[rgb(255, 255, 255)] shadow-[inset_0_0_0_0px_rgb(112,190,250),inset_0_0_0_1px_rgb(34,34,34)]"
+                  className="v1 framer-custom-input appearance-none w-full h-auto outline-none border-none px-4.5 py-2.5 rounded-md text-sm font-normal leading-none bg-transparent text-[rgb(255, 255, 255)] shadow-[inset_0_0_0_0px_rgb(112,190,250),inset_0_0_0_1px_rgb(34,34,34)] text-white px-2"
                   autoComplete="off"
                   autoCapitalize="off"
                   autoCorrect="off"
                   spellCheck="false"
                   data-1p-ignore="true"
-                  value=""
+                  defaultValue=""
                 />
 
                 <div className="relative top-0 right-0 bottom-0">
@@ -160,102 +160,6 @@ const Footer = () => {
                   </div>
                 </div>
               ))}
-              {/* <div className="ssr-variant hidden-5tblbe">
-                <div className="framer-u6c4zq-container">
-                  <a
-                    className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
-                    data-framer-name="Footer Link"
-                    href="https://www.instagram.com/codeblaze.ai"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaInstagram color="white" />
-                    <div
-                      className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1otixq8"
-                        data-styles-preset="Z8KnRQzQq"
-                      >
-                        Instagram
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="ssr-variant hidden-5tblbe">
-                <div className="framer-1r0f7no-container">
-                  <a
-                    className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
-                    data-framer-name="Footer Link"
-                    href="https://www.twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaTwitterSquare color="white" />
-                    <div
-                      className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1otixq8"
-                        data-styles-preset="Z8KnRQzQq"
-                      >
-                        Twitter
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="ssr-variant hidden-5tblbe">
-                <div className="framer-tcb6ra-container">
-                  <a
-                    className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
-                    data-framer-name="Footer Link"
-                    href="https://www.linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaLinkedin color="white" />
-                    <div
-                      className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1otixq8"
-                        data-styles-preset="Z8KnRQzQq"
-                      >
-                        LinkedIn
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="ssr-variant hidden-5tblbe">
-                <div className="framer-94wwb1-container">
-                  <a
-                    className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
-                    data-framer-name="Footer Link"
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaFacebook color="white" />
-                    <div
-                      className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1otixq8"
-                        data-styles-preset="Z8KnRQzQq"
-                      >
-                        Facebook
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div> */}
             </div>
             <div
               className="framer-1yja4ab"
@@ -409,9 +313,9 @@ const Footer = () => {
               className="framer-awy7jg flex flex-col justify-start flex-shrink-0 transform-none outline-none"
               data-framer-component-type="RichTextContainer"
             >
-              <p className="framer-text text-[rgb(156,156,156)] text-[15px] leading-[1.4em] !text-white">
+              <p className="framer-text text-[rgb(156,156,156)] text-[15px] !leading-[28px] !text-white !font-outfit">
                 <a
-                  className="framer-text framer-styles-preset-57rakp !mb-[5px]"
+                  className="framer-text framer-styles-preset-57rakp !font-outfit !text-[15px]"
                   data-styles-preset="zMpsiMOLk"
                   href="./term"
                   target="_blank"
@@ -421,7 +325,7 @@ const Footer = () => {
                 </a>
                 <br className="framer-text" />
                 <a
-                  className="framer-text framer-styles-preset-57rakp"
+                  className="framer-text framer-styles-preset-57rakp !font-outfit !text-[15px]"
                   data-styles-preset="zMpsiMOLk"
                   href=".privacy"
                   target="_blank"
@@ -431,7 +335,7 @@ const Footer = () => {
                 </a>
                 <br className="framer-text" />
                 <a
-                  className="framer-text framer-styles-preset-57rakp"
+                  className="framer-text framer-styles-preset-57rakp !font-outfit !text-[15px]"
                   data-styles-preset="zMpsiMOLk"
                   href="./disclaimer"
                   target="_blank"
@@ -441,7 +345,7 @@ const Footer = () => {
                 </a>
                 <br className="framer-text" />
                 <a
-                  className="framer-text framer-styles-preset-57rakp"
+                  className="framer-text framer-styles-preset-57rakp !font-outfit !text-[15px]"
                   data-styles-preset="zMpsiMOLk"
                   href="./cookie"
                   target="_blank"
