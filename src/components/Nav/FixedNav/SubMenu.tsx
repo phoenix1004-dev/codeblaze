@@ -30,7 +30,7 @@ const SubMenu = () => {
                   data-text-fill="true"
                   className="framer-text bg-gradient-to-r from-white to-[#70befa]"
                 >
-                  Get template
+                  Sign In
                 </span>
               </h4>
             </div>

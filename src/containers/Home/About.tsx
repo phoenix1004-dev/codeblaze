@@ -1,5 +1,10 @@
-import { bgCodeblaze } from "../../assets/image";
-import { AnimationButton, InitialAppearance } from "../../components/Animation";
+import {
+  AnimationButton,
+  InitialAppearance,
+  Slider,
+} from "../../components/Animation";
+import { FlowIcons } from "../../constants/FlowIcons";
+import { IMAGE } from "../../type";
 
 const About = () => {
   return (
@@ -9,6 +14,42 @@ const About = () => {
       id="about"
       data-name="About"
     >
+      <Slider dir="left" time={20}>
+        <div className="flex gap-10 my-10 overflow-hidden">
+          {FlowIcons.map((item: IMAGE, index: number) => (
+            <img
+              className="w-[50px] h-[50px]"
+              key={index}
+              src={item.image}
+              alt={item.alt}
+            />
+          ))}
+          {FlowIcons.map((item: IMAGE, index: number) => (
+            <img
+              className="w-[50px] h-[50px]"
+              key={index}
+              src={item.image}
+              alt={item.alt}
+            />
+          ))}
+          {FlowIcons.map((item: IMAGE, index: number) => (
+            <img
+              className="w-[50px] h-[50px]"
+              key={index}
+              src={item.image}
+              alt={item.alt}
+            />
+          ))}
+          {FlowIcons.map((item: IMAGE, index: number) => (
+            <img
+              className="w-[50px] h-[50px]"
+              key={index}
+              src={item.image}
+              alt={item.alt}
+            />
+          ))}
+        </div>
+      </Slider>
       <InitialAppearance
         className="framer-od6gw3 -translate-y-12"
         data-framer-name="Text &amp; Button"
@@ -27,6 +68,11 @@ const About = () => {
                 <span
                   data-text-fill="true"
                   className="framer-text bg-gradient-to-r from-white to-[#70bffa] text-white text-center text-[18px] sm:text-[28px] md:text-[36px] lg:text-[48px] font-medium tracking-normal w-full"
+                  style={{
+                    fontFamily: "Outfit",
+                    fontStyle: "ExtraLight",
+                    fontWeight: 200,
+                  }}
                 >
                   Build, deploy, and collaborate seamlessly with our
                   browser-based platform designed for the future of fullstack
@@ -72,7 +118,7 @@ const About = () => {
           </AnimationButton>
         </div>
       </InitialAppearance>
-      <div className="ssr-variant hidden-wbkh13 hidden-5tblbe hidden-72rtr7 hidden-ncoutt !contents">
+      {/* <div className="ssr-variant hidden-wbkh13 hidden-5tblbe hidden-72rtr7 hidden-ncoutt !contents">
         <div
           className="framer-pox1sj outline-none flex flex-col justify-start shrink-0 !w-full !h-full transform !-translate-x-1/2 !bottom-0 lg:bottom-0"
           data-framer-name="Background Text"
@@ -84,7 +130,7 @@ const About = () => {
             alt="codeblaze"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

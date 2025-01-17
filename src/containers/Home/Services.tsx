@@ -630,7 +630,7 @@ const Services = () => {
                                 data-text-fill="true"
                                 className="framer-text bg-gradient-to-r from-white to-blue-400 text-3xl font-medium text-white"
                               >
-                                100+
+                                50+
                               </span>
                             </p>
                           </div>

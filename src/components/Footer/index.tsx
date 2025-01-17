@@ -1,10 +1,6 @@
-import {
-  FaInstagram,
-  FaTwitterSquare,
-  FaLinkedin,
-  FaFacebook,
-} from "react-icons/fa";
 import { logo } from "../../assets/image";
+import { SOCIALMEDIA_LINK_LIST } from "../../constants/Link";
+import { SOCIALMEDIA } from "../../type";
 
 const Footer = () => {
   return (
@@ -134,12 +130,42 @@ const Footer = () => {
                   </span>
                 </p>
               </div>
-              <div className="ssr-variant hidden-5tblbe">
+              {SOCIALMEDIA_LINK_LIST.map((item: SOCIALMEDIA, index: number) => (
+                <div key={index} className="ssr-variant hidden-5tblbe">
+                  <div className="framer-u6c4zq-container">
+                    <a
+                      className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
+                      data-framer-name="Footer Link"
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="w-5 h-5"
+                        src={item.icon}
+                        alt={item.title}
+                      />
+                      <div
+                        className="framer-zos1th flex flex-col !w-[90px]"
+                        data-framer-component-type="RichTextContainer"
+                      >
+                        <p
+                          className="framer-text framer-styles-preset-1otixq8"
+                          data-styles-preset="Z8KnRQzQq"
+                        >
+                          {item.title}
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              ))}
+              {/* <div className="ssr-variant hidden-5tblbe">
                 <div className="framer-u6c4zq-container">
                   <a
                     className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
                     data-framer-name="Footer Link"
-                    href="https://www.instagram.com"
+                    href="https://www.instagram.com/codeblaze.ai"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -229,7 +255,7 @@ const Footer = () => {
                     </div>
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div
               className="framer-1yja4ab"
@@ -359,28 +385,6 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="ssr-variant hidden-5tblbe">
-                <div className="framer-5lu08a-container">
-                  <a
-                    className="framer-f8bpb framer-l50WH framer-1jysear framer-v-1jysear framer-3jgckd w-full h-full"
-                    data-framer-name="Footer Link"
-                    href="./#"
-                    target="_blank"
-                  >
-                    <div
-                      className="framer-zos1th flex flex-col justify-start flex-shrink-0 transform-none outline-none"
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1otixq8"
-                        data-styles-preset="Z8KnRQzQq"
-                      >
-                        Terms & Conditions
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
           <div
@@ -397,7 +401,7 @@ const Footer = () => {
                   data-text-fill="true"
                   className="framer-text bg-gradient-to-r from-white to-[#70bafa]"
                 >
-                  Credits
+                  Legal
                 </span>
               </p>
             </div>
@@ -406,8 +410,6 @@ const Footer = () => {
               data-framer-component-type="RichTextContainer"
             >
               <p className="framer-text text-[rgb(156,156,156)] text-[15px] leading-[1.4em] !text-white">
-                Template by
-                <br className="framer-text" />
                 <a
                   className="framer-text framer-styles-preset-57rakp !mb-[5px]"
                   data-styles-preset="zMpsiMOLk"
@@ -415,7 +417,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Tibor Bregman
+                  Terms & Conditions
                 </a>
                 <br className="framer-text" />
                 <a
@@ -425,7 +427,17 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  BlueStar Supply
+                  Privacy & Policy
+                </a>
+                <br className="framer-text" />
+                <a
+                  className="framer-text framer-styles-preset-57rakp"
+                  data-styles-preset="zMpsiMOLk"
+                  href="https://bluestar.supply/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Disclaimer
                 </a>
               </p>
             </div>

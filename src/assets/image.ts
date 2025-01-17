@@ -35,6 +35,11 @@ import person12 from "./images/person/person12.jpg";
 import person13 from "./images/person/person13.jpg";
 import person14 from "./images/person/person14.jpg";
 import person15 from "./images/person/person15.jpg";
+import codeblaze2 from "./images/codeblaze1.png";
+import xcom from "./images/icon/xcom.svg";
+import linkedin from "./images/icon/linkedin.svg";
+import tiktok from "./images/icon/tiktok.svg";
+import instagram from "./images/icon/instagram.svg";
 
 export {
   arrowRight,
@@ -57,6 +62,11 @@ export {
   codeblaze,
   deployment,
   logo,
+  xcom,
+  instagram,
+  linkedin,
+  tiktok,
+  codeblaze2,
   collaboration,
   aiChat,
   person1,

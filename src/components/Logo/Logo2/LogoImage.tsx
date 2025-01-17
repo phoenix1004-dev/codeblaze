@@ -1,16 +1,16 @@
-import { logo } from "../../../assets/image";
+import { codeblaze2 } from "../../../assets/image";
 
 const LogoImage = () => {
   return (
-    <div className="framer-kom92n !w-[250px]" data-framer-name="Logo Image">
+    <div className="framer-kom92n !w-[220px]" data-framer-name="Logo Image">
       <div
-        className="absolute rounded-inherit top-0 right-0 bottom-0 left-0 flex"
+        className="absolute rounded-inherit top-0 right-0 bottom-0 left-10 flex"
         data-framer-background-image-wrapper="true"
       >
         <img
           className="block w-full h-full rounded-inherit object-center object-contain"
           decoding="async"
-          src={logo}
+          src={codeblaze2}
           alt="logo"
         />
       </div>
