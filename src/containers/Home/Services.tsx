@@ -13,7 +13,13 @@ import {
 } from "../../constants/Workflow";
 import { IMAGE } from "../../type";
 import WorkflowItem from "../../components/Image/Workflow";
-import { aiChat, arrowUp, person1 } from "../../assets/image";
+import {
+  aiChat,
+  arrowUp,
+  collaboration,
+  deployment,
+  person1,
+} from "../../assets/image";
 
 const Services = () => {
   const [isHoverChatbot, setIsHoverChatbot] = useState<boolean>(false);
@@ -37,7 +43,7 @@ const Services = () => {
           time={1}
         >
           <h2
-            className="framer-text framer-styles-preset-15mg8bp !text-[20px] sm:!text-[36px] md:!text-[48px] xl:text-[80px]"
+            className="framer-text framer-styles-preset-15mg8bp !text-[24px] sm:!text-[36px] md:!text-[48px] xl:text-[80px]"
             data-styles-preset="IXKxaceG9"
           >
             <span
@@ -87,33 +93,33 @@ const Services = () => {
                     }}
                   >
                     <div
-                      className={`framer-1r7gfum bg-[#0f0f0f] rounded-[5px] border-solid border-[1px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0)] ${
+                      className={`framer-1r7gfum bg-[#0f0f0f] rounded-[5px] border-solid border-[1px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0)] !w-full sm:!w-auto !left-0 sm:!left-[40px] ${
                         isHoverChatbot ? "border-[#70befa]" : "border-[#222222]"
                       }`}
                       data-border="true"
                       data-framer-name="Chatbar"
                     >
                       <div
-                        className="framer-1c5lsn9 outline-none flex flex-col justify-start flex-shrink-0 transform translate-y-[-50%] text-[#0099ff] no-underline !left-[60px] sm:!left-[80px]"
+                        className="framer-1c5lsn9 outline-none flex flex-col justify-start flex-shrink-0 transform translate-y-[-50%] text-[#0099ff] no-underline !left-[40px] sm:!left-[80px]"
                         data-framer-component-type="RichTextContainer"
                       >
                         <p
-                          className="framer-text framer-styles-preset-1otixq8 !text-[12px] sm:!text-[16px]"
+                          className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px]"
                           data-styles-preset="Z8KnRQzQq"
                         >
                           Message AI Coding Assistant…
                         </p>
                       </div>
                       <div
-                        className="framer-bxt7f7 border-solid border-[#222222] border-[1px] rounded-[3px]"
+                        className="framer-bxt7f7 border-solid border-[#222222] border-[1px] rounded-[3px] !left-[5px] sm:!left-[20px]"
                         data-border="true"
-                        data-framer-name="+ Button"
+                        data-framer-name="+ Btton"
                       >
                         <div className="framer-1souglk bg-[#9c9c9c] rounded-[1px]" />
                         <div className="framer-1xzne2e bg-[#9c9c9c] rounded-[1px]" />
                       </div>
                       <div
-                        className="framer-1pd23lz border-solid border-[#222222] border-[1px] rounded-[3px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0.75)] transform translate-y-[-50%]"
+                        className="framer-1pd23lz border-solid border-[#222222] border-[1px] rounded-[3px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0.75)] transform translate-y-[-50%] !right-[5px] sm:!right-[20px]"
                         data-border="true"
                         data-framer-name="Button"
                       >
@@ -133,7 +139,7 @@ const Services = () => {
                       </div>
                     </div>
                     <div
-                      className="framer-ee1pva bg-[#0f0f0f] border-solid border-[#222222] border-[1px] rounded-[7px]"
+                      className="framer-ee1pva bg-[#0f0f0f] border-solid border-[#222222] border-[1px] rounded-[7px] !w-full sm:!w-auto !left-0 sm:!left-[40px]"
                       data-border="true"
                       data-framer-name="Chatbot"
                     >
@@ -221,12 +227,12 @@ const Services = () => {
                             data-framer-component-type="RichTextContainer"
                           >
                             <p
-                              className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[10px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
+                              className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal !whitespace-normal"
                               data-styles-preset="Z8KnRQzQq"
                             >
                               Develop both frontend and backend applications
                               directly in your browser, eliminating the need
-                              <br />
+                              <br className="hidden" />
                               for local setups
                             </p>
                           </div>
@@ -243,7 +249,7 @@ const Services = () => {
                             >
                               <img
                                 decoding="async"
-                                src={person1}
+                                src={collaboration}
                                 alt="Memoji Tim"
                                 className="block w-full h-full rounded-none object-center object-cover"
                               />
@@ -254,12 +260,12 @@ const Services = () => {
                           className="framer-18z790b outline-none flex flex-col justify-start flex-shrink-0 transform-none text-white text-[#0099ff] underline !top-[180px]"
                           data-framer-component-type="RichTextContainer"
                         >
-                          <p className="framer-text text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
+                          <p className="framer-text text-[10px] md:text-[15px] leading-[1.4em] tracking-[0px] text-left text-white font-['Switzer','Switzer Placeholder',sans-serif]">
                             <span
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
                             >
-                              AI-Driven Development
+                              Real-Time Collaboration
                             </span>
                           </p>
                         </div>
@@ -271,9 +277,8 @@ const Services = () => {
                             className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                             data-styles-preset="Z8KnRQzQq"
                           >
-                            Transform your ideas into code with our AI assistant
-                            that generates and refines your projects in
-                            real-time
+                            Work alongside your team seamlessly with our
+                            real-time collaboration tools.
                           </p>
                         </div>
                         <div
@@ -302,7 +307,7 @@ const Services = () => {
                             >
                               <img
                                 decoding="async"
-                                src={person1}
+                                src={deployment}
                                 alt="Memoji Tim"
                                 className="block w-full h-full rounded-none object-center object-cover"
                               />
@@ -318,7 +323,7 @@ const Services = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
                             >
-                              AI-Driven Development
+                              Instant Deployment
                             </span>
                           </p>
                         </div>
@@ -330,9 +335,9 @@ const Services = () => {
                             className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                             data-styles-preset="Z8KnRQzQq"
                           >
-                            Transform your ideas into code with our AI assistant
-                            that generates and refines your projects in
-                            real-time
+                            Deploy your applications with a single click,
+                            ensuring your projects are live and accessible
+                            instantly.
                           </p>
                         </div>
                         <div
@@ -438,7 +443,7 @@ const Services = () => {
                         data-framer-component-type="RichTextContainer"
                       >
                         <p
-                          className="framer-text framer-styles-preset-1otixq8 !text-[15px]"
+                          className="framer-text framer-styles-preset-1otixq8 !text-[11px] !left-[5px] sm:!text-[15px]"
                           data-styles-preset="Z8KnRQzQq"
                         >
                           Text prompt your idea to life
@@ -675,7 +680,7 @@ const Services = () => {
                   data-framer-component-type="RichTextContainer"
                 >
                   <p
-                    className="framer-text framer-styles-preset-1otixq8 !w-[500px]"
+                    className="framer-text framer-styles-preset-1otixq8"
                     data-styles-preset="Z8KnRQzQq"
                   >
                     This extensive support enables seamless switching between

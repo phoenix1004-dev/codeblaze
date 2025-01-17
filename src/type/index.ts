@@ -10,6 +10,10 @@ export type HEADER_BUTTON = {
   icon: any;
 };
 
+export type PRICE_BUTTON = {
+  title: string;
+};
+
 export type CURSOR_POSITION = {
   left: number;
   width: number;

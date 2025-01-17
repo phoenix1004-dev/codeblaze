@@ -286,11 +286,18 @@ const Process = () => {
                   </h3>
                 </div>
                 <div
-                  className="framer-1ipjf0i flex flex-col justify-start flex-shrink-0 transform-none"
+                  className="framer-1r27pi outline-none flex flex-col justify-start flex-shrink-0"
                   data-framer-component-type="RichTextContainer"
+                  style={{
+                    flex: "1 0 0px",
+                    whiteSpace: "pre-wrap",
+                    width: "1px",
+                    wordBreak: "break-word",
+                    wordWrap: "break-word",
+                  }}
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir lg:!text-[28px] xl:!text-[35px]"
                     data-styles-preset="E4lBliITk"
                   >
                     Intelligent A.I Workflow
@@ -371,9 +378,16 @@ const Process = () => {
                 <div
                   className="framer-1r27pi outline-none flex flex-col justify-start flex-shrink-0"
                   data-framer-component-type="RichTextContainer"
+                  style={{
+                    flex: "1 0 0px",
+                    whiteSpace: "pre-wrap",
+                    width: "1px",
+                    wordBreak: "break-word",
+                    wordWrap: "break-word",
+                  }}
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir lg:!text-[28px] xl:!text-[35px]"
                     data-styles-preset="E4lBliITk"
                   >
                     Automated Code Generator
@@ -622,9 +636,16 @@ const Process = () => {
                 <div
                   className="framer-1s4xy7i outline-none flex flex-col justify-start flex-shrink-0 transform-none"
                   data-framer-component-type="RichTextContainer"
+                  style={{
+                    flex: "1 0 0px",
+                    whiteSpace: "pre-wrap",
+                    width: "1px",
+                    wordBreak: "break-word",
+                    wordWrap: "break-word",
+                  }}
                 >
                   <h3
-                    className="framer-text framer-styles-preset-6ghdir"
+                    className="framer-text framer-styles-preset-6ghdir lg:!text-[28px] xl:!text-[35px]"
                     data-styles-preset="E4lBliITk"
                   >
                     Seamless Upgrades

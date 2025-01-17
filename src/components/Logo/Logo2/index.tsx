@@ -1,5 +1,4 @@
 import LogoImage from "./LogoImage";
-import LogoText from "./LogoText";
 
 const Logo = () => {
   return (
@@ -8,7 +7,6 @@ const Logo = () => {
       data-framer-name="Logo"
     >
       <LogoImage />
-      {/* <LogoText /> */}
       <div className="framer-13lzke7" data-framer-name="Filler" />
     </div>
   );

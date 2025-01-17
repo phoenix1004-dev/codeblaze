@@ -96,6 +96,14 @@ type InitialAppearanceProps = {
   children: ReactNode;
 };
 
+type PriceIndicatorProps = {
+  status: {
+    top: number;
+    left: number;
+    width: number;
+  };
+};
+
 export const HoverMoveTop: FC<HoverMoveTopProps> = ({
   isActive,
   from,
@@ -578,5 +586,16 @@ export const InitialAppearance: FC<InitialAppearanceProps> = ({
     >
       {children}
     </motion.div>
+  );
+};
+
+export const PriceIndicator: FC<PriceIndicatorProps> = ({ status }) => {
+  return (
+    <motion.div
+      className="framer-ooxt3h border border-solid border-[rgb(34,34,34)] bg-[rgb(22,22,22)] rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      data-border="true"
+      animate={status}
+      transition={{ duration: 0.3 }}
+    />
   );
 };
