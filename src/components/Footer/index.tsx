@@ -4,6 +4,7 @@ import {
   FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
+import { logo } from "../../assets/image";
 
 const Footer = () => {
   return (
@@ -97,7 +98,7 @@ const Footer = () => {
             data-name="Logo"
           >
             <div
-              className="framer-1octt6"
+              className="framer-1octt6 !w-[200px] !h-[50px]"
               data-framer-name="Logo Image"
               data-name="Logo Image"
             >
@@ -107,37 +108,10 @@ const Footer = () => {
               >
                 <img
                   decoding="async"
-                  src="https://framerusercontent.com/images/CSr01inYFSNcBiRsiHyP21guEk.png"
+                  src={logo}
                   alt="logo"
                   className="block w-full h-full rounded-none object-center object-contain"
                 />
-              </div>
-            </div>
-            <div className="ssr-variant hidden-5tblbe hidden-ncoutt">
-              <div className="framer-1f3t9sv-container">
-                <a
-                  className="framer-SuVVZ framer-p3nekb framer-v-p3nekb framer-1yijx76 w-full h-full"
-                  data-framer-name="Footer Logo"
-                  href="./"
-                  data-framer-page-link-current="true"
-                >
-                  <div
-                    className="framer-beasfa flex flex-col justify-start shrink-0 text-white !top-0 !left-0"
-                    data-framer-component-type="RichTextContainer"
-                  >
-                    <p className="framer-text !font-switzer !text-[35px] font-medium !text-white">
-                      Halo
-                    </p>
-                  </div>
-                  <div
-                    className="framer-18yxgjg flex flex-col justify-start shrink-0 text-white transform -translate-x-1/2"
-                    data-framer-component-type="RichTextContainer"
-                  >
-                    <p className="framer-text !font-switzer text-[35px] font-medium text-white">
-                      Halo
-                    </p>
-                  </div>
-                </a>
               </div>
             </div>
           </div>
@@ -431,11 +405,11 @@ const Footer = () => {
               className="framer-awy7jg flex flex-col justify-start flex-shrink-0 transform-none outline-none"
               data-framer-component-type="RichTextContainer"
             >
-              <p className="framer-text text-[rgb(156,156,156)] font-sans text-[15px] leading-[1.4em]">
+              <p className="framer-text text-[rgb(156,156,156)] text-[15px] leading-[1.4em] !text-white">
                 Template by
                 <br className="framer-text" />
                 <a
-                  className="framer-text framer-styles-preset-57rakp"
+                  className="framer-text framer-styles-preset-57rakp !font-outfit !mb-[5px]"
                   data-styles-preset="zMpsiMOLk"
                   href="https://x.com/Bregmantibor"
                   target="_blank"
@@ -445,7 +419,7 @@ const Footer = () => {
                 </a>
                 <br className="framer-text" />
                 <a
-                  className="framer-text framer-styles-preset-57rakp"
+                  className="framer-text framer-styles-preset-57rakp !font-outfit"
                   data-styles-preset="zMpsiMOLk"
                   href="https://bluestar.supply/"
                   target="_blank"
@@ -472,7 +446,7 @@ const Footer = () => {
             className="framer-text framer-styles-preset-1otixq8"
             data-styles-preset="Z8KnRQzQq"
           >
-            © 2024, Halo Inc - All rights reserved.
+            © 2025, Codeblaze Inc - All rights reserved.
           </p>
         </div>
       </div>

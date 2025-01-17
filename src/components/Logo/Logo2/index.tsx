@@ -7,7 +7,6 @@ const Logo = () => {
       data-framer-name="Logo"
     >
       <LogoImage />
-      {/* <LogoText /> */}
       <div className="framer-13lzke7" data-framer-name="Filler" />
     </div>
   );

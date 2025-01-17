@@ -3,7 +3,7 @@ import { logo } from "../../../assets/image";
 const LogoImage = () => {
   return (
     <div className="framer-1hv1geq" data-framer-name="Logo">
-      <div className="framer-1rc6u42" data-framer-name="Logo">
+      <div className="framer-1rc6u42 !w-[100px]" data-framer-name="Logo">
         <div
           className="absolute inset-0 rounded-inherit"
           data-framer-background-image-wrapper="true"
