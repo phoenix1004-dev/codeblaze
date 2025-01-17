@@ -3,12 +3,12 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-/* @font-face {
+@font-face {
   font-family: "Outfit";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Outfit-Regular.ttf") format("ttf");
-} */
+  font-style: "ExtraLight";
+  font-weight: 200;
+  src: url("./assets/fonts/Outfit-ExtraLight.ttf") format("ttf");
+}
 
 body {
   margin: 0;

@@ -64,3 +64,9 @@ export type STAR = {
   distance: number;
   duration: number;
 };
+
+export type SOCIALMEDIA = {
+  title: string;
+  link: string;
+  icon?: any;
+};

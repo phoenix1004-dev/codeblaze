@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        outfit: ["outfit"],
+        outfit: ["Outfit"],
         playfair: ["Playfair", "Display"],
       },
       colors: {

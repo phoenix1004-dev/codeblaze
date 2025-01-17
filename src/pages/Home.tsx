@@ -15,7 +15,7 @@ import FixedNav from "../components/Nav/FixedNav";
 import { useState } from "react";
 import { MobileToggleMenuButton } from "../components/Button";
 
-const Home = () => {
+const Home: React.FC = () => {
   const [isHoverTeam, setIsHoverTeam] = useState<boolean>(false);
 
   return (

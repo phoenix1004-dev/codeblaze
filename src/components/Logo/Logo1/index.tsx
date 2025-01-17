@@ -1,5 +1,4 @@
 import LogoImage from "./LogoImage";
-import LogoText from "./LogoText";
 
 const Logo = () => {
   return (

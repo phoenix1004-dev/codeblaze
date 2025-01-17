@@ -109,16 +109,16 @@ const Contact = () => {
                   </span>
                 </p>
               </div>
-              <div className="framer-1fz61wk-container">
+              <div className="framer-1fz61wk-container !w-full">
                 <a
-                  className="framer-AOsUx framer-NrkXy framer-b8oikg framer-v-b8oikg framer-962nx5 !w-full !h-full"
+                  className="framer-AOsUx framer-NrkXy framer-b8oikg framer-v-b8oikg framer-962nx5 !w-[300px]"
                   data-framer-name="Button Email"
                   href="/cdn-cgi/l/email-protection#11787f777e51657462653f727e7c"
                   target="_blank"
                   rel="noopener"
                 >
                   <div
-                    className="framer-10ach0s flex flex-col justify-start flex-shrink-0 transform -translate-x-1/2 -translate-y-1/2"
+                    className="framer-10ach0s flex flex-col justify-start flex-shrink-0 transform !left-0 -translate-y-1/2"
                     data-framer-component-type="RichTextContainer"
                   >
                     <h3
@@ -129,7 +129,7 @@ const Contact = () => {
                         className="__cf_email__"
                         data-cfemail="2d44434b426d454c4142034e4240"
                       >
-                        info.com
+                        hello.codeblaze.ai
                       </span>
                     </h3>
                   </div>
@@ -147,62 +147,6 @@ const Contact = () => {
                       >
                         info.com
                       </span>
-                    </h3>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div
-              className="framer-m8k9rk"
-              data-framer-name="Line"
-              data-name="Line"
-            ></div>
-            <div
-              className="framer-uoz3hi"
-              data-framer-name="Phone"
-              data-name="Phone"
-            >
-              <div
-                className="framer-10wwpde flex flex-col justify-start flex-shrink-0 transform-none"
-                data-framer-component-type="RichTextContainer"
-              >
-                <p className="framer-text text-white text-[15px] font-[Switzer, sans-serif] tracking-[0px]">
-                  <span
-                    data-text-fill="true"
-                    className="framer-text bg-gradient-to-r from-white to-[#70b2fa]"
-                  >
-                    Phone:
-                  </span>
-                </p>
-              </div>
-              <div className="framer-n9ytyh-container">
-                <a
-                  className="framer-1B5WH framer-NrkXy framer-dyezfe framer-v-dyezfe framer-1uysbm9 w-full h-full"
-                  data-framer-name="Button phone"
-                  href="tel:+31612345678"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    className="framer-1545107 flex flex-col justify-start flex-shrink-0 transform -translate-x-1/2 -translate-y-1/2"
-                    data-framer-component-type="RichTextContainer"
-                  >
-                    <h3
-                      className="framer-text framer-styles-preset-6ghdir"
-                      data-styles-preset="E4lBliITk"
-                    >
-                      +31 (0) 20 343 9223
-                    </h3>
-                  </div>
-                  <div
-                    className="framer-1avl2p5 flex flex-col justify-start flex-shrink-0 transform -translate-x-1/2"
-                    data-framer-component-type="RichTextContainer"
-                  >
-                    <h3
-                      className="framer-text framer-styles-preset-6ghdir"
-                      data-styles-preset="E4lBliITk"
-                    >
-                      +31 (0) 20 343 9223
                     </h3>
                   </div>
                 </a>

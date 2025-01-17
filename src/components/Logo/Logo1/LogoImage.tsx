@@ -1,4 +1,4 @@
-import { logo } from "../../../assets/image";
+import { codeblaze2 } from "../../../assets/image";
 
 const LogoImage = () => {
   return (
@@ -10,7 +10,7 @@ const LogoImage = () => {
         <img
           className="block w-full h-full rounded-inherit object-center object-contain"
           decoding="async"
-          src={logo}
+          src={codeblaze2}
           alt="logo"
         />
       </div>

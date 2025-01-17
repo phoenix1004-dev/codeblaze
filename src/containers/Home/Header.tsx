@@ -1,8 +1,9 @@
 import ToggleNav from "../../components/Nav/ToggleNav";
 import { HeaderButtonGroup } from "../../components/Button";
 import { useState } from "react";
-import { InitialLoading } from "../../components/Animation";
+import { AnimationButton, InitialLoading } from "../../components/Animation";
 import MobileNav from "../../components/Nav/MobileNav";
+import { bgVideo } from "../../assets/video";
 
 const Header = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -11,7 +12,7 @@ const Header = () => {
     <div className="framer-13gmy9c-container" id="header">
       <div className="ssr-variant hidden-r5chz7 hidden-5tblbe hidden-ncoutt !contents">
         <header
-          className="framer-qcVxT framer-V74Ls framer-1fi3t7c framer-v-qn2nt5 !bg-[#0a0a0a] !h-full !w-full"
+          className="framer-qcVxT framer-V74Ls framer-1fi3t7c framer-v-qn2nt5 !bg-[#0a0a0a] !h-full !w-full bg-black"
           data-framer-name="Loading Animation Part 1 - 1440 &amp; 1200"
           data-highlight="true"
         >
@@ -23,50 +24,85 @@ const Header = () => {
               muted
               autoPlay
               playsInline
-              className="absolute cursor-auto w-full h-full rounded-none block object-cover bg-transparent object-center"
-              src="https://framerusercontent.com/assets/UEcewUs0sO1esTagR1XENajYHSY.mp4"
+              className="absolute right-0 cursor-auto h-full rounded-none block object-cover bg-transparent object-center"
+              src={bgVideo}
             />
           )}
           <MobileNav />
           <ToggleNav />
           {isLoading && (
-            <div className="framer-co01ly" data-framer-name="Header text">
+            <>
               <div
-                className="framer-dt8d5q outline-none flex flex-col justify-start flex-shrink-0 opacity-100 transform-none text-[#0099ff] underline"
-                data-framer-component-type="RichTextContainer"
-              >
-                <h1 className="framer-text text-white font-medium tracking-[-3px]">
-                  <span
-                    data-text-fill="true"
-                    className="framer-text !font-playfair leading-normal text-[27px] sm:text-[64px] md:text-[76px] lg:text-[100px] xl:text-[140px] bg-gradient-to-r from-white to-[#70bafa] text-center"
-                  >
-                    <b>codeblaze</b> a.i engine.
-                  </span>
-                </h1>
-              </div>
+                className="absolute bg-black"
+                style={{
+                  width: "100%",
+                  height: "150%",
+                  filter: "blur(80px)",
+                  transform: "translate(-50%, 0)",
+                }}
+              />
               <div
-                className="framer-1pn7ziw outline-none flex flex-col justify-start flex-shrink-0 opacity-100 transform-none text-[#0099ff] no-underline"
-                data-framer-component-type="RichTextContainer"
+                className="absolute left-0 h-full"
+                style={{ width: "60%", alignContent: "center" }}
               >
-                <p
-                  className="framer-text framer-styles-preset-85tvh7  !whitespace-normal !text-center !font-playfair text-[17px] sm:!text-[36px] md:!text-[42px] lg:!text-[48px] xl:!text-[64px]"
-                  data-styles-preset="FhU5qX9WL"
+                <div
+                  className="framer-co01ly !pl-[80px]"
+                  style={{ alignItems: "start" }}
+                  data-framer-name="Header text"
                 >
-                  now anybody easily develop fullstack web apps in just seconds.
-                </p>
+                  <div className="flex gap-3 ml-2">
+                    <AnimationButton>
+                      <p className="text-white px-1 py-0.5">Beta Launch</p>
+                    </AnimationButton>
+                    <p className="text-white">apply for early access</p>
+                  </div>
+                  <div
+                    className="framer-dt8d5q outline-none flex flex-col justify-start flex-shrink-0 opacity-100 transform-none text-[#0099ff] underline"
+                    data-framer-component-type="RichTextContainer"
+                  >
+                    <h1 className="framer-text text-white font-medium tracking-[-3px]">
+                      <span
+                        data-text-fill="true"
+                        className="framer-text leading-[130px] text-[27px] sm:text-[40px] md:text-[50px] lg:text-[64px] xl:text-[120px] bg-gradient-to-r from-white to-[#70bafa]"
+                        style={{ fontWeight: 500 }}
+                      >
+                        Develop fullstack
+                        <br />
+                        apps 100x{" "}
+                        <span className="font-playfair">
+                          <i>faster</i>
+                        </span>
+                        .
+                      </span>
+                    </h1>
+                  </div>
+                  <div
+                    className="framer-1pn7ziw outline-none flex flex-col justify-start flex-shrink-0 opacity-100 transform-none text-[#0099ff] no-underline"
+                    data-framer-component-type="RichTextContainer"
+                  >
+                    <p
+                      className="framer-text framer-styles-preset-85tvh7  !whitespace-normal !text-center text-[12px] sm:!text-[16px] md:!text-[20px] lg:!text-[26px] xl:!text-[30px]"
+                      data-styles-preset="FhU5qX9WL"
+                    >
+                      Rapidly ideate, create, and deploy powerful platforms in
+                      just seconds
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className="framer-alsw2r-container opacity-100 mt-[20px] ml-[80px]"
+                  style={{ minWidth: "300px" }}
+                >
+                  <div
+                    className="framer-Y4gfO framer-uKIIJ framer-w31wm framer-v-w31wm border border-solid border-[#222222] bg-[#0f0f0f] rounded-[10px] !pl-[5px]"
+                    data-border="true"
+                    data-framer-name="Contact"
+                  >
+                    <HeaderButtonGroup />
+                  </div>
+                </div>
               </div>
-            </div>
-          )}
-          {isLoading && (
-            <div className="framer-alsw2r-container opacity-100">
-              <div
-                className="framer-Y4gfO framer-uKIIJ framer-w31wm framer-v-w31wm border border-solid border-[#222222] bg-[#0f0f0f] rounded-[10px] !pl-[5px]"
-                data-border="true"
-                data-framer-name="Contact"
-              >
-                <HeaderButtonGroup />
-              </div>
-            </div>
+            </>
           )}
           <div
             className="framer-suf4l1 filter blur-[75px] webkit-filter blur-[75px]"
