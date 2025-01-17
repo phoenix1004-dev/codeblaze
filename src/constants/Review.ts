@@ -33,7 +33,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person8,
+      avatar: person9,
       name: "Priya Malhotra",
       pos: "CTO, BrightHive Inc.",
     },
@@ -42,7 +42,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person9,
+      avatar: person8,
       name: "Michael Tanaka",
       pos: "Senior Engineer, CloudX Systems",
     },
@@ -51,7 +51,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person10,
+      avatar: person11,
       name: "Emma Johnson",
       pos: "CEO, GreenByte AI",
     },
@@ -60,7 +60,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person11,
+      avatar: person10,
       name: "Ahmed Khan",
       pos: "Project Manager, DigitOps",
     },
@@ -69,7 +69,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person12,
+      avatar: person13,
       name: "Linda Spencer",
       pos: "Product Owner, EdgeLogic",
     },
@@ -78,7 +78,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person13,
+      avatar: person12,
       name: "Carlos Ramirez",
       pos: "Co-Founder, InnovateLabs",
     },
@@ -96,7 +96,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person15,
+      avatar: person12,
       name: "Tom Edwards",
       pos: "Head of IT, BrightCore Solutions",
     },
@@ -105,7 +105,7 @@ export const Reviews: REVIEW[] = [
   },
   {
     person: {
-      avatar: person12,
+      avatar: person15,
       name: "Anna Wills",
       pos: "Freelance Web Developer",
     },
