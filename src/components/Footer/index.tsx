@@ -413,7 +413,7 @@ const Footer = () => {
                 <a
                   className="framer-text framer-styles-preset-57rakp !mb-[5px]"
                   data-styles-preset="zMpsiMOLk"
-                  href="https://x.com/Bregmantibor"
+                  href="./term"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -423,7 +423,7 @@ const Footer = () => {
                 <a
                   className="framer-text framer-styles-preset-57rakp"
                   data-styles-preset="zMpsiMOLk"
-                  href="https://bluestar.supply/"
+                  href=".privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -433,11 +433,21 @@ const Footer = () => {
                 <a
                   className="framer-text framer-styles-preset-57rakp"
                   data-styles-preset="zMpsiMOLk"
-                  href="https://bluestar.supply/"
+                  href="./disclaimer"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Disclaimer
+                </a>
+                <br className="framer-text" />
+                <a
+                  className="framer-text framer-styles-preset-57rakp"
+                  data-styles-preset="zMpsiMOLk"
+                  href="./cookie"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cookie & GDPR
                 </a>
               </p>
             </div>
