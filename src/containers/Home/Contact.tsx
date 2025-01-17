@@ -62,25 +62,12 @@ const Contact = () => {
                     className="framer-text framer-styles-preset-85tvh7"
                     data-styles-preset="FhU5qX9WL"
                   >
-                    Menlo Park, CA 9402
+                    Menlo Park
+                    <br className="framer-text" />
+                    CA 9402
                     <br className="framer-text" />
                     United States
                   </p>
-                </div>
-                <div className="framer-1m1bqqb">
-                  <div
-                    className="framer-15nbdaj flex flex-col justify-start flex-shrink-0 transform-none"
-                    data-framer-component-type="RichTextContainer"
-                  >
-                    <p className="framer-text !text-white text-sm font-sans">
-                      Local time:
-                    </p>
-                  </div>
-                  <div className="framer-kglgpj-container">
-                    <p className="text-white font-sans text-sm font-normal leading-none tracking-normal whitespace-nowrap">
-                      07:30:55
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
