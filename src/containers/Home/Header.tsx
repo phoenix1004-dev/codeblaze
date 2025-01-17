@@ -40,7 +40,7 @@ const Header = () => {
                     data-text-fill="true"
                     className="framer-text !font-playfair leading-normal text-[27px] sm:text-[64px] md:text-[76px] lg:text-[100px] xl:text-[140px] bg-gradient-to-r from-white to-[#70bafa] text-center"
                   >
-                    <b>Codeblaze</b> a.i engine.
+                    <b>codeblaze</b> a.i engine.
                   </span>
                 </h1>
               </div>
