@@ -113,7 +113,7 @@ const Team: FC<Props> = ({ setIsHoverTeam }) => {
                                 data-framer-component-type="RichTextContainer"
                               >
                                 <h3
-                                  className="framer-text framer-styles-preset-6ghdir"
+                                  className="framer-text framer-styles-preset-6ghdir !text-[28px]"
                                   data-styles-preset="E4lBliITk"
                                 >
                                   {item.name}

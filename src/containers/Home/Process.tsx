@@ -286,7 +286,7 @@ const Process = () => {
                   </h3>
                 </div>
                 <div
-                  className="framer-1ipjf0i flex flex-col justify-start flex-shrink-0 transform-none"
+                  className="framer-1r27pi outline-none flex flex-col justify-start flex-shrink-0"
                   data-framer-component-type="RichTextContainer"
                 >
                   <h3
