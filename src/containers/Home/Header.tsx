@@ -2,6 +2,7 @@ import ToggleNav from "../../components/Nav/ToggleNav";
 import { HeaderButtonGroup } from "../../components/Button";
 import { useState } from "react";
 import { InitialLoading } from "../../components/Animation";
+import MobileNav from "../../components/Nav/MobileNav";
 
 const Header = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -26,6 +27,7 @@ const Header = () => {
               src="https://framerusercontent.com/assets/UEcewUs0sO1esTagR1XENajYHSY.mp4"
             />
           )}
+          <MobileNav />
           <ToggleNav />
           {isLoading && (
             <div className="framer-co01ly" data-framer-name="Header text">
