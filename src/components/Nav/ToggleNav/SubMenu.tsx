@@ -13,7 +13,7 @@ const SubMenu = () => {
             className="framer-hhOXC framer-1qihf93 framer-v-1qihf93 framer-9ti88g bg-[var(--token-dfd29766-9b54-40dd-9398-e62b74c1aefb,rgb(34,34,34))] rounded-[8px]"
             data-framer-name="Button State 1"
             data-highlight="true"
-            href="https://tiborbregman.lemonsqueezy.com/buy/7ba08e30-c822-47b8-8af9-9909fc8aeb50"
+            href="./login"
             target="_blank"
             rel="noopener noreferrer"
           >
