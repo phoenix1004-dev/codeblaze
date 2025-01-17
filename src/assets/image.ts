@@ -31,6 +31,8 @@ import vite from "./images/logos/vite.svg";
 import vue from "./images/logos/vue.svg";
 import bgCodeblaze from "./images/background/bg-codeblaze.png";
 import codeblaze from "./images/logos/codeblaze.png";
+import collaboration from "./images/icon/collaboration.png";
+import deployment from "./images/icon/deployment.png";
 import person1 from "./images/person/person1.png";
 import person2 from "./images/person/person2.png";
 import person3 from "./images/person/person3.png";
@@ -66,6 +68,7 @@ export {
   vue,
   bgCodeblaze,
   codeblaze,
+  deployment,
   googleMeet,
   expend,
   chatgpt,
@@ -80,6 +83,7 @@ export {
   logo,
   sandbox,
   notion,
+  collaboration,
   aiChat,
   person1,
   person2,

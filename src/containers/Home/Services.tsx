@@ -13,7 +13,13 @@ import {
 } from "../../constants/Workflow";
 import { IMAGE } from "../../type";
 import WorkflowItem from "../../components/Image/Workflow";
-import { aiChat, arrowUp, person1 } from "../../assets/image";
+import {
+  aiChat,
+  arrowUp,
+  collaboration,
+  deployment,
+  person1,
+} from "../../assets/image";
 
 const Services = () => {
   const [isHoverChatbot, setIsHoverChatbot] = useState<boolean>(false);
@@ -87,7 +93,7 @@ const Services = () => {
                     }}
                   >
                     <div
-                      className={`framer-1r7gfum bg-[#0f0f0f] rounded-[5px] border-solid border-[1px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0)] ${
+                      className={`framer-1r7gfum bg-[#0f0f0f] rounded-[5px] border-solid border-[1px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0)] !w-full sm:!w-auto !left-0 sm:!left-[40px] ${
                         isHoverChatbot ? "border-[#70befa]" : "border-[#222222]"
                       }`}
                       data-border="true"
@@ -105,7 +111,7 @@ const Services = () => {
                         </p>
                       </div>
                       <div
-                        className="framer-bxt7f7 border-solid border-[#222222] border-[1px] rounded-[3px] !left-[5px] sm:left-[20px]"
+                        className="framer-bxt7f7 border-solid border-[#222222] border-[1px] rounded-[3px] !left-[5px] sm:!left-[20px]"
                         data-border="true"
                         data-framer-name="+ Btton"
                       >
@@ -113,7 +119,7 @@ const Services = () => {
                         <div className="framer-1xzne2e bg-[#9c9c9c] rounded-[1px]" />
                       </div>
                       <div
-                        className="framer-1pd23lz border-solid border-[#222222] border-[1px] rounded-[3px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0.75)] transform translate-y-[-50%] !right-[5px] right-[20px]"
+                        className="framer-1pd23lz border-solid border-[#222222] border-[1px] rounded-[3px] shadow-[0px_0px_2px_0.5px_rgba(112,_190,_250,_0.75)] transform translate-y-[-50%] !right-[5px] sm:!right-[20px]"
                         data-border="true"
                         data-framer-name="Button"
                       >
@@ -243,7 +249,7 @@ const Services = () => {
                             >
                               <img
                                 decoding="async"
-                                src={person1}
+                                src={collaboration}
                                 alt="Memoji Tim"
                                 className="block w-full h-full rounded-none object-center object-cover"
                               />
@@ -259,7 +265,7 @@ const Services = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
                             >
-                              AI-Driven Development
+                              Real-Time Collaboration
                             </span>
                           </p>
                         </div>
@@ -271,9 +277,8 @@ const Services = () => {
                             className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                             data-styles-preset="Z8KnRQzQq"
                           >
-                            Transform your ideas into code with our AI assistant
-                            that generates and refines your projects in
-                            real-time
+                            Work alongside your team seamlessly with our
+                            real-time collaboration tools.
                           </p>
                         </div>
                         <div
@@ -302,7 +307,7 @@ const Services = () => {
                             >
                               <img
                                 decoding="async"
-                                src={person1}
+                                src={deployment}
                                 alt="Memoji Tim"
                                 className="block w-full h-full rounded-none object-center object-cover"
                               />
@@ -318,7 +323,7 @@ const Services = () => {
                               data-text-fill="true"
                               className="framer-text bg-gradient-to-r from-[#ffffff] to-[#70befa]"
                             >
-                              AI-Driven Development
+                              Instant Deployment
                             </span>
                           </p>
                         </div>
@@ -330,9 +335,9 @@ const Services = () => {
                             className="framer-text framer-styles-preset-1otixq8 !text-[10px] sm:!text-[16px] lg:!text-[13px] xl:!text-[16px] !whitespace-normal"
                             data-styles-preset="Z8KnRQzQq"
                           >
-                            Transform your ideas into code with our AI assistant
-                            that generates and refines your projects in
-                            real-time
+                            Deploy your applications with a single click,
+                            ensuring your projects are live and accessible
+                            instantly.
                           </p>
                         </div>
                         <div
