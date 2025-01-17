@@ -189,7 +189,7 @@ export const Slider: FC<SliderProps> = ({
 }) => {
   return (
     <motion.div
-      className="absolute top-0 left-0 flex space-x-4"
+      className="absolute top-0 left-0 flex space-x-4 overflow-hidden"
       initial={{ x: dir === "right" ? pos : 0 }}
       animate={{ x: dir === "right" ? 0 : pos }}
       transition={{
