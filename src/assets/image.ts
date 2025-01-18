@@ -40,8 +40,14 @@ import xcom from "./images/icon/xcom.svg";
 import linkedin from "./images/icon/linkedin.svg";
 import tiktok from "./images/icon/tiktok.svg";
 import instagram from "./images/icon/instagram.svg";
+import linkedin1 from "./images/icon/linkedin1.svg";
+import facebook from "./images/icon/facebook.svg";
+import googleplus from "./images/icon/google-plus.svg";
 
 export {
+  linkedin1,
+  googleplus,
+  facebook,
   arrowRight,
   arrowUp,
   angular,
