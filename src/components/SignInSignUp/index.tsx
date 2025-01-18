@@ -32,7 +32,7 @@ const SignInSignUp = () => {
       </div>
       <div className="root">
         <div
-          className={`container ${
+          className={`container md:!min-h-[600px] ${
             isRightPanelActive ? "right-panel-active" : ""
           }`}
           id="container"
