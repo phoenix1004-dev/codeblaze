@@ -42,8 +42,8 @@ const Header = () => {
                 }}
               />
               <div
-                className="absolute left-0 h-full"
-                style={{ width: "60%", alignContent: "center" }}
+                className="absolute left-0 h-full w-full lg:w-3/5"
+                style={{ alignContent: "center" }}
               >
                 <div
                   className="framer-co01ly !pl-[20px] lg:!pl-[80px]"
@@ -67,7 +67,7 @@ const Header = () => {
                     <h1 className="framer-text text-white font-medium tracking-[-3px]">
                       <span
                         data-text-fill="true"
-                        className="framer-text leading-[20px] sm:leading-[40px] md:leading-[50px] lg:leading-[64px] xl:leading-[90px] 2xl:leading-[120px] text-[20px] sm:text-[40px] md:text-[50px] lg:text-[64px] xl:text-[90px] 2xl:text-[120px] bg-gradient-to-r from-white to-[#70bafa]"
+                        className="framer-text leading-[40px] sm:leading-[60px] md:leading-[64px] lg:leading-[64px] xl:leading-[90px] 2xl:leading-[120px] text-[40px] sm:text-[60px] md:text-[64px] lg:text-[64px] xl:text-[90px] 2xl:text-[120px] bg-gradient-to-r from-white to-[#70bafa]"
                         style={{ fontWeight: 500 }}
                       >
                         Develop fullstack
@@ -93,10 +93,7 @@ const Header = () => {
                     </p>
                   </div>
                 </div>
-                <div
-                  className="framer-alsw2r-container opacity-100 mt-[20px] ml-[80px]"
-                  style={{ minWidth: "300px" }}
-                >
+                <div className="framer-alsw2r-container opacity-100 mt-[20px] ml-[20px] lg:ml-[80px] w-full">
                   <div
                     className="framer-Y4gfO framer-uKIIJ framer-w31wm framer-v-w31wm border border-solid border-[#222222] bg-[#0f0f0f] rounded-[10px] !pl-[5px]"
                     data-border="true"
