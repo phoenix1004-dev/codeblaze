@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./index.css";
 import { facebook, googleplus, linkedin1 } from "../../assets/image";
+import { AnimationButton } from "../Animation";
 
 const SignInSignUp = () => {
   const [isRightPanelActive, setIsRightPanelActive] = useState(false);
@@ -48,11 +49,15 @@ const SignInSignUp = () => {
                 />
               </a>
             </div>
-            <span>or use your email for registration</span>
+            <span className="text-[#c0c0c0]">
+              or use your email for registration
+            </span>
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <button>Sign Up</button>
+            <AnimationButton>
+              <button>Sign Up</button>
+            </AnimationButton>
           </form>
         </div>
 
@@ -82,19 +87,21 @@ const SignInSignUp = () => {
                 />
               </a>
             </div>
-            <span>or use your account</span>
+            <span className="text-[#c0c0c0]">or use your account</span>
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <a href="./#">Forgot your password?</a>
-            <button>Sign In</button>
+            <AnimationButton>
+              <button>Sign In</button>
+            </AnimationButton>
           </form>
         </div>
 
         <div className="overlay-container">
           <div className="overlay">
             <div className="overlay-panel overlay-left !px-[10px] sm:!px-[40px]">
-              <h1>Welcome Back!</h1>
-              <p>
+              <h1 className="!text-[#f0f0f0]">Welcome Back!</h1>
+              <p className="!text-[#e0e0e0]">
                 To keep connected with us please login with your personal info
               </p>
               <button className="ghost" onClick={handleSignInClick} id="signIn">
@@ -103,8 +110,10 @@ const SignInSignUp = () => {
             </div>
 
             <div className="overlay-panel overlay-right !px-[10px] sm:!px-[40px]">
-              <h1>Hello, Friend!</h1>
-              <p>Enter your personal details and build the website with us</p>
+              <h1 className="!text-[#e0e0e0]">Hello, Friend!</h1>
+              <p className="!text-[#e0e0e0]">
+                Enter your personal details and build the website with us
+              </p>
               <button className="ghost" onClick={handleSignUpClick} id="signUp">
                 Sign Up
               </button>
