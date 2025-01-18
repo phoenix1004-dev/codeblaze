@@ -34,6 +34,9 @@ const MobileNav: React.FC = () => {
               <a href={item.link}>{item.title}</a>
             </div>
           ))}
+          <div className="w-full text-white bg-black text-[20px] px-[30px] py-[5px] flex justify-end">
+            <a href="./login">Sign In</a>
+          </div>
         </div>
       </div>
     </nav>
