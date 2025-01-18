@@ -23,26 +23,26 @@ const SignInSignUp = () => {
         id="container"
       >
         <div className="form-container sign-up-container">
-          <form action="#">
+          <form className="px-[10px] sm:px-[50px]" action="#">
             <h1>Create Account</h1>
             <div className="social-container">
               <a href="./#" className="social">
                 <img
-                  className="w-[428px] h-[28px]"
+                  className="w-[18px] h-[18px] sm:w-[28px] sm:h-[28px]"
                   src={facebook}
                   alt="facebook"
                 />
               </a>
               <a href="./#" className="social">
                 <img
-                  className="w-[28px] h-[28px]"
+                  className="w-[18px] h-[18px] sm:w-[28px] sm:h-[28px]"
                   src={googleplus}
                   alt="google-plus"
                 />
               </a>
               <a href="./#" className="social">
                 <img
-                  className="w-[28px] h-[28px]"
+                  className="w-[18px] h-[18px] sm:w-[28px] sm:h-[28px]"
                   src={linkedin1}
                   alt="linkedin1"
                 />
@@ -57,26 +57,26 @@ const SignInSignUp = () => {
         </div>
 
         <div className="form-container sign-in-container">
-          <form action="#">
+          <form className="px-[10px] sm:px-[50px]" action="#">
             <h1>Sign in</h1>
             <div className="social-container">
               <a href="./#" className="social">
                 <img
-                  className="w-[428px] h-[28px]"
+                  className="w-[18px] h-[18px] sm:w-[28px] sm:h-[28px]"
                   src={facebook}
                   alt="facebook"
                 />
               </a>
               <a href="./#" className="social">
                 <img
-                  className="w-[28px] h-[28px]"
+                  className="w-[18px] h-[18px] sm:w-[28px] sm:h-[28px]"
                   src={googleplus}
                   alt="google-plus"
                 />
               </a>
               <a href="./#" className="social">
                 <img
-                  className="w-[28px] h-[28px]"
+                  className="w-[18px] h-[18px] sm:w-[28px] sm:h-[28px]"
                   src={linkedin1}
                   alt="linkedin1"
                 />
@@ -92,7 +92,7 @@ const SignInSignUp = () => {
 
         <div className="overlay-container">
           <div className="overlay">
-            <div className="overlay-panel overlay-left">
+            <div className="overlay-panel overlay-left !px-[10px] sm:!px-[40px]">
               <h1>Welcome Back!</h1>
               <p>
                 To keep connected with us please login with your personal info
@@ -102,7 +102,7 @@ const SignInSignUp = () => {
               </button>
             </div>
 
-            <div className="overlay-panel overlay-right">
+            <div className="overlay-panel overlay-right !px-[10px] sm:!px-[40px]">
               <h1>Hello, Friend!</h1>
               <p>Enter your personal details and build the website with us</p>
               <button className="ghost" onClick={handleSignUpClick} id="signUp">
