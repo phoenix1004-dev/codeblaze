@@ -114,12 +114,14 @@ const SignInSignUp = () => {
           <div className="overlay-container">
             <div className="overlay">
               <div className="overlay-panel overlay-left !px-[10px] sm:!px-[40px]">
-                <h1 className="!text-[#f0f0f0]">Welcome Back!</h1>
-                <p className="!text-[#e0e0e0]">
+                <h1 className="!text-[#f0f0f0] md:!text-[28px]">
+                  Welcome Back!
+                </h1>
+                <p className="!text-[#e0e0e0] md:!text-[18px]">
                   To keep connected with us please login with your personal info
                 </p>
                 <button
-                  className="ghost"
+                  className="ghost md:!text-[20px]"
                   onClick={handleSignInClick}
                   id="signIn"
                 >
@@ -128,12 +130,14 @@ const SignInSignUp = () => {
               </div>
 
               <div className="overlay-panel overlay-right !px-[10px] sm:!px-[40px]">
-                <h1 className="!text-[#e0e0e0]">Hello, Friend!</h1>
-                <p className="!text-[#e0e0e0]">
+                <h1 className="!text-[#e0e0e0] md:!text-[28px]">
+                  Hello, Friend!
+                </h1>
+                <p className="!text-[#e0e0e0] md:!text-[18px]">
                   Enter your personal details and build the website with us
                 </p>
                 <button
-                  className="ghost"
+                  className="ghost md:!text-[20px]"
                   onClick={handleSignUpClick}
                   id="signUp"
                 >
@@ -144,7 +148,7 @@ const SignInSignUp = () => {
           </div>
         </div>
       </div>
-      <footer className="fixed bottom-0 left-0 w-full bg-[#0c0c0c] text-[#222222] text-[16px] h-[40px] content-center px-[10px]">
+      <footer className="fixed bottom-0 left-0 w-full bg-[#0c0c0c] text-[#c0c0c0] text-[16px] h-[40px] content-center px-[10px]">
         © 2025, Codeblaze Inc - All rights reserved.
       </footer>
     </div>
