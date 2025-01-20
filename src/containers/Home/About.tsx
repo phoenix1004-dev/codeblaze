@@ -111,8 +111,14 @@ const About = () => {
                   }}
                 >
                   Build, deploy, and collaborate seamlessly with our
-                  browser-based platform designed for the future of fullstack
-                  web development.
+                  browser-based platform designed for the future of{" "}
+                  <span
+                    className="font-playfair"
+                    style={{ fontStyle: "italic" }}
+                  >
+                    <b>fullstack web development</b>
+                  </span>
+                  .
                 </span>
               </h3>
             </div>
@@ -122,7 +128,17 @@ const About = () => {
           className="framer-fl9649-container opacity-100 transform translate-y-[10px]"
           style={{ transform: "perspective(1200px)" }}
         >
-          <AnimationButton>
+          <div className="flex gap-3 ml-2">
+            <AnimationButton>
+              <p className="text-white px-1 py-0.5 text-[10px] sm:text-[16px] md:text-[20px] xl:text-[24px]">
+                Beta Launch
+              </p>
+            </AnimationButton>
+            <p className="text-white text-center text-[10px] sm:text-[16px] md:text-[20px] xl:text-[24px]">
+              apply for early access
+            </p>
+          </div>
+          {/* <AnimationButton>
             <div
               className="framer-m2G2h framer-1x78atm framer-v-1x78atm bg-[#222222] rounded-[8px]"
               data-framer-name="Button State 1"
@@ -151,7 +167,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </AnimationButton>
+          </AnimationButton> */}
         </div>
       </InitialAppearance>
       {/* <div className="ssr-variant hidden-wbkh13 hidden-5tblbe hidden-72rtr7 hidden-ncoutt !contents">

@@ -14,7 +14,7 @@ const Footer = () => {
         data-framer-name="Newsletter"
         data-name="Newsletter"
       >
-        <div className="framer-5ea7pa" data-border="true">
+        <div className="framer-5ea7pa !items-end" data-border="true">
           <div
             className="framer-1hfx2vh"
             data-framer-name="Text"
@@ -46,7 +46,8 @@ const Footer = () => {
                 className="framer-text framer-styles-preset-1otixq8"
                 data-styles-preset="Z8KnRQzQq"
               >
-                Have questions? Reach out to us at support@codeblaze.ai.
+                Stay updated with the latest breakthroughs and announcements in
+                the world of A.I. by subscribing to our newsletter
               </p>
             </div>
           </div>
@@ -327,7 +328,7 @@ const Footer = () => {
                 <a
                   className="framer-text framer-styles-preset-57rakp !font-outfit !text-[15px]"
                   data-styles-preset="zMpsiMOLk"
-                  href=".privacy"
+                  href="privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
