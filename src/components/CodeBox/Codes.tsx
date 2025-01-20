@@ -45,7 +45,7 @@ const Codes: FC<Props> = ({ isHover, selected }) => {
         {`7        scale=1.0">`}
       </p>
       <p className="framer-text font-['Source_Code_Pro'] !text-[#9b9b9b] text-[15px] tracking-[0px] leading-[1.4em] text-left text-[rgba(156,156,156,0.5)]">
-        {`8      <title>Halo</title>`}
+        {`8      <title>Codeblaze</title>`}
       </p>
       <p className="framer-text font-mono !text-[#9b9b9b] text-[15px] tracking-normal leading-[1.4em] text-left text-gray-500/50">
         {`9      <style>`}
