@@ -69,6 +69,7 @@ const SignInSignUp = () => {
               <input type="text" placeholder="Name" />
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Re-password" />
               <AnimationButton>
                 <button>Sign Up</button>
               </AnimationButton>
