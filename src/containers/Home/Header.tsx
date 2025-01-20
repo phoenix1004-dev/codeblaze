@@ -1,7 +1,7 @@
 import ToggleNav from "../../components/Nav/ToggleNav";
 import { HeaderButtonGroup } from "../../components/Button";
 import { useState } from "react";
-import { AnimationButton, InitialLoading } from "../../components/Animation";
+import { InitialLoading } from "../../components/Animation";
 import MobileNav from "../../components/Nav/MobileNav";
 import { bgVideo } from "../../assets/video";
 
@@ -50,16 +50,6 @@ const Header = () => {
                   style={{ alignItems: "start" }}
                   data-framer-name="Header text"
                 >
-                  <div className="flex gap-3 ml-2">
-                    <AnimationButton>
-                      <p className="text-white px-1 py-0.5 text-[10px]">
-                        Beta Launch
-                      </p>
-                    </AnimationButton>
-                    <p className="text-white text-center text-[10px]">
-                      apply for early access
-                    </p>
-                  </div>
                   <div
                     className="framer-dt8d5q outline-none flex flex-col justify-start flex-shrink-0 opacity-100 transform-none text-[#0099ff] underline"
                     data-framer-component-type="RichTextContainer"

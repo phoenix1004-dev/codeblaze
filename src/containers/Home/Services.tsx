@@ -56,7 +56,7 @@ const Services = () => {
         </InitialAppearance>
       </div>
       <div
-        className="framer-8hvpax"
+        className="framer-8hvpax lg:!gap-[70px]"
         data-framer-name="Services"
         data-name="Services"
       >
@@ -753,7 +753,7 @@ const Services = () => {
                             style={{ textAlign: "end" }}
                           >
                             Develop <br className="hidden lg:block xl:hidden" />{" "}
-                            a food delivery platform <br /> like uber eats
+                            a platform like uber eats
                           </span>
                         </p>
                       </div>
@@ -814,7 +814,7 @@ const Services = () => {
                               className="framer-text framer-styles-preset-1otixq8"
                               data-styles-preset="Z8KnRQzQq"
                             >
-                              And are Quokka's big?
+                              Use voice or text prompts...
                             </p>
                           </div>
                         </div>
