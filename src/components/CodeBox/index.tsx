@@ -13,38 +13,38 @@ const CodeBox = () => {
 
   return (
     <div
-      className="framer-xn01z1 bg-[#0f0f0f] border border-solid border-[#222222] rounded-[10px]"
+      className="codeblaze-xn01z1 bg-[#0f0f0f] border border-solid border-[#222222] rounded-[10px]"
       data-border="true"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
       <Codes isHover={isHover} selected={selected} />
       <div
-        className="framer-1oukmxi border border-solid border-[#222222]"
+        className="codeblaze-1oukmxi border border-solid border-[#222222]"
         data-border="true"
-        data-framer-name="Top bar"
+        data-codeblaze-name="Top bar"
       >
         <Tabs selected={selected} setSelected={setSelected} />
         <div
-          className="framer-1dcxamb border border-solid border-gray-800 bg-gradient-to-b from-blue-400 to-white rounded-full shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+          className="codeblaze-1dcxamb border border-solid border-gray-800 bg-gradient-to-b from-blue-400 to-white rounded-full shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
           data-border="true"
-          data-framer-name="Dot 3"
+          data-codeblaze-name="Dot 3"
         />
         <div
-          className="framer-1x1d8qg border border-solid border-gray-800 bg-gradient-to-b from-blue-400 to-white rounded-full shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+          className="codeblaze-1x1d8qg border border-solid border-gray-800 bg-gradient-to-b from-blue-400 to-white rounded-full shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
           data-border="true"
-          data-framer-name="Dot 2"
+          data-codeblaze-name="Dot 2"
         ></div>
         <div
-          className="framer-x5ptsh border border-solid border-gray-800 bg-gradient-to-b from-blue-400 to-white rounded-[6px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+          className="codeblaze-x5ptsh border border-solid border-gray-800 bg-gradient-to-b from-blue-400 to-white rounded-[6px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
           data-border="true"
-          data-framer-name="Dot 1"
+          data-codeblaze-name="Dot 1"
         ></div>
       </div>
       <div
-        className="framer-1muaudk border border-solid border-gray-800 bg-gradient-to-b from-transparent to-[rgba(13,13,13,0.41)] to-[rgba(13,13,13,1)] rounded-[10px]"
+        className="codeblaze-1muaudk border border-solid border-gray-800 bg-gradient-to-b from-transparent to-[rgba(13,13,13,0.41)] to-[rgba(13,13,13,1)] rounded-[10px]"
         data-border="true"
-        data-framer-name="Overlay"
+        data-codeblaze-name="Overlay"
       >
         <SelectedTextCursor
           isActive={isHover}

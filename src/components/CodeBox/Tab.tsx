@@ -25,29 +25,29 @@ const Tab: FC<Props> = ({ item, selected, setPosition, setSelected }) => {
 
   return (
     <div
-      className="framer-10qotjz rounded-[5px]"
-      data-framer-name={item.title}
+      className="codeblaze-10qotjz rounded-[5px]"
+      data-codeblaze-name={item.title}
       data-highlight="true"
       tabIndex={item.key}
       ref={ref}
       onMouseDown={setPos}
     >
       <div
-        className="framer-1w3thlh outline-none flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline"
-        data-framer-component-type="RichTextContainer"
+        className="codeblaze-1w3thlh outline-none flex flex-col justify-start flex-shrink-0 text-blue-500 no-underline"
+        data-codeblaze-component-type="RichTextContainer"
       >
         {selected === item.key ? (
-          <p className="framer-text font-sans !text-[14px] tracking-normal text-white">
+          <p className="codeblaze-text font-sans !text-[14px] tracking-normal text-white">
             <span
               data-text-fill="true"
-              className="framer-text bg-gradient-to-r from-white to-blue-400"
+              className="codeblaze-text bg-gradient-to-r from-white to-blue-400"
             >
               {item.title}
             </span>
           </p>
         ) : (
           <h4
-            className="framer-text framer-styles-preset-1nt88v3 !text-[14px]"
+            className="codeblaze-text codeblaze-styles-preset-1nt88v3 !text-[14px]"
             data-styles-preset="e67rss72C"
           >
             {item.title}

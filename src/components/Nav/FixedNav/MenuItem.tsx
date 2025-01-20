@@ -24,8 +24,8 @@ const MenuItem: FC<MenuItemProps> = ({ item, currentPos, setPosition }) => {
 
   return (
     <a
-      className="framer-lu3rjb framer-1rmjqro rounded-[5px]"
-      data-framer-name="Services"
+      className="codeblaze-lu3rjb codeblaze-1rmjqro rounded-[5px]"
+      data-codeblaze-name="Services"
       data-highlight="true"
       href={item.link}
       ref={ref}
@@ -33,8 +33,8 @@ const MenuItem: FC<MenuItemProps> = ({ item, currentPos, setPosition }) => {
       onMouseLeave={setInitialPos}
     >
       <div
-        className="framer-p69owj outline-none flex flex-col justify-start flex-shrink-0 [--framer-link-text-color:rgb(0,153,255)] [--framer-link-text-decoration:underline] transform-none"
-        data-framer-component-type="RichTextContainer"
+        className="codeblaze-p69owj outline-none flex flex-col justify-start flex-shrink-0 [--codeblaze-link-text-color:rgb(0,153,255)] [--codeblaze-link-text-decoration:underline] transform-none"
+        data-codeblaze-component-type="RichTextContainer"
       >
         <NormalButton>{item.title}</NormalButton>
       </div>

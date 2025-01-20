@@ -5,24 +5,24 @@ const LogoText = () => {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   return (
-    <div className="framer-1oprh4s-container opacity-100">
+    <div className="codeblaze-1oprh4s-container opacity-100">
       <a
-        className="framer-SHlZl framer-qlriss framer-v-qlriss framer-xqedti !h-full !w-full opacity-100 !w-[48px]"
-        data-framer-name="Navigation Logo"
+        className="codeblaze-SHlZl codeblaze-qlriss codeblaze-v-qlriss codeblaze-xqedti !h-full !w-full opacity-100 !w-[48px]"
+        data-codeblaze-name="Navigation Logo"
         href="./"
-        data-framer-page-link-current="true"
+        data-codeblaze-page-link-current="true"
         onMouseEnter={() => setIsActive(true)}
         onMouseLeave={() => setIsActive(false)}
       >
         <HoverMoveTop isActive={isActive} from={0} to={-20}>
           <div
-            className="framer-m6s0ez outline-none flex flex-col justify-start flex-shrink-0 transform -translate-y-1/2 text-[#0099ff] underline"
-            data-framer-component-type="RichTextContainer"
+            className="codeblaze-m6s0ez outline-none flex flex-col justify-start flex-shrink-0 transform -translate-y-1/2 text-[#0099ff] underline"
+            data-codeblaze-component-type="RichTextContainer"
           >
-            <p className="framer-text !font-switzer text-white tracking-[0px] translate-y-[2px]">
+            <p className="codeblaze-text !font-switzer text-white tracking-[0px] translate-y-[2px]">
               <span
                 data-text-fill="true"
-                className="framer-text bg-white text-[22px]"
+                className="codeblaze-text bg-white text-[22px]"
               >
                 codeblaze
               </span>
@@ -31,13 +31,13 @@ const LogoText = () => {
         </HoverMoveTop>
         <HoverMoveTop isActive={isActive} from={25} to={5}>
           <div
-            className="framer-c6deyg outline-none flex flex-col justify-start flex-shrink-0 transform -translate-y-1/2 text-[#0099ff] underline !bottom-[-30px]"
-            data-framer-component-type="RichTextContainer"
+            className="codeblaze-c6deyg outline-none flex flex-col justify-start flex-shrink-0 transform -translate-y-1/2 text-[#0099ff] underline !bottom-[-30px]"
+            data-codeblaze-component-type="RichTextContainer"
           >
-            <p className="framer-text font-switzer text-white tracking-[0px] translate-y-[2px]">
+            <p className="codeblaze-text font-switzer text-white tracking-[0px] translate-y-[2px]">
               <span
                 data-text-fill="true"
-                className="framer-text bg-white text-[22px]"
+                className="codeblaze-text bg-white text-[22px]"
               >
                 codeblaze
               </span>

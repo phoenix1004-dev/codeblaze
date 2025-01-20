@@ -7,7 +7,7 @@ import Big from "../components/Description/Big";
 const Disclaimer = () => {
   return (
     <div id="body">
-      <div className="framer-IqNBt framer-vrYYp framer-NrkXy framer-l50WH framer-V74Ls framer-uKIIJ framer-Fw2Wf framer-72rtr7 min-h-screen !w-auto">
+      <div className="codeblaze-IqNBt codeblaze-vrYYp codeblaze-NrkXy codeblaze-l50WH codeblaze-V74Ls codeblaze-uKIIJ codeblaze-Fw2Wf codeblaze-72rtr7 min-h-screen !w-auto">
         <FixedNav />
         <MobileNav />
         <div id="content" className="w-full mt-[60px] p-[20px]">

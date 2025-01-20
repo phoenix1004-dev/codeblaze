@@ -3,11 +3,11 @@ import LogoImage from "./LogoImage";
 const Logo = () => {
   return (
     <div
-      className="framer-1f9t7pw !hidden lg:!flex !w-[130px]"
-      data-framer-name="Logo"
+      className="codeblaze-1f9t7pw !hidden lg:!flex !w-[130px]"
+      data-codeblaze-name="Logo"
     >
       <LogoImage />
-      <div className="framer-13lzke7" data-framer-name="Filler" />
+      <div className="codeblaze-13lzke7" data-codeblaze-name="Filler" />
     </div>
   );
 };

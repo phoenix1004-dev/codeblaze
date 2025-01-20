@@ -2,10 +2,10 @@ import { codeblaze2 } from "../../../assets/image";
 
 const LogoImage = () => {
   return (
-    <div className="framer-hlgkof" data-framer-name="Logo Image">
+    <div className="codeblaze-hlgkof" data-codeblaze-name="Logo Image">
       <div
         className="absolute rounded-inherit top-0 right-0 bottom-0 left-0"
-        data-framer-background-image-wrapper="true"
+        data-codeblaze-background-image-wrapper="true"
       >
         <img
           className="block w-full h-full rounded-inherit object-center object-contain"

@@ -3,111 +3,115 @@ import { AnimationButton } from "../../components/Animation";
 const Contact = () => {
   return (
     <section
-      className="framer-gga7ze"
-      data-framer-name="Contact"
+      className="codeblaze-gga7ze"
+      data-codeblaze-name="Contact"
       id="contact"
       data-name="Contact"
     >
-      <div className="framer-yvfhgs">
-        <div className="framer-x5t36e" data-framer-name="Text" data-name="Text">
+      <div className="codeblaze-yvfhgs">
+        <div
+          className="codeblaze-x5t36e"
+          data-codeblaze-name="Text"
+          data-name="Text"
+        >
           <div
-            className="framer-3roo8m flex flex-col justify-start flex-shrink-0 transform-none"
-            data-framer-component-type="RichTextContainer"
+            className="codeblaze-3roo8m flex flex-col justify-start flex-shrink-0 transform-none"
+            data-codeblaze-component-type="RichTextContainer"
           >
             <h2
-              className="framer-text framer-styles-preset-15mg8bp"
+              className="codeblaze-text codeblaze-styles-preset-15mg8bp"
               data-styles-preset="IXKxaceG9"
             >
               <span
                 data-text-fill="true"
-                className="framer-text bg-gradient-to-r from-white to-[#70b2fa]"
+                className="codeblaze-text bg-gradient-to-r from-white to-[#70b2fa]"
               >
                 Let's talk!
               </span>
             </h2>
           </div>
           <div
-            className="framer-1eeuq8g"
-            data-framer-name="Company Info"
+            className="codeblaze-1eeuq8g"
+            data-codeblaze-name="Company Info"
             data-name="Company Info"
           >
             <div
-              className="framer-1hiy7cj"
-              data-framer-name="Adress"
+              className="codeblaze-1hiy7cj"
+              data-codeblaze-name="Adress"
               data-name="Adress"
             >
               <div
-                className="framer-10yitai flex flex-col justify-start flex-shrink-0 transform-none"
-                data-framer-component-type="RichTextContainer"
+                className="codeblaze-10yitai flex flex-col justify-start flex-shrink-0 transform-none"
+                data-codeblaze-component-type="RichTextContainer"
               >
-                <p className="framer-text text-white text-[15px] font-[Switzer, sans-serif] tracking-[0px]">
+                <p className="codeblaze-text text-white text-[15px] font-[Switzer, sans-serif] tracking-[0px]">
                   <span
                     data-text-fill="true"
-                    className="framer-text bg-gradient-to-r from-white to-[#70b2fa]"
+                    className="codeblaze-text bg-gradient-to-r from-white to-[#70b2fa]"
                   >
                     Office:
                   </span>
                 </p>
               </div>
               <div
-                className="framer-qw0owr"
-                data-framer-name="Adress"
+                className="codeblaze-qw0owr"
+                data-codeblaze-name="Adress"
                 data-name="Adress"
               >
                 <div
-                  className="framer-uvqbjo flex flex-col justify-start flex-shrink-0 transform-none"
-                  data-framer-component-type="RichTextContainer"
+                  className="codeblaze-uvqbjo flex flex-col justify-start flex-shrink-0 transform-none"
+                  data-codeblaze-component-type="RichTextContainer"
                 >
                   <p
-                    className="framer-text framer-styles-preset-85tvh7"
+                    className="codeblaze-text codeblaze-styles-preset-85tvh7"
                     data-styles-preset="FhU5qX9WL"
                   >
                     Menlo Park
-                    <br className="framer-text" />
+                    <br className="codeblaze-text" />
                     CA 9402
-                    <br className="framer-text" />
+                    <br className="codeblaze-text" />
                     United States
                   </p>
                 </div>
               </div>
             </div>
             <div
-              className="framer-1omc4jd"
-              data-framer-name="Line"
+              className="codeblaze-1omc4jd"
+              data-codeblaze-name="Line"
               data-name="Line"
             ></div>
             <div
-              className="framer-cm80vv"
-              data-framer-name="Email"
+              className="codeblaze-cm80vv"
+              data-codeblaze-name="Email"
               data-name="Email"
             >
               <div
-                className="framer-gzy51t flex flex-col justify-start flex-shrink-0 transform-none"
-                data-framer-component-type="RichTextContainer"
+                className="codeblaze-gzy51t flex flex-col justify-start flex-shrink-0 transform-none"
+                data-codeblaze-component-type="RichTextContainer"
               >
-                <p className="framer-text text-white text-[15px] font-[Switzer, sans-serif] tracking-[0px]">
+                <p className="codeblaze-text text-white text-[15px] font-[Switzer, sans-serif] tracking-[0px]">
                   <span
                     data-text-fill="true"
-                    className="framer-text bg-gradient-to-r from-white to-[#70b2fa]"
+                    className="codeblaze-text bg-gradient-to-r from-white to-[#70b2fa]"
                   >
                     Email:
                   </span>
                 </p>
               </div>
-              <div className="framer-1fz61wk-container !w-full !h-[20px]">
+              <div className="codeblaze-1fz61wk-container !w-full !h-[20px]">
                 <a
-                  className="framer-AOsUx framer-NrkXy framer-b8oikg framer-v-b8oikg framer-962nx5 !w-[300px] !h-[20px]"
-                  data-framer-name="Button Email"
+                  className="codeblaze-AOsUx codeblaze-NrkXy codeblaze-b8oikg codeblaze-v-b8oikg codeblaze-962nx5 !w-[300px] !h-[20px]"
+                  data-codeblaze-name="Button Email"
                   href="/cdn-cgi/l/email-protection#11787f777e51657462653f727e7c"
                   target="_blank"
                   rel="noopener"
                 >
                   <div
-                    className="framer-10ach0s flex flex-col justify-start flex-shrink-0 transform !left-0 -translate-y-1/2"
-                    data-framer-component-type="RichTextContainer"
+                    className="codeblaze-10ach0s flex flex-col justify-start flex-shrink-0 transform !left-0 -translate-y-1/2"
+                    data-codeblaze-component-type="RichTextContainer"
                   >
                     <h3
-                      className="framer-text framer-styles-preset-6ghdir !text-[16px]"
+                      className="codeblaze-text codeblaze-styles-preset-6ghdir !text-[16px]"
                       data-styles-preset="E4lBliITk"
                     >
                       <span
@@ -119,11 +123,11 @@ const Contact = () => {
                     </h3>
                   </div>
                   <div
-                    className="framer-10ldvoj flex flex-col justify-start flex-shrink-0 transform -translate-x-1/2"
-                    data-framer-component-type="RichTextContainer"
+                    className="codeblaze-10ldvoj flex flex-col justify-start flex-shrink-0 transform -translate-x-1/2"
+                    data-codeblaze-component-type="RichTextContainer"
                   >
                     <h3
-                      className="framer-text framer-styles-preset-6ghdir"
+                      className="codeblaze-text codeblaze-styles-preset-6ghdir"
                       data-styles-preset="E4lBliITk"
                     >
                       <span
@@ -140,139 +144,139 @@ const Contact = () => {
           </div>
         </div>
         <div
-          className="framer-k9jwxq"
-          data-framer-name="Contact Form"
+          className="codeblaze-k9jwxq"
+          data-codeblaze-name="Contact Form"
           data-name="Contact Form"
         >
-          <form className="framer-5u0143">
+          <form className="codeblaze-5u0143">
             <label
-              className="framer-1kz3kwl"
-              data-framer-name="Name"
+              className="codeblaze-1kz3kwl"
+              data-codeblaze-name="Name"
               data-name="Name"
             >
               <div
-                className="framer-p7xk68 flex flex-col justify-start flex-shrink-0"
-                data-framer-component-type="RichTextContainer"
+                className="codeblaze-p7xk68 flex flex-col justify-start flex-shrink-0"
+                data-codeblaze-component-type="RichTextContainer"
               >
                 <h4
-                  className="framer-text framer-styles-preset-1nt88v3 !text-white"
+                  className="codeblaze-text codeblaze-styles-preset-1nt88v3 !text-white"
                   data-styles-preset="e67rss72C"
                 >
                   Name
                 </h4>
               </div>
-              <div className="framer-form-text-input framer-form-input-wrapper framer-1a4lfgn">
+              <div className="codeblaze-form-text-input codeblaze-form-input-wrapper codeblaze-1a4lfgn">
                 <input
                   type="text"
                   required
                   data-name="Name"
                   placeholder="John Doe"
-                  className="framer-form-input framer-form-input-empty"
+                  className="codeblaze-form-input codeblaze-form-input-empty"
                 />
               </div>
             </label>
             <label
-              className="framer-1mv449a"
-              data-framer-name="Email"
+              className="codeblaze-1mv449a"
+              data-codeblaze-name="Email"
               data-name="Email"
             >
               <div
-                className="framer-nopjb9 flex flex-col justify-start flex-shrink-0"
-                data-framer-component-type="RichTextContainer"
+                className="codeblaze-nopjb9 flex flex-col justify-start flex-shrink-0"
+                data-codeblaze-component-type="RichTextContainer"
               >
                 <h4
-                  className="framer-text framer-styles-preset-1nt88v3 !text-white"
+                  className="codeblaze-text codeblaze-styles-preset-1nt88v3 !text-white"
                   data-styles-preset="e67rss72C"
                 >
                   Email
                 </h4>
               </div>
-              <div className="framer-form-text-input framer-form-input-wrapper framer-1ph2abo">
+              <div className="codeblaze-form-text-input codeblaze-form-input-wrapper codeblaze-1ph2abo">
                 <input
                   type="email"
                   data-name="Email"
                   placeholder="john@example.com"
-                  className="framer-form-input framer-form-input-empty"
+                  className="codeblaze-form-input codeblaze-form-input-empty"
                 />
               </div>
             </label>
             <label
-              className="framer-1djs6hx"
-              data-framer-name="Phone"
+              className="codeblaze-1djs6hx"
+              data-codeblaze-name="Phone"
               data-name="Phone"
             >
               <div
-                className="framer-j04qdw flex flex-col justify-start flex-shrink-0"
-                data-framer-component-type="RichTextContainer"
+                className="codeblaze-j04qdw flex flex-col justify-start flex-shrink-0"
+                data-codeblaze-component-type="RichTextContainer"
               >
                 <h4
-                  className="framer-text framer-styles-preset-1nt88v3 !text-white"
+                  className="codeblaze-text codeblaze-styles-preset-1nt88v3 !text-white"
                   data-styles-preset="e67rss72C"
                 >
                   Phone
                 </h4>
               </div>
-              <div className="framer-form-text-input framer-form-input-wrapper framer-7j7enf">
+              <div className="codeblaze-form-text-input codeblaze-form-input-wrapper codeblaze-7j7enf">
                 <input
                   type="tel"
                   required
                   data-name="Phone"
                   placeholder="+1 555 1234 123"
-                  className="framer-form-input framer-form-input-empty"
+                  className="codeblaze-form-input codeblaze-form-input-empty"
                 />
               </div>
             </label>
             <label
-              className="framer-j5z4b9"
-              data-framer-name="Message"
+              className="codeblaze-j5z4b9"
+              data-codeblaze-name="Message"
               data-name="Message"
             >
               <div
-                className="framer-1soxzt1 flex flex-col justify-start flex-shrink-0"
-                data-framer-component-type="RichTextContainer"
+                className="codeblaze-1soxzt1 flex flex-col justify-start flex-shrink-0"
+                data-codeblaze-component-type="RichTextContainer"
               >
                 <h4
-                  className="framer-text framer-styles-preset-1nt88v3 !text-white"
+                  className="codeblaze-text codeblaze-styles-preset-1nt88v3 !text-white"
                   data-styles-preset="e67rss72C"
                 >
                   Message
                 </h4>
               </div>
-              <div className="framer-form-text-input framer-form-input-wrapper framer-jojokm">
+              <div className="codeblaze-form-text-input codeblaze-form-input-wrapper codeblaze-jojokm">
                 <textarea
                   required
                   data-name="Message"
                   placeholder="Hi codeblaze team! I'm reaching out for..."
-                  className="framer-form-input"
+                  className="codeblaze-form-input"
                 ></textarea>
               </div>
             </label>
-            <div className="framer-wlm6qx-container">
+            <div className="codeblaze-wlm6qx-container">
               <AnimationButton>
                 <button
                   type="submit"
-                  className="framer-gWCwD framer-1gjtrw7 framer-v-1gjtrw7 bg-[var(--token-dfd29766-9b54-40dd-9398-e62b74c1aefb,rgb(34,34,34))] rounded-[10px] !w-full opacity-100"
-                  data-framer-name="Default 1"
+                  className="codeblaze-gWCwD codeblaze-1gjtrw7 codeblaze-v-1gjtrw7 bg-[var(--token-dfd29766-9b54-40dd-9398-e62b74c1aefb,rgb(34,34,34))] rounded-[10px] !w-full opacity-100"
+                  data-codeblaze-name="Default 1"
                   data-highlight="true"
                   data-reset="button"
                   tabIndex={0}
                 >
                   <div
-                    className="framer-2rjhaj outline-none flex flex-col justify-start flex-shrink-0"
-                    data-framer-component-type="RichTextContainer"
+                    className="codeblaze-2rjhaj outline-none flex flex-col justify-start flex-shrink-0"
+                    data-codeblaze-component-type="RichTextContainer"
                   >
-                    <p className="framer-text text-[14px] tracking-[0px]">
+                    <p className="codeblaze-text text-[14px] tracking-[0px]">
                       <span
                         data-text-fill="true"
-                        className="framer-text bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(112,190,250)]"
+                        className="codeblaze-text bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(112,190,250)]"
                       >
                         Submit
                       </span>
                     </p>
                   </div>
                   <div
-                    className="framer-14bqof7 bg-[rgb(22,22,22)] rounded-[8px]"
-                    data-framer-name="Fill"
+                    className="codeblaze-14bqof7 bg-[rgb(22,22,22)] rounded-[8px]"
+                    data-codeblaze-name="Fill"
                   ></div>
                 </button>
               </AnimationButton>

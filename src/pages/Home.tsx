@@ -20,33 +20,39 @@ const Home: React.FC = () => {
 
   return (
     <div
-      data-framer-ssr-released-at="2024-11-18T17:03:50.809Z"
-      data-framer-page-optimized-at="2024-11-21T07:30:55.702Z"
+      data-codeblaze-ssr-released-at="2024-11-18T17:03:50.809Z"
+      data-codeblaze-page-optimized-at="2024-11-21T07:30:55.702Z"
     >
-      <div className="framer-IqNBt framer-vrYYp framer-NrkXy framer-l50WH framer-V74Ls framer-uKIIJ framer-Fw2Wf framer-72rtr7 min-h-screen !w-auto">
-        <div className="framer-k2s3e6-container" />
+      <div className="codeblaze-IqNBt codeblaze-vrYYp codeblaze-NrkXy codeblaze-l50WH codeblaze-V74Ls codeblaze-uKIIJ codeblaze-Fw2Wf codeblaze-72rtr7 min-h-screen !w-auto">
+        <div className="codeblaze-k2s3e6-container" />
         <FixedNav />
         <div className="ssr-variant hidden-5tblbe">
-          <div className="framer-c341if-container hidden-72rtr7 hidden-wbkh13 hidden-r5chz7 hidden-ncoutt opacity-0 transform -translate-y-[100px]">
+          <div className="codeblaze-c341if-container hidden-72rtr7 hidden-wbkh13 hidden-r5chz7 hidden-ncoutt opacity-0 transform -translate-y-[100px]">
             <div
-              className="framer-hEVRE framer-PZPbf framer-17q0614 framer-v-17q0614 border-[1px] border-solid border-transparent bg-gradient-radial from-transparent to-transparent rounded-bl-lg rounded-br-lg w-full"
+              className="codeblaze-hEVRE codeblaze-PZPbf codeblaze-17q0614 codeblaze-v-17q0614 border-[1px] border-solid border-transparent bg-gradient-radial from-transparent to-transparent rounded-bl-lg rounded-br-lg w-full"
               data-border="true"
-              data-framer-name="Phone Navigation"
+              data-codeblaze-name="Phone Navigation"
             >
-              <div className="framer-wmhqws" data-framer-name="Menu closed">
+              <div
+                className="codeblaze-wmhqws"
+                data-codeblaze-name="Menu closed"
+              >
                 <Logo />
               </div>
             </div>
           </div>
         </div>
         <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 hidden-72rtr7 hidden-ncoutt hidden">
-          <div className="framer-c341if-container hidden-72rtr7 hidden-wbkh13 hidden-r5chz7 hidden-ncoutt opacity-100">
+          <div className="codeblaze-c341if-container hidden-72rtr7 hidden-wbkh13 hidden-r5chz7 hidden-ncoutt opacity-100">
             <div
-              className="framer-hEVRE framer-PZPbf framer-17q0614 framer-v-17q0614 border-[1px] border-solid border-transparent bg-gradient-radial from-transparent to-transparent rounded-bl-lg rounded-br-lg !w-full"
+              className="codeblaze-hEVRE codeblaze-PZPbf codeblaze-17q0614 codeblaze-v-17q0614 border-[1px] border-solid border-transparent bg-gradient-radial from-transparent to-transparent rounded-bl-lg rounded-br-lg !w-full"
               data-border="true"
-              data-framer-name="Phone Navigation"
+              data-codeblaze-name="Phone Navigation"
             >
-              <div className="framer-wmhqws" data-framer-name="Menu closed">
+              <div
+                className="codeblaze-wmhqws"
+                data-codeblaze-name="Menu closed"
+              >
                 <Logo />
                 <MobileToggleMenuButton />
               </div>
@@ -54,8 +60,8 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div
-          className="framer-hzeqsp"
-          data-framer-name="Main sections"
+          className="codeblaze-hzeqsp"
+          data-codeblaze-name="Main sections"
           data-name="Main sections"
         >
           <Header />
