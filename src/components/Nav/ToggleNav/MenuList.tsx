@@ -13,9 +13,9 @@ const MenuList = () => {
 
   return (
     <div
-      className="framer-bhlto9 border border-solid border-[#222222] backdrop-blur-[0px] bg-[#0f0f0f] rounded-[10px]"
+      className="codeblaze-bhlto9 border border-solid border-[#222222] backdrop-blur-[0px] bg-[#0f0f0f] rounded-[10px]"
       data-border="true"
-      data-framer-name="Menu"
+      data-codeblaze-name="Menu"
     >
       <CursorDiv pos={position} />
       {NAV_MENU.map((item: MENULINK, index: number) => (

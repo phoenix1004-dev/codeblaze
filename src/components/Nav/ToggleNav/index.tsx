@@ -4,10 +4,10 @@ import SubMenu from "./SubMenu";
 
 const ToggleNav = () => {
   return (
-    <div className="framer-83vgnn-container opacity-100 will-change-transform !hidden lg:!flex">
+    <div className="codeblaze-83vgnn-container opacity-100 will-change-transform !hidden lg:!flex">
       <nav
-        className="framer-xM5rw framer-uKIIJ framer-1gv67ej framer-v-1gv67ej !h-full !w-full"
-        data-framer-name="Home"
+        className="codeblaze-xM5rw codeblaze-uKIIJ codeblaze-1gv67ej codeblaze-v-1gv67ej !h-full !w-full"
+        data-codeblaze-name="Home"
       >
         <Logo />
         <MenuList />

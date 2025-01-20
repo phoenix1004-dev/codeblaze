@@ -16,7 +16,7 @@ type HeaderButtonProps = {
 export const NormalButton: FC<ButtonProps> = ({ children }) => {
   return (
     <h4
-      className="framer-text framer-styles-preset-1nt88v3"
+      className="codeblaze-text codeblaze-styles-preset-1nt88v3"
       data-styles-preset="e67rss72C"
     >
       {children}
@@ -48,25 +48,25 @@ export const HeaderButton: FC<HeaderButtonProps> = ({
 
   return (
     <a
-      className="framer-1frhuhs framer-a2hxmi rounded-[5px]"
-      data-framer-name="Contact"
+      className="codeblaze-1frhuhs codeblaze-a2hxmi rounded-[5px]"
+      data-codeblaze-name="Contact"
       href={item.link}
       ref={ref}
       onMouseEnter={setPos}
       onMouseLeave={setInitialPos}
     >
       <div
-        className="framer-cevu97 outline-none flex flex-col justify-start flex-shrink-0 text-white text-[#0099ff] underline transform-none"
-        data-framer-component-type="RichTextContainer"
+        className="codeblaze-cevu97 outline-none flex flex-col justify-start flex-shrink-0 text-white text-[#0099ff] underline transform-none"
+        data-codeblaze-component-type="RichTextContainer"
       >
-        <p className="framer-text font-[Switzer] text-white text-[14px] tracking-[0px]">
+        <p className="codeblaze-text font-[Switzer] text-white text-[14px] tracking-[0px]">
           <span
             data-text-fill="true"
             className={
               (currentPos.left === 0 && item.key === 0) ||
               (currentPos.left > 0 && item.key === 1)
-                ? "framer-text bg-gradient-to-r from-white to-[#70befa]"
-                : "framer-text bg-[#9c9c9c]"
+                ? "codeblaze-text bg-gradient-to-r from-white to-[#70befa]"
+                : "codeblaze-text bg-[#9c9c9c]"
             }
           >
             {item.title}
@@ -74,10 +74,10 @@ export const HeaderButton: FC<HeaderButtonProps> = ({
         </p>
       </div>
       {item.icon !== null && (
-        <div className="framer-9xgqfi" data-framer-name="Arrow">
+        <div className="codeblaze-9xgqfi" data-codeblaze-name="Arrow">
           <div
             className="absolute inset-0 rounded-inherit"
-            data-framer-background-image-wrapper="true"
+            data-codeblaze-background-image-wrapper="true"
           >
             <img
               className="block w-full h-full rounded-inherit object-center object-cover"
@@ -117,18 +117,18 @@ export const HeaderButtonGroup = () => {
 export const MobileToggleMenuButton = () => {
   return (
     <div
-      className="framer-1v41qs5 border border-solid border-[rgb(34,34,34)] bg-[rgb(15,15,15)] rounded-lg shadow-none"
+      className="codeblaze-1v41qs5 border border-solid border-[rgb(34,34,34)] bg-[rgb(15,15,15)] rounded-lg shadow-none"
       data-border="true"
-      data-framer-name="Menu"
+      data-codeblaze-name="Menu"
       data-highlight="true"
       tabIndex={0}
     >
       <div
-        className="framer-d0shrp transform -translate-x-1/2 -translate-y-1/2"
-        data-framer-name="Hamburger menu"
+        className="codeblaze-d0shrp transform -translate-x-1/2 -translate-y-1/2"
+        data-codeblaze-name="Hamburger menu"
       >
-        <div className="framer-53qt6p bg-[rgb(112,190,250)] rounded-[1px] transform-none"></div>
-        <div className="framer-npc2cw bg-[rgb(112,190,250)] rounded-[1px] transform-none"></div>
+        <div className="codeblaze-53qt6p bg-[rgb(112,190,250)] rounded-[1px] transform-none"></div>
+        <div className="codeblaze-npc2cw bg-[rgb(112,190,250)] rounded-[1px] transform-none"></div>
       </div>
     </div>
   );

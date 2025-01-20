@@ -18,9 +18,9 @@ const Tabs: FC<Props> = ({ selected, setSelected }) => {
 
   return (
     <div
-      className="framer-11sdx13 border border-solid border-gray-800 bg-[#0c0c0c] rounded-[10px]"
+      className="codeblaze-11sdx13 border border-solid border-gray-800 bg-[#0c0c0c] rounded-[10px]"
       data-border="true"
-      data-framer-name="HTML/React/CSS"
+      data-codeblaze-name="HTML/React/CSS"
     >
       <ClickableCursorDiv pos={position} />
       {CodeTabs.map((item: TAB, index: number) => (

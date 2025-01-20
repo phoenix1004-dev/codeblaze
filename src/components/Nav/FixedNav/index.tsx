@@ -4,11 +4,11 @@ import SubMenu from "./SubMenu";
 
 const FixedNav = () => {
   return (
-    <div className="framer-ogrscq-container hidden-5tblbe">
+    <div className="codeblaze-ogrscq-container hidden-5tblbe">
       <nav
-        className="framer-eE9h1 framer-uKIIJ framer-ux1xcs framer-v-ux1xcs border border-solid border-[rgb(34,34,34)] bg-[rgb(15,15,15)] rounded-[10px]"
+        className="codeblaze-eE9h1 codeblaze-uKIIJ codeblaze-ux1xcs codeblaze-v-ux1xcs border border-solid border-[rgb(34,34,34)] bg-[rgb(15,15,15)] rounded-[10px]"
         data-border="true"
-        data-framer-name="Main"
+        data-codeblaze-name="Main"
       >
         <LogoImage />
         <MenuList />

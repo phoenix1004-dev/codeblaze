@@ -2,7 +2,7 @@ import LogoImage from "./LogoImage";
 
 const Logo = () => {
   return (
-    <div className="framer-1n2yrmf !w-[130px]" data-framer-name="Logo">
+    <div className="codeblaze-1n2yrmf !w-[130px]" data-codeblaze-name="Logo">
       <LogoImage />
       {/* <LogoText /> */}
     </div>

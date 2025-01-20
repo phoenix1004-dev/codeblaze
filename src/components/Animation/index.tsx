@@ -135,7 +135,7 @@ export const CursorDiv: FC<CursorProps> = ({ pos }) => {
 export const ClickableCursorDiv: FC<CursorProps> = ({ pos }) => {
   return (
     <motion.div
-      className="framer-oggjeu border border-solid border-gray-800 bg-gray-900 rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      className="codeblaze-oggjeu border border-solid border-gray-800 bg-gray-900 rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
       animate={pos}
       data-border="true"
     />
@@ -214,7 +214,7 @@ export const AnalyzeBox: FC<AnalyzeBoxProps> = ({
     <motion.div
       className={`${className} border border-solid border-[rgba(34,34,34)] rounded-[5px]`}
       data-border={border}
-      data-framer-name={name}
+      data-codeblaze-name={name}
       animate={{
         boxShadow: isActive
           ? "0 0 2px 0.5px rgba(112, 190, 250, 0.75)"
@@ -230,7 +230,7 @@ export const AnalyzeBox: FC<AnalyzeBoxProps> = ({
 export const AnalyzeBlur = ({ isActive }: { isActive: boolean }) => {
   return (
     <motion.div
-      className="framer-1c27g3o border border-solid border-[#222222] rounded-lg"
+      className="codeblaze-1c27g3o border border-solid border-[#222222] rounded-lg"
       data-border="true"
       animate={{
         background: isActive
@@ -266,9 +266,9 @@ export const SelectedTextArea: FC<SelectedTextAreaProps> = ({
 }) => {
   return (
     <motion.div
-      className="framer-1l8m52c border border-solid border-gray-800 rounded-[2px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      className="codeblaze-1l8m52c border border-solid border-gray-800 rounded-[2px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
       data-border="true"
-      data-framer-name="Code highlighter"
+      data-codeblaze-name="Code highlighter"
       animate={isActive ? to : from}
     />
   );
@@ -281,17 +281,17 @@ export const SelectedTextCursor: FC<SelectedTextTooltopProps> = ({
 }) => {
   return (
     <motion.div
-      className="framer-1lsin23 opacity-75"
-      data-framer-name="Pointer"
+      className="codeblaze-1lsin23 opacity-75"
+      data-codeblaze-name="Pointer"
       animate={isActive ? to : from}
     >
       <div
         className="absolute rounded-[inherit] top-0 right-0 bottom-0 left-0"
-        data-framer-background-image-wrapper="true"
+        data-codeblaze-background-image-wrapper="true"
       >
         <img
           decoding="async"
-          src="https://framerusercontent.com/images/rvmRoFIcGrHNamGkuTyVS7imKU.png"
+          src="https://codeblazeusercontent.com/images/rvmRoFIcGrHNamGkuTyVS7imKU.png"
           alt="telegram"
           className="block w-full h-full rounded-[inherit] object-center object-cover"
         />
@@ -307,19 +307,19 @@ export const SelectedTextTooltip: FC<SelectedTextCursorProps> = ({
 }) => {
   return (
     <motion.div
-      className="framer-1ywhfnj border border-solid border-gray-800 bg-gray-900 rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      className="codeblaze-1ywhfnj border border-solid border-gray-800 bg-gray-900 rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
       data-border="true"
-      data-framer-name="User name"
+      data-codeblaze-name="User name"
       animate={isActive ? to : from}
     >
       <div
-        className="framer-h1p7s4 outline-none flex flex-col justify-start flex-shrink-0 text-white hover:text-blue-500 underline transform -translate-x-1/2 -translate-y-1/2"
-        data-framer-component-type="RichTextContainer"
+        className="codeblaze-h1p7s4 outline-none flex flex-col justify-start flex-shrink-0 text-white hover:text-blue-500 underline transform -translate-x-1/2 -translate-y-1/2"
+        data-codeblaze-component-type="RichTextContainer"
       >
-        <p className="framer-text font-sans text-[14px] tracking-normal text-white">
+        <p className="codeblaze-text font-sans text-[14px] tracking-normal text-white">
           <span
             data-text-fill="true"
-            className="framer-text bg-gradient-to-r from-white to-blue-400"
+            className="codeblaze-text bg-gradient-to-r from-white to-blue-400"
           >
             Tibor
           </span>
@@ -335,7 +335,7 @@ export const ToggleAnswerText: FC<ToggleAnswerTextProps> = ({
 }) => {
   return (
     <motion.p
-      className="framer-text font-switzer !text-[15px] !text-[#9c9c9c]"
+      className="codeblaze-text font-switzer !text-[15px] !text-[#9c9c9c]"
       animate={{
         marginBottom: isActive ? "20px" : "0px",
         height: isActive ? "70px" : "0px",
@@ -352,12 +352,12 @@ export const RotateButton: FC<RotateButtonProps> = ({ isActive }) => {
   return (
     <>
       <motion.div
-        className="framer-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"
+        className="codeblaze-106aa87 bg-gradient-to-l from-white to-blue-400 rounded-lg"
         animate={{ rotate: isActive ? 45 : 0 }}
         transition={{ duration: 0.3 }}
       />
       <motion.div
-        className="framer-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"
+        className="codeblaze-35xf77 bg-gradient-to-b from-white to-blue-400 rounded-lg"
         animate={{ rotate: isActive ? 45 : 0 }}
         transition={{ duration: 0.3 }}
       />
@@ -421,7 +421,7 @@ export const InitialLoading: FC<InitialLoadingProps> = ({ setIsLoading }) => {
     <div className="relative h-auto overflow-hidden z-[9999]">
       <motion.span
         data-text-fill="true"
-        className="framer-text relative leading-normal text-[64px] md:text-[90px] lg:text-[120px] bg-gradient-to-r from-white to-[#70befa]"
+        className="codeblaze-text relative leading-normal text-[64px] md:text-[90px] lg:text-[120px] bg-gradient-to-r from-white to-[#70befa]"
         initial={{ y: 225, opacity: 0 }}
         animate={spanAnimates[step]}
         transition={{ duration: 1 }}
@@ -512,7 +512,7 @@ export const MoveIndicator: FC<MoveIndicatorProps> = ({
     <motion.div
       className={`${className} border border-solid border-gray-800 rounded-xl backdrop-blur-sm shadow-md`}
       data-border="true"
-      data-framer-name={name}
+      data-codeblaze-name={name}
       animate={isActive ? to : from}
     >
       {children}
@@ -553,10 +553,10 @@ export const MemberIndicator: FC<MemberIndicatorProps> = ({ name }) => {
         duration: 0.2,
       }}
     >
-      <p className="framer-text gap-2 justify-center font-sans text-white text-base tracking-normal">
+      <p className="codeblaze-text gap-2 justify-center font-sans text-white text-base tracking-normal">
         <span
           data-text-fill="true"
-          className="framer-text bg-gradient-to-r from-white to-blue-400"
+          className="codeblaze-text bg-gradient-to-r from-white to-blue-400"
         >
           {name}
         </span>
@@ -592,7 +592,7 @@ export const InitialAppearance: FC<InitialAppearanceProps> = ({
 export const PriceIndicator: FC<PriceIndicatorProps> = ({ status }) => {
   return (
     <motion.div
-      className="framer-ooxt3h border border-solid border-[rgb(34,34,34)] bg-[rgb(22,22,22)] rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
+      className="codeblaze-ooxt3h border border-solid border-[rgb(34,34,34)] bg-[rgb(22,22,22)] rounded-[5px] shadow-[0px_0px_2px_0.5px_rgba(112,190,250,0.75)]"
       data-border="true"
       animate={status}
       transition={{ duration: 0.3 }}

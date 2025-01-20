@@ -9,8 +9,8 @@ import { IMAGE } from "../../type";
 const About = () => {
   return (
     <section
-      className="framer-1nwhh6k overflow-auto"
-      data-framer-name="About"
+      className="codeblaze-1nwhh6k overflow-auto"
+      data-codeblaze-name="About"
       id="about"
       data-name="About"
     >
@@ -87,23 +87,27 @@ const About = () => {
         </div>
       </div>
       <InitialAppearance
-        className="framer-od6gw3 -translate-y-12"
-        data-framer-name="Text &amp; Button"
+        className="codeblaze-od6gw3 -translate-y-12"
+        data-codeblaze-name="Text &amp; Button"
         data-name="Text &amp; Button"
         from={{ top: 30, left: 0 }}
         to={{ top: 0, left: 0 }}
         time={0.5}
       >
-        <div className="framer-wt8gf5" data-framer-name="Text" data-name="Text">
+        <div
+          className="codeblaze-wt8gf5"
+          data-codeblaze-name="Text"
+          data-name="Text"
+        >
           <div className="ssr-variant hidden-r5chz7 hidden-wbkh13 hidden-5tblbe hidden-ncoutt !contents">
             <div
-              className="framer-phcsba outline-none flex flex-col justify-start flex-shrink-0 opacity-100 transform perspective-[1200px]"
-              data-framer-component-type="RichTextContainer"
+              className="codeblaze-phcsba outline-none flex flex-col justify-start flex-shrink-0 opacity-100 transform perspective-[1200px]"
+              data-codeblaze-component-type="RichTextContainer"
             >
-              <h3 className="framer-text !leading-normal">
+              <h3 className="codeblaze-text !leading-normal">
                 <span
                   data-text-fill="true"
-                  className="framer-text bg-gradient-to-r from-white to-[#70bffa] text-white text-center text-[18px] sm:text-[28px] md:text-[36px] lg:text-[48px] font-medium tracking-normal w-full"
+                  className="codeblaze-text bg-gradient-to-r from-white to-[#70bffa] text-white text-center text-[18px] sm:text-[28px] md:text-[36px] lg:text-[48px] font-medium tracking-normal w-full"
                   style={{
                     fontFamily: "Outfit",
                     fontStyle: "ExtraLight",
@@ -125,7 +129,7 @@ const About = () => {
           </div>
         </div>
         <div
-          className="framer-fl9649-container opacity-100 transform translate-y-[10px]"
+          className="codeblaze-fl9649-container opacity-100 transform translate-y-[10px]"
           style={{ transform: "perspective(1200px)" }}
         >
           <div className="flex gap-3 ml-2">
@@ -140,26 +144,26 @@ const About = () => {
           </div>
           {/* <AnimationButton>
             <div
-              className="framer-m2G2h framer-1x78atm framer-v-1x78atm bg-[#222222] rounded-[8px]"
-              data-framer-name="Button State 1"
+              className="codeblaze-m2G2h codeblaze-1x78atm codeblaze-v-1x78atm bg-[#222222] rounded-[8px]"
+              data-codeblaze-name="Button State 1"
               data-highlight="true"
             >
               <div
-                className="framer-qdqyn3 rounded-[10px] !relative"
-                data-framer-name="Stroke"
+                className="codeblaze-qdqyn3 rounded-[10px] !relative"
+                data-codeblaze-name="Stroke"
               >
                 <div
-                  className="framer-1ckdakb rounded-[8px]"
-                  data-framer-name="Fill"
+                  className="codeblaze-1ckdakb rounded-[8px]"
+                  data-codeblaze-name="Fill"
                 />
                 <div
-                  className="framer-w410ah"
-                  data-framer-component-type="RichTextContainer outline-none flex flex-col justify-start flex-shrink-0 text-white text-[#0099ff] underline"
+                  className="codeblaze-w410ah"
+                  data-codeblaze-component-type="RichTextContainer outline-none flex flex-col justify-start flex-shrink-0 text-white text-[#0099ff] underline"
                 >
-                  <h4 className="framer-text">
+                  <h4 className="codeblaze-text">
                     <span
                       data-text-fill="true"
-                      className="framer-text bg-gradient-to-r from-white to-[#70bffa] font-switzer text-white text-[14px] tracking-normal"
+                      className="codeblaze-text bg-gradient-to-r from-white to-[#70bffa] font-switzer text-white text-[14px] tracking-normal"
                     >
                       Sign Up Now
                     </span>
@@ -172,9 +176,9 @@ const About = () => {
       </InitialAppearance>
       {/* <div className="ssr-variant hidden-wbkh13 hidden-5tblbe hidden-72rtr7 hidden-ncoutt !contents">
         <div
-          className="framer-pox1sj outline-none flex flex-col justify-start shrink-0 !w-full !h-full transform !-translate-x-1/2 !bottom-0 lg:bottom-0"
-          data-framer-name="Background Text"
-          data-framer-component-type="RichTextContainer"
+          className="codeblaze-pox1sj outline-none flex flex-col justify-start shrink-0 !w-full !h-full transform !-translate-x-1/2 !bottom-0 lg:bottom-0"
+          data-codeblaze-name="Background Text"
+          data-codeblaze-component-type="RichTextContainer"
         >
           <img
             className="w-full h-full bg-contain"
